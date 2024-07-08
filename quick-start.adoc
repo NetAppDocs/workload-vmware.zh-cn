@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: quick-start.html 
+keywords: quick start 
+summary: 开始使用VMware迁移顾问、使用Amazon FSx for ONTAP作为外部NFS数据存储库将当前基础架构迁移到AWS上的VMware Cloud。 
+---
+= 快速开始使用VMware迁移顾问
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+开始使用VMware迁移顾问、使用Amazon FSx for ONTAP作为外部NFS数据存储库将当前基础架构迁移到AWS上的VMware Cloud。
+
+开始之前、您应了解 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["操作模式"^]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"] 注册并创建Workload Factory帐户
+[role="quick-margin-para"]
+转到 https://console.workloads.netapp.com["工作负载出厂控制台"^] 并注册。 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["了解有关创建帐户的更多信息"](英文)
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 向您的帐户添加AWS凭据和权限
+[role="quick-margin-para"]
+您可以在_Basic_模式下使用Workload Factory、而无需添加凭据即可访问您的AWS帐户。在_read_或_Automate _模式下向Workload Factory添加AWS凭据、可以为您的Workload Factory帐户提供创建和管理适用于ONTAP文件系统的FSx以及在VMware Cloud中部署和管理工作负载所需的权限。
+
+[role="quick-margin-para"]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何添加凭据和权限"^]
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 捕获vSphere环境中的当前虚拟机配置
+[role="quick-margin-para"]
+您可以使用迁移顾问VM收集器脚本或RVTools捕获当前VM配置、以便创建部署计划。您还可以将现有部署计划导入为模板、然后修改任何必需的属性。
+
+[role="quick-margin-para"]
+link:capture-vm-configurations.html["了解如何捕获当前虚拟机配置"](英文)
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 使用VMware迁移顾问创建部署计划
+[role="quick-margin-para"]
+启动VMware迁移顾问、并使用Amazon FSx for ONTAP文件系统作为外部NFS数据存储库选择要迁移到新的VMware Cloud on AWS基础架构的VM。您可以在保存计划之前进行一些修改。
+
+[role="quick-margin-para"]
+link:launch-onboarding-advisor.html["了解如何使用VMware迁移顾问创建部署计划"](英文)
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五个"] 为ONTAP文件系统部署建议的FSx
+[role="quick-margin-para"]
+部署新的FSx for ONTAP文件系统、为基于AWS的VMware Cloud基础架构中的VM提供数据存储库。
+
+[role="quick-margin-para"]
+link:deploy-fsx-file-system.html["了解如何部署新的FSx for ONTAP文件系统"](英文)
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-6.png["六个"] 将FSx for ONTAP文件系统连接到基于AWS的VMware Cloud
+[role="quick-margin-para"]
+软件定义的数据中心(Software-定义 的Data Center、SDDC)通过使用VPC对等功能将网络连接扩展到外部NFS存储卷、提供了用于连接到FSx for ONTAP文件系统的网络选项。
+
+[role="quick-margin-para"]
+link:connect-sddc-to-fsx.html["了解有关迁移数据的更多信息"](英文)
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-7.png["七个"] 将数据从旧系统迁移到新的FSx for ONTAP文件系统
+[role="quick-margin-para"]
+使用VMware HCX (混合云扩展)等外部工具将数据从旧虚拟机存储移动到连接到新虚拟机的FSx for NetApp ONTAP卷。
+
+[role="quick-margin-para"]
+link:migrate-data.html["了解有关迁移数据的更多信息"](英文)

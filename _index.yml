@@ -1,0 +1,25 @@
+---
+indexpage:
+  title: Workload Factory for VMware文档
+  summary: 简化从内部vSphere环境到VMware Cloud on AWS的迁移、并为ONTAP文件系统实施自定义FSx作为外部数据存储库。
+  keywords: VMware, FSx, VMs, VMC, VMware Cloud on AWS, FSx for ONTAP
+  lead: 简化从内部vSphere环境到VMware Cloud on AWS的迁移、并为ONTAP文件系统实施自定义FSx作为外部数据存储库。
+  tiles:
+  - title: 开始使用
+    links:
+    - title: 了解适用于VMware的Workload Factory
+      url: learn-about-vmware-workloads.html
+    - title: 快速入门
+      url: quick-start.html
+  - title: 使用VMware迁移顾问
+    links:
+    - title: 捕获当前虚拟机配置
+      url: capture-vm-configurations.html
+    - title: 使用迁移顾问创建部署计划
+      url: launch-onboarding-advisor.html
+    - title: 为ONTAP文件系统部署建议的FSx
+      url: deploy-fsx-file-system.html
+    - title: 将FSx for ONTAP文件系统连接到基于AWS的VMware Cloud
+      url: connect-sddc-to-fsx.html
+    - title: 将数据迁移到新基础架构
+      url: migrate-data.html

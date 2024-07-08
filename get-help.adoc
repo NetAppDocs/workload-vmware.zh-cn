@@ -1,0 +1,165 @@
+---
+sidebar: sidebar 
+permalink: get-help.html 
+keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
+summary: NetApp以多种方式支持工作负载工厂。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。 
+---
+= 获取帮助
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+NetApp以多种方式为Workload Factory及其云服务提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。
+
+
+
+== 获取FSx for ONTAP支持
+
+有关FSx for ONTAP、其基础架构或任何使用该服务的解决方案的技术支持、请参阅该产品的工作负载工厂文档中的"获得帮助"。
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["适用于 ONTAP 的 Amazon FSX"^]
+
+要获得特定于Workload Factory及其存储解决方案和服务的技术支持、请使用下面所述的支持选项。
+
+
+
+== 使用自助支持选项
+
+这些选项每周 7 天，每天 24 小时免费提供：
+
+* 文档
++
+您当前正在查看的Workload Factory文档。
+
+* https://kb.netapp.com["知识库"^]
++
+搜索工作负载工厂知识库、查找有助于解决问题的文章。
+
+* http://community.netapp.com/["社区"^]
++
+加入Workload Factory社区、关注正在进行的讨论或创建新的讨论。
+
+
+
+
+
+== 向NetApp支持部门创建案例
+
+除了上述自助支持选项之外、您还可以在激活支持后与NetApp支持专家合作解决任何问题。
+
+.开始之前
+要使用*创建案例*功能，您必须先注册获得支持。 将您的NetApp支持站点凭据与您的工作负载出厂登录关联起来。link:support-registration.html["了解如何注册获取支持"](英文)
+
+.步骤
+. 在Workload Factory控制台的右上角，选择*Help > Support*。
++
+选择此选项将打开BlueXP控制台一个新的浏览器选项卡并加载支持信息板。
+
+. 在*资源*页面上、在技术支持下选择一个可用选项：
++
+.. 如果您想通过电话与某人通话，请选择*呼叫我们*。系统会将您定向到netapp.com上的一个页面、其中列出了您可以拨打的电话号码。
+.. 选择*创建案例*向NetApp支持专家开立TT：
++
+*** *服务*：选择*工作负载工厂*。
+*** *案例优先级*：选择案例的优先级、可以是"低"、"中"、"高"或"严重"。
++
+要了解有关这些优先级的更多详细信息、请将鼠标悬停在字段名称旁边的信息图标上。
+
+*** *问题描述 *：提供问题的详细问题描述 、包括任何适用的错误消息或您执行的故障排除步骤。
+*** *其他电子邮件地址*：如果您希望其他人了解此问题描述 、请输入其他电子邮件地址。
+*** *附件(可选)*：一次最多上传五个附件。
++
+每个文件的附件数限制为25 MB。支持以下文件扩展名：txt、log、pdf、jp6/jpeu、rtf、 doc/docx、xls/xlsx和csv。
+
+
+
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-create-case.png["创建案例表的屏幕截图、可用于向NetApp支持部门创建案例。"]
+
+
+
+.完成后
+此时将显示一个弹出窗口、其中包含您的支持案例编号。NetApp支持专家将审核您的案例、并尽快与您联系。
+
+要查看支持案例的历史记录，您可以选择*设置>时间线*并查找名为“创建支持案例”的操作。最右侧的按钮可用于展开操作以查看详细信息。
+
+尝试创建案例时、您可能会遇到以下错误消息：
+
+"您无权针对选定服务创建案例"
+
+此错误可能意味着NSS帐户及其关联的记录公司与BlueXP帐户序列号(即960xxxx)或工作环境序列号。您可以使用以下选项之一寻求帮助：
+
+* 使用产品内聊天功能
+* 请通过提交非技术案例 https://mysupport.netapp.com/site/help[]
+
+
+
+
+== 管理支持案例(预览)
+
+您可以直接从BlueXP查看和管理活动的和已解决的支持案例。您可以管理与您的NSS帐户和公司关联的案例。
+
+案例管理以预览形式提供。我们计划改进此体验、并在即将发布的版本中添加增强功能。请通过产品内聊天向我们发送反馈。
+
+请注意以下事项：
+
+* 页面顶部的案例管理信息板提供了两个视图：
++
+** 左侧视图显示了您提供的用户NSS帐户在过去3个月内打开的案例总数。
+** 右侧视图显示了过去3个月内根据用户NSS帐户在公司级别开立的案例总数。
+
+
++
+此表中的结果反映了与选定视图相关的案例。
+
+* 您可以添加或删除感兴趣的列、也可以筛选优先级和状态等列的内容。其他列仅提供排序功能。
++
+有关更多详细信息、请查看以下步骤。
+
+* 在每个案例级别、我们可以更新案例备注或关闭尚未处于"已关闭"或"待关闭"状态的案例。
+
+
+.步骤
+. 在Workload Factory控制台的右上角，选择*Help > Support*。
++
+选择此选项将打开BlueXP控制台一个新的浏览器选项卡并加载支持信息板。
+
+. 选择*案例管理*，如果出现提示，请将您的NSS帐户添加到BlueXP。
++
+"*案例管理*"页面显示了与您的BlueXP用户帐户关联的NSS帐户相关的已打开案例。此NSS帐户与* NSS管理*页面顶部显示的NSS帐户相同。
+
+. 也可以修改表中显示的信息：
++
+** 在“*组织案例*”下，选择“*查看*”以查看与贵公司关联的所有案例。
+** 通过选择确切的日期范围或选择其他时间范围来修改日期范围。
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-date-range.png["案例管理页面上表上方选项的屏幕截图、可用于选择确切的日期范围或过去7天、30天或3个月。"]
+
+** 筛选列的内容。
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-filter.png["\"状态\"列中筛选选项的屏幕截图、可用于筛选与特定状态(如\"活动\"或\"已关闭\")匹配的案例。"]
+
+** 通过选择并选择要显示的列来更改表中 image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/icon-table-columns.png["表中显示的加号图标"] 显示的列。
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-columns.png["显示可在表中显示的列的屏幕截图。"]
+
+
+
+. 通过选择并选择一个可用选项来管理现有案例 image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/icon-table-action.png["包含三个点的图标、显示在表的最后一列中"] ：
++
+** *查看案例*：查看有关特定案例的完整详细信息。
+** *更新案例注释*：提供有关您的问题的更多详细信息、或者选择*上传文件*最多附加五个文件。
++
+每个文件的附件数限制为25 MB。支持以下文件扩展名：txt、log、pdf、jp6/jpeu、rtf、 doc/docx、xls/xlsx和csv。
+
+** *关闭案例*：提供关闭案例的详细原因，然后选择*关闭案例*。
+
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-case-management-actions.png["屏幕截图、显示在表的最后一列中选择菜单后可以执行的操作。"]
+
+

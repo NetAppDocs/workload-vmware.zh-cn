@@ -1,0 +1,24 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
+summary: 了解Workload Factory的VMware迁移顾问组件的新增功能。 
+---
+= 新增功能
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解Workload Factory的VMware Cloud迁移顾问组件的新增功能。
+
+
+
+== 2024年7月7日
+
+
+
+=== 适用于VMware的Workload Factory初始版本
+
+初始版本支持使用VMware迁移顾问分析内部vSphere环境中的当前虚拟机配置、并生成一个计划、以便将建议的虚拟机布局部署到VMware Cloud on AWS中、并将适用于NetApp ONTAP文件系统的自定义Amazon FSx用作外部数据存储库。

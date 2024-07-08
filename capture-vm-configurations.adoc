@@ -1,0 +1,100 @@
+---
+sidebar: sidebar 
+permalink: capture-vm-configurations.html 
+keywords: vm workloads, capture vm details 
+summary: 您可以使用迁移顾问VM收集器脚本或RVTools捕获当前VM配置。我们建议您使用迁移顾问VM收集器脚本、因为它会收集VM配置和性能数据、以便制定最准确的计划。 
+---
+= 捕获当前虚拟机配置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用迁移顾问VM收集器脚本或RVTools捕获当前VM配置。我们建议您使用迁移顾问VM收集器脚本、因为它会收集VM配置和性能数据、以便制定最准确的计划。
+
+如果您计划根据之前在本地保存的现有部署计划部署新系统、则可以跳过此步骤并选择现有部署计划。link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["了解如何使用现有计划构建新计划"](英文)
+
+[role="tabbed-block"]
+====
+.使用迁移顾问VM收集器脚本
+--
+NetApp迁移顾问VM收集器脚本从vCenter收集VM配置信息、与RVTools收集的信息类似、但是、它会捕获当前VM性能数据、以提供实际读写IOPS和吞吐量统计信息。
+
+您需要启动迁移顾问才能从代码框窗口复制迁移顾问VM收集器脚本。
+
+.开始之前
+要运行收集器脚本的系统必须满足以下要求：
+
+* 必须安装Microsoft PowerShell 7.0或更高版本。如果需要安装PowerShell、请参见 https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell?view=powershell-7.4["Microsoft PowerShell文档"^] 。
+* 必须安装VMware PowerCLI。如果需要安装PowerCLI、请参见 https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.esxi.install.doc/GUID-F02D0C2D-B226-4908-9E5C-2E783D41FE2D.html["VMware PowerCLI文档"^] 。
+* 必须禁用SSL证书检查。
+* PowerShell必须允许运行未签名的脚本。
+
+
+请注意、如果您计划从VM捕获长期统计信息(每日统计信息)、则必须在vSphere管理控制台中激活3级或以上的统计信息(VMware管理环境)。
+
+.步骤
+. 登录到Workload Factory。
+. 在VMware磁贴中，选择*Plan and Deploy (计划和部署)*。
++
+image:screenshot-choose-method.png["可用于收集当前VM配置信息的不同方法的屏幕截图。"]
+
+. 选择*创建新部署计划*，选择*使用迁移顾问VMware数据收集器*选项，然后选择*下一步*。
++
+此时将显示*准备在AWS上迁移VMware Cloud *页面。
+
+. 在"Code"窗口中、选择 image:button-download-codebox.png["下载按钮"] 将迁移顾问VM收集器脚本(名为"list-VMs.ps1")保存到目标系统、或者选择 image:button-copy-codebox.png["复制按钮"] 复制此脚本以便将其粘贴到相应的系统上。
+. 按照以下步骤捕获当前VM的配置：
++
+.. 登录到下载了数据收集器的系统、其中安装了PowerShell和PowerCLI。
+.. 运行以下命令以连接到VMware vCenter Server：
++
+ Connect-VIServer -server <server_IP>
++
+将<server_IP>替换为VMware服务器的IP地址或主机名。
+
+.. 运行下载的数据收集器脚本、并为"Daily (每日)"或"Shourly (每小时)"虚拟机统计信息指定数据收集选项。
++
+ .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
++
+其中：
+
++
+*** *TRUE*以5分钟为间隔收集过去24小时的IOPS和吞吐量数据
+*** *false*以20秒的间隔收集过去1小时的IOPS和吞吐量数据。
+
+
+
+
+
+
+.结果
+该脚本将输出一个CSV文件、该文件名为 `list-vms-yyyy-MM-dd-HH-mm-ss.csv` 当前工作目录。CSV文件包含所有虚拟机及其属性的列表、以及它们的IOPS和吞吐量数据。
+
+--
+.使用RVTools软件
+--
+RVTools是一个Windows应用程序、可与vCenter和ESX服务器(5.x到8.0)交互、以捕获有关VMware虚拟环境的信息。它可收集有关VM、CPU、内存、磁盘、集群、 ESX主机、数据存储库等。您可以将此信息导出到一个xlsx文件、以便与迁移顾问一起使用。
+
+https://www.robware.net/home["了解有关RVTools的更多信息"^]
+
+.步骤
+. 从下载并安装RVTools 4.4.2或更高版本 https://www.robware.net/download["RVTools网站"^]
+. 启动RVTools并登录到目标vCenter Server。
++
+此操作将捕获有关此vCenter Server的信息。
+
+. 将VMware信息导出到xlsx或xls文件。
++
+有关详细信息、请参见中的"命令行参数"一章 https://resources.robware.net/resources/prod/RVTools.pdf["RVTools文档"^] 。
+
+
+
+.结果
+包含结果的xlsx或xls文件将保存到您的工作目录中。
+
+--
+====
+.下一步是什么？
+link:launch-onboarding-advisor.html["使用迁移顾问创建部署计划"](英文)

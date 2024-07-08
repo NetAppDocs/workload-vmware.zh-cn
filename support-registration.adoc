@@ -1,0 +1,113 @@
+---
+sidebar: sidebar 
+permalink: support-registration.html 
+keywords: support registration, register for support, support, nss account, add nss account, 
+summary: 要向NetApp技术支持创建支持案例、您需要先将NetApp支持站点帐户添加到工作负载工厂、然后注册支持。 
+---
+= 注册以获得支持
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+要获得特定于Workload Factory及其存储解决方案和服务的技术支持、需要注册支持。您必须从BlueXP控制台注册获得支持、BlueXP控制台是一个与Workload Factory不同的基于Web的控制台。
+
+注册获取支持不会为云提供商文件服务启用NetApp支持。有关与云提供商文件服务、其基础架构或任何使用该服务的解决方案相关的技术支持、请参阅该产品的Workload Factory文档中的"获得帮助"。
+
+link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["适用于 ONTAP 的 Amazon FSX"^]
+
+
+
+== 支持注册概述
+
+注册您的帐户ID支持订阅(您的20位960xxxxxxxxx序列号位于BlueXP的支持资源页面上)将作为您的单个支持订阅ID。必须注册每个BlueXP帐户级别的支持订阅。
+
+通过注册、您可以创建支持服务单和自动生成案例等功能。要完成注册、请按如下所述将NetApp 支持站点(NSS)帐户添加到BlueXP中。
+
+
+
+== 注册您的帐户以获得NetApp支持
+
+要注册支持并激活支持授权、您帐户中的一个用户必须将NetApp支持站点帐户与其BlueXP登录名关联。如何注册NetApp支持取决于您是否已拥有NetApp 支持站点 (NSS)帐户。
+
+
+
+=== 具有NSS帐户的现有客户
+
+如果您是拥有NSS帐户的NetApp客户、则只需通过BlueXP注册支持即可。
+
+.步骤
+. 在Workload Factory控制台的右上角，选择*Help > Support*。
++
+选择此选项将打开BlueXP控制台一个新的浏览器选项卡并加载支持信息板。
+
+. 在BlueXP控制台的右上角、选择设置图标、然后选择*凭据*。
+. 选择*用户凭据*。
+. 选择*添加NSS凭证*，然后按照NetApp 支持站点(NSS)鉴定提示进行操作。
+. 要确认注册过程是否成功，请选择帮助图标，然后选择*Support*。
++
+“资源”页面应显示您的帐户已注册支持。
+
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-support-registration.png["屏幕截图、显示帐户序列号、绿色复选框以及注册支持的文本。"]
+
++
+请注意、其他BlueXP用户如果没有将NetApp 支持站点 帐户与其BlueXP登录关联、则不会看到此相同的支持注册状态。但是、这并不意味着您的BlueXP帐户未注册支持。只要帐户中有一个用户执行了这些步骤、您的帐户即已注册。
+
+
+
+
+
+=== 现有客户、但无NSS帐户
+
+如果您是现有许可证和序列号但拥有_no_ nss帐户的现有NetApp客户、则需要创建一个NSS帐户并将其与BlueXP登录关联。
+
+.步骤
+. 完成以创建NetApp支持站点帐户 https://mysupport.netapp.com/site/user/registration["NetApp 支持站点 用户注册表"^]
++
+.. 请务必选择适当的用户级别、通常为* NetApp客户/最终用户*。
+.. 请务必复制上面用于序列号字段的BlueXP帐户序列号(960xxxx)。这样可以加快帐户处理速度。
+
+
+. 通过完成下的步骤，将新的NSS帐户与BlueXP登录相关联 <<具有NSS帐户的现有客户>>。
+
+
+
+
+=== NetApp的新品牌
+
+如果您是NetApp的新客户、并且没有NSS帐户、请按照以下每个步骤进行操作。
+
+.步骤
+. 在Workload Factory控制台的右上角，选择*Help > Support*。
++
+选择此选项将打开BlueXP控制台一个新的浏览器选项卡并加载支持信息板。
+
+. 从支持资源页面中找到您的帐户ID序列号。
++
+image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/screenshot-serial-number.png["帮助菜单的屏幕截图，其中列出的第一个选项为支持"]
+
+. 导航到 https://register.netapp.com["NetApp的支持注册站点"^] 并选择*我不是NetApp的注册客户*。
+. 填写必填字段(带有红色星号的字段)。
+. 在*产品线*字段中、选择*云管理器*、然后选择适用的计费提供商。
+. 复制上述第2步中的帐户序列号、完成安全检查、然后确认您已阅读NetApp的全球数据隐私政策。
++
+系统会立即向提供的邮箱发送一封电子邮件、以完成此安全事务。如果验证电子邮件未在几分钟内收到、请务必检查您的垃圾邮件文件夹。
+
+. 在电子邮件中确认操作。
++
+确认将向NetApp提交您的请求、并建议您创建NetApp 支持站点 帐户。
+
+. 完成以创建NetApp支持站点帐户 https://mysupport.netapp.com/site/user/registration["NetApp 支持站点 用户注册表"^]
++
+.. 请务必选择适当的用户级别、通常为* NetApp客户/最终用户*。
+.. 请务必复制上面用于序列号字段的帐户序列号(960xxxx)。这样可以加快帐户处理速度。
+
+
+
+
+.完成后
+在此过程中、NetApp应与您联系。这是针对新用户的一次性入职练习。
+
+拥有NetApp支持站点帐户后，请完成下的步骤，将该帐户与BlueXP登录相关联 <<具有NSS帐户的现有客户>>。

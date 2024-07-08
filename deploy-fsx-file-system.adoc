@@ -1,0 +1,90 @@
+---
+sidebar: sidebar 
+permalink: deploy-fsx-file-system.html 
+keywords: vm workloads, deploy fsx, deploy storage for vms 
+summary: 在确认为ONTAP文件系统或某些情况下的文件系统建议的FSx符合您的确切要求后、您可以使用Workload Factory在AWS环境中部署该系统。 
+---
+= 为ONTAP文件系统部署建议的FSx
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+确认为ONTAP文件系统(或某些情况下的多个文件系统)建议的FSx满足您的确切要求后、您可以使用Workload Factory在AWS环境中部署该系统。
+
+根据您添加到Workload Factory帐户的策略和权限、您可以使用Workload Factory (使用自动化模式)完全部署FSx for ONTAP文件系统。如果您的权限较少(读取模式)或无权限(基本模式)、则需要使用CodeBox中的CloudFormation信息、并在AWS中自行部署FSx for ONTAP文件系统。
+
+.要求
+* 要部署适用于ONTAP文件系统的FSx、必须使用基于AWS软件定义的数据中心(SDDC) 1.20或更高版本的VMware Cloud。
+* 不得将FSx for ONTAP文件系统部署在SDDC部署期间使用的同一个VPC中。而是必须将其部署在您拥有的新Amazon VPC中、才能实现VMware Cloud on AWS与Amazon FSx for NetApp ONTAP的集成。
+* 您必须将FSx for ONTAP文件系统部署在与SDDC相同的AWS区域中。
+
+
+.步骤
+. 在*Review pland*页面底部，选择*Deploy，此时将显示Create an FSx for ONTAP file system页面。
++
+根据您提供的信息、定义FSx for ONTAP文件系统的大多数字段都已完成、但此页面中有几个字段需要完成。
+
++
+您可以使用快速创建或高级创建选项。高级创建提供了一些其他存储参数、您可以自定义这些参数。 https://docs.netapp.com/us-en/workload-fsx-ontap/create-file-system.html["了解这两种选项的功能"](英文)
+
+. *AWS凭据*：选择或添加可为Workload Factory提供直接创建FSx for ONTAP文件系统所需权限的凭据。您还可以从CodeBox中选择CloudFormation代码、并在AWS中自行部署FSx for ONTAP文件系统。
+. *文件系统名称*：输入要用于此FSx for ONTAP文件系统的名称。
+. *标记*：您可以选择添加标记来对FSx for ONTAP文件系统进行分类。
+. 在"网络和安全"部分中、输入以下信息：
++
+.. *区域和VPC*：选择要部署FSx for ONTAP文件系统的区域和VPC。
++
+它应部署在与部署VMware Cloud on AWS的VPC不同的VPC中。
+
+.. *安全组*：使用*高级创建*选项时、您可以为FSx for ONTAP VPC选择默认安全组、以便所有流量都可以访问FSx for ONTAP文件系统。
++
+您可以添加入站规则、以限制其他AWS服务可以访问FSx for ONTAP文件系统的内容。这将阻止打开的服务数量。以下是最低端口和协议数量：
+
++
+[cols="15,10,55"]
+|===
+| 协议 | 端口 | 目的 
+
+
+| TCP、UDP | 111 | portmaper (用于协商NFS请求中使用的端口) 
+
+
+| TCP、UDP | 635 | NFS mounta (接收NFS挂载请求) 
+
+
+| TCP、UDP | 2049 | NFS网络流量 
+
+
+| TCP、UDP | 4045 | 网络锁定管理器(NLM、lockd)-处理锁定请求。 
+
+
+| TCP、UDP | 4046 | 网络状态监控器(NSM、statd)—在服务器重新启动以进行锁定管理时通知NFS客户端。 
+|===
+.. *可用性区域*：选择可用性区域和子网。
++
+如果要避免跨AZ流量产生费用、应选择与VMware SDDC部署位置相同的可用性区域。
+
+.. *加密*：使用*高级创建*选项时、您可以从下拉列表中选择AWS加密密钥名称。
+.. *数据存储库访问控制*：使用*高级创建*选项时、您可以选择是所有主机都可以访问数据存储库、还是只有特定子网上的某些vSphere集群节点可以访问数据存储库。
+
+
+. 在"文件系统详细信息"部分中、输入以下信息：
++
+.. * ONTAP凭据*：输入并确认ONTAP密码。
+.. * Storage VM凭据*(仅限高级创建)：输入并确认Storage VM密码。密码可以特定于此文件系统、也可以使用为ONTAP凭据输入的相同密码。
+
+
+. 在*摘要*部分中，您可以查看VMware迁移顾问根据您的信息设计的FSx for ONTAP文件系统和数据存储库配置。
+. 选择*Create/*以部署FSx for ONTAP文件系统。此过程可能需要长达2小时。
++
+或者，在“代码框”窗口中，您可以选择*重定向到CloudFormation*以使用CloudFormation堆栈创建文件系统。
+
++
+无论哪种情况、您都可以在CloudFormation中监控创建进度。
+
+
+
+.结果
+此时将部署FSx for ONTAP文件系统。
