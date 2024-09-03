@@ -4,7 +4,7 @@ permalink: launch-onboarding-advisor.html
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
 summary: 登录到NetApp工作负载工厂以访问VMware迁移顾问。您将按照向导中的步骤创建根据您的需求自定义的部署计划或迁移计划。 
 ---
-= 使用迁移顾问创建部署计划
+= 使用迁移顾问为基于AWS的VMware Cloud创建部署计划
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -13,9 +13,9 @@ summary: 登录到NetApp工作负载工厂以访问VMware迁移顾问。您将�
 [role="lead"]
 登录到NetApp工作负载工厂以访问VMware迁移顾问。您将按照向导中的步骤创建根据您的需求自定义的部署计划或迁移计划。
 
-可以使用迁移顾问为以下情形创建部署计划：
+迁移到VMware Cloud时、您可以使用迁移顾问为以下情形创建部署计划：
 
-* <<基于内部vSphere环境创建部署计划,将当前的内部vSphere环境迁移到云。>>
+* <<基于内部vSphere环境创建部署计划,将当前的内部vSphere环境迁移到VMware云。>>
 * <<根据现有计划创建部署计划,根据具有类似要求的现有部署计划在云中部署系统。>>
 
 
@@ -33,9 +33,9 @@ summary: 登录到NetApp工作负载工厂以访问VMware迁移顾问。您将�
 
 
 .步骤
-. 从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到VMware Cloud on AWS*。此时将显示VMware迁移顾问主页。
+. 从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到VMware Cloud on AWS*。
 +
-image:screenshot-choose-method-create.png["可用于加载当前VM配置信息的不同方法的屏幕截图。"]
+此时将显示VMware迁移顾问主页。
 
 . 选择*创建新部署计划*。
 . 选择要用于使用当前VM配置填充Workload Factory的清单文件类型，然后选择*Next*。
@@ -83,7 +83,7 @@ VM摘要部分将从清单文件中填充、以反映VM数量和总存储容量�
 
 . 在_VM storage Capacity Considerations _部分中、从几个存储选项中进行选择。
 +
-.. *平均数据精简率*：从三个常见数据精简选择值中进行选择。选择“1:1-无缩减”、“1:1.25-20%缩减”或“1:1.5--33%缩减”。
+.. *平均数据精简率*：从三个常见数据精简选择值中进行选择。选择"1：1 -无缩减"、"1：1.25 - 20%缩减"或"1：1.5 - 33%缩减"。
 .. *性能余量百分比*：输入添加到FSx for ONTAP文件系统容量中的容量增长百分比。
 +
 请注意、如果选择的数量小于20%、则无法创建卷快照来进行保护和长期备份。
@@ -134,7 +134,7 @@ VM摘要部分将从清单文件中填充、以反映VM数量和总存储容量�
 
 . 在*查看部署计划*页面上，查看计划迁移的所有VM的估计每月成本。
 +
-页面顶部介绍了所有已部署VM和FSx for ONTAP文件系统的每月成本。您可以展开每个部分以查看有关"针对ONTAP文件系统配置的建议Amazon FSx "、"估计成本细分"、"卷配置"、"规模估算假设"和技术"免责声明"的详细信息。
+页面顶部介绍了所有已部署VM和FSx for ONTAP文件系统的每月成本。您可以展开每个部分以查看"针对ONTAP文件系统配置的建议Amazon FSx "、"估计成本细分"、"卷配置"、"规模估算假设"和技术"免责声明"的详细信息。
 
 . 如果您对迁移计划感到满意、您可以选择以下几种方式：
 +
@@ -157,10 +157,7 @@ VM摘要部分将从清单文件中填充、以反映VM数量和总存储容量�
 
 .步骤
 . 登录到Workload Factory。
-. 在VMware Workloads (VMware工作负载)磁贴中，选择*Plan and Deploy (计划和部署)*，此时将显示VMware迁移顾问主页。
-+
-image:screenshot-choose-method-import.png["可用于加载当前VM配置信息的不同方法的屏幕截图。"]
-
+. 从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到VMware Cloud on AWS*。此时将显示VMware迁移顾问主页。
 . 选择*导入现有部署计划*。
 . 选择 image:button-upload-file.png["上传按钮"] 并选择要在迁移顾问中导入的现有计划文件。
 . 选择*Next*(下一步*)，将显示Review plan (复审计划)页面。

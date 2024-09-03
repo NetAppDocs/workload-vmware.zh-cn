@@ -1,17 +1,17 @@
 ---
 sidebar: sidebar 
-permalink: quick-start.html 
+permalink: quick-start-native.html 
 keywords: quick start 
-summary: 开始使用VMware迁移顾问、使用Amazon FSx for ONTAP作为外部NFS数据存储库将当前基础架构迁移到AWS上的VMware Cloud。 
+summary: 开始使用VMware迁移顾问、使用Amazon FSx for ONTAP作为外部NFS数据存储库将当前基础架构迁移到Amazon EC2。 
 ---
-= 使用VMware迁移顾问快速开始迁移到AWS上的VMware Cloud
+= 使用VMware迁移顾问快速开始迁移到Amazon EC2
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-开始使用VMware迁移顾问、使用Amazon FSx for ONTAP作为外部NFS数据存储库将当前基础架构迁移到AWS上的VMware Cloud。
+开始使用VMware迁移顾问、使用Amazon FSx for ONTAP作为外部NFS数据存储库将当前基础架构迁移到Amazon EC2。
 
 开始之前、您应了解 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["操作模式"^]
 
@@ -21,7 +21,7 @@ summary: 开始使用VMware迁移顾问、使用Amazon FSx for ONTAP作为外部
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 向您的帐户添加AWS凭据和权限
 [role="quick-margin-para"]
-您可以在_Basic_模式下使用Workload Factory、而无需添加凭据即可访问您的AWS帐户。在_read_或_Automate _模式下向Workload Factory添加AWS凭据、可以为您的Workload Factory帐户提供创建和管理适用于ONTAP文件系统的FSx以及在VMware Cloud中部署和管理工作负载所需的权限。
+您可以在_Basic_模式下使用Workload Factory、而无需添加凭据即可访问您的AWS帐户。在_read_或_Automate _模式下向Workload Factory添加AWS凭据、可以为Workload Factory帐户提供创建和管理适用于ONTAP文件系统的FSx以及在Amazon EC2中部署和管理工作负载所需的权限。
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何添加凭据和权限"^]
@@ -31,18 +31,18 @@ https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解�
 您可以使用迁移顾问VM收集器脚本或RVTools捕获当前VM配置、以便创建部署计划。您还可以将现有部署计划导入为模板、然后修改任何必需的属性。
 
 [role="quick-margin-para"]
-link:capture-vm-configurations.html["了解如何捕获当前虚拟机配置"](英文)
+link:capture-vm-configurations-native.html["了解如何捕获当前虚拟机配置"](英文)
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 使用VMware迁移顾问创建部署计划
 [role="quick-margin-para"]
-启动VMware迁移顾问、并使用Amazon FSx for ONTAP文件系统作为外部NFS数据存储库选择要迁移到新的VMware Cloud on AWS基础架构的VM。您可以在保存计划之前进行一些修改。
+启动VMware迁移顾问、然后选择要使用Amazon FSx for ONTAP文件系统作为外部NFS数据存储库迁移到Amazon EC2基础架构的VM。您可以在保存计划之前进行一些修改。
 
 [role="quick-margin-para"]
-link:launch-onboarding-advisor.html["了解如何使用VMware迁移顾问创建部署计划"](英文)
+link:launch-onboarding-advisor-native.html["了解如何使用VMware迁移顾问创建部署计划"](英文)
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-5.png["五个"] 为ONTAP文件系统部署建议的FSx
 [role="quick-margin-para"]
-部署新的FSx for ONTAP文件系统、为基于AWS的VMware Cloud基础架构中的VM提供数据存储库。
+部署新的FSx for ONTAP文件系统、为Amazon EC2基础架构中的VM提供数据存储库。
 
 [role="quick-margin-para"]
 link:deploy-fsx-file-system.html["了解如何部署新的FSx for ONTAP文件系统"](英文)

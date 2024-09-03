@@ -11,9 +11,9 @@ summary: Workload Factory for VMware提供了用于将数据从内部系统迁�
 
 
 [role="lead"]
-Workload Factory for VMware提供了一些工具、用于将数据从内部系统迁移到VMware Cloud on AWS (VMC)。通过VMware迁移顾问、您可以分析内部vSphere环境中的当前虚拟机配置、并生成一个计划、以便将建议的虚拟机布局部署到AWS vSphere集群上的VMware Cloud、并将适用于NetApp ONTAP文件系统的自定义Amazon FSx用作外部数据存储库。
+Workload Factory for VMware提供了一些工具、用于将数据从内部系统迁移到VMware Cloud on AWS (VMC)或Amazon EC2。通过VMware迁移顾问、您可以分析内部vSphere环境中的当前虚拟机配置、并生成一个计划、以便将建议的虚拟机布局部署到Amazon EC2或AWS vSphere集群上的VMware Cloud、并将适用于NetApp ONTAP文件系统的自定义Amazon FSx用作外部数据存储库。
 
-Amazon FSx for NetApp ONTAP是一个基于NetApp ONTAP文件系统构建的外部NFS数据存储库、可连接到AWS vSphere集群上的VMware Cloud。无需添加更多主机即可增加可用存储；只需使用适用于ONTAP卷的FSx作为外部数据存储库来补充vSAN数据存储库即可。这为您提供了一个灵活的高性能虚拟化存储基础架构、该基础架构可独立于计算资源进行扩展。
+Amazon FSx for NetApp ONTAP是一个基于NetApp的ONTAP文件系统构建的外部NFS数据存储库、可以连接到Amazon EC2实例或AWS vSphere集群上的VMware Cloud。无需添加更多主机即可增加可用存储；只需使用适用于ONTAP卷的FSx作为外部数据存储库来补充vSAN数据存储库即可。这为您提供了一个灵活的高性能虚拟化存储基础架构、该基础架构可独立于计算资源进行扩展。
 
 image:diagram-vmware-fsx-overview.png["显示架构的示意图。"]
 
@@ -21,7 +21,7 @@ image:diagram-vmware-fsx-overview.png["显示架构的示意图。"]
 
 == VMware迁移顾问的工作原理
 
-迁移顾问可以帮助您将在任何VMware支持的数据存储库上运行的内部虚拟机(VM)及其数据迁移到VMware云数据存储库、其中包括FSx for ONTAP文件系统上的补充NFS数据存储库。
+迁移顾问可以帮助您将在任何VMware支持的数据存储库上运行的内部虚拟机(VM)及其数据迁移到Amazon EC2或VMware Cloud数据存储库、其中包括FSx for ONTAP文件系统上的补充NFS数据存储库。
 
 image:diagram-vmware-fsx-old-new.png["显示迁移后旧架构和新架构示例的示意图。"]
 
@@ -34,19 +34,19 @@ image:diagram-vmware-fsx-old-new.png["显示迁移后旧架构和新架构示例
 迁移顾问提供以下功能：
 
 * 分析当前的内部VM配置
-* 确定要迁移到AWS上的VMware Cloud的VM
+* 确定要迁移到Amazon EC2或VMware Cloud on AWS的VM
 * 确定ONTAP卷在FSx上用作VM外部数据存储库所需的空间
 * 查看生成的报告以了解部署步骤
 * 执行实际部署
 
 
-迁移顾问支持为连接到单个FSx for ONTAP文件系统的单个VMware Cloud on AWS集群进行配置规划。
+迁移顾问支持为连接到单个FSx for ONTAP文件系统的单个Amazon EC2实例或VMware Cloud on AWS集群进行配置规划。
 
 
 
 == 使用迁移顾问的优势
 
-使用Amazon FSx for ONTAP作为外部NFS数据存储库将当前基础架构的部分内容过渡到AWS上的VMware Cloud具有以下优势：
+使用Amazon FSx for ONTAP作为外部NFS数据存储库、将当前基础架构的部分内容过渡到Amazon EC2或AWS上的VMware Cloud具有以下优势：
 
 * 主机和存储分离以及高级数据效率功能可优化成本
 * 无需购买额外的主机实例、即可根据需要增加存储容量

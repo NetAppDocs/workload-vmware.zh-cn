@@ -13,7 +13,7 @@ summary: 使用VMware混合云扩展等工具将数据从旧虚拟机存储移�
 [role="lead"]
 使用VMware混合云扩展(HCX)等工具将数据从旧虚拟机存储移动到连接到新虚拟机的FSx for NetApp ONTAP卷。通过VMware HCX核心功能、您可以将工作负载从内部数据中心透明地迁移到软件定义的数据中心(Software-定义 的数据中心、SDDC)。
 
-https://docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws-operations/GUID-E8671FC6-F64B-4D41-8F01-B6120B0E3675.html["有关详细信息、请查看VMware HCX文档"^]
+https://docs.vmware.com/en/VMware-Cloud-on-AWS/services/com.vmware.vmc-aws-operations/GUID-E8671FC6-F64B-4D41-8F01-B6120B0E3675.html["查看VMware HCX文档"^] 有关详细信息、请参见。
 
 .下一步是什么？
 现在、您已将数据迁移到基于AWS的VMware Cloud和适用于NetApp ONTAP的Amazon FSx外部数据存储库、您可以备份和保护FSx for ONTAP文件系统上的重要数据、以确保数据始终可用。

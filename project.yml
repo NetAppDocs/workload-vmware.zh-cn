@@ -8,6 +8,8 @@ settings:
     pdf_enabled: true
     harmony_enabled: false
   rss_page: whats-new.html
+  release_notes_autogen:
+    release_notes_repo: workload-relnotes
   langs: zh-cn,us-en,ja-jp,ko-kr,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
@@ -21,20 +23,34 @@ sidebar:
     entries:
     - title: 了解适用于VMware的Workload Factory
       url: "/learn-about-vmware-workloads.html"
-    - title: 快速入门
+    - title: 迁移到VMware Cloud on AWS的快速入门
       url: "/quick-start.html"
+    - title: 迁移到Amazon EC2的快速入门
+      url: "/quick-start-native.html"
   - title: 使用VMware迁移顾问
     entries:
-    - title: 捕获当前虚拟机配置
-      url: "/capture-vm-configurations.html"
-    - title: 使用迁移顾问创建部署计划
-      url: "/launch-onboarding-advisor.html"
-    - title: 为ONTAP文件系统部署建议的FSx
-      url: "/deploy-fsx-file-system.html"
-    - title: 将FSx for ONTAP连接到AWS上的VMware Cloud
-      url: "/connect-sddc-to-fsx.html"
-    - title: 将数据迁移到新基础架构
-      url: "/migrate-data.html"
+    - title: 迁移到基于AWS的VMware Cloud
+      entries:
+      - title: 捕获当前虚拟机配置
+        url: "/capture-vm-configurations.html"
+      - title: 使用迁移顾问创建部署计划
+        url: "/launch-onboarding-advisor.html"
+      - title: 为ONTAP文件系统部署建议的FSx
+        url: "/deploy-fsx-file-system.html"
+      - title: 将FSx for ONTAP连接到AWS上的VMware Cloud
+        url: "/connect-sddc-to-fsx.html"
+      - title: 将数据迁移到新基础架构
+        url: "/migrate-data.html"
+    - title: 迁移到Amazon EC2
+      entries:
+      - title: 捕获当前虚拟机配置
+        url: "/capture-vm-configurations-native.html"
+      - title: 使用迁移顾问创建部署计划
+        url: "/launch-onboarding-advisor-native.html"
+      - title: 为ONTAP文件系统部署建议的FSx
+        url: "/deploy-fsx-file-system.html"
+      - title: 将数据迁移到新基础架构
+        url: "/migrate-data-native.html"
   - title: 知识和支持
     entries:
     - title: 注册以获得支持

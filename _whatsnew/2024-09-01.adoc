@@ -1,0 +1,9 @@
+= 迁移到Amazon EC2
+:allow-uri-read: 
+
+
+
+
+=== 迁移到Amazon EC2
+
+现在、适用于VMware的Workload Factory支持使用VMware迁移顾问迁移到Amazon EC2。

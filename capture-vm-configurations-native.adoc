@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: capture-vm-configurations.html 
+permalink: capture-vm-configurations-native.html 
 keywords: vm workloads, capture vm details 
 summary: 您可以使用迁移顾问VM收集器脚本或RVTools捕获当前VM配置。我们建议您使用迁移顾问VM收集器脚本、因为它会收集VM配置和性能数据、以便制定最准确的计划。 
 ---
-= 在迁移到VMware Cloud之前捕获当前虚拟机配置
+= 在迁移到Amazon EC2之前捕获当前虚拟机配置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -12,8 +12,6 @@ summary: 您可以使用迁移顾问VM收集器脚本或RVTools捕获当前VM配
 
 [role="lead"]
 您可以使用迁移顾问VM收集器脚本或RVTools捕获当前VM配置。我们建议您使用迁移顾问VM收集器脚本、因为它会收集VM配置和性能数据、以便制定最准确的计划。
-
-如果您计划根据之前在本地保存的现有部署计划部署新系统、则可以跳过此步骤并选择现有部署计划。link:launch-onboarding-advisor.html#create-a-deployment-plan-based-on-an-existing-plan["了解如何使用现有计划构建新计划"](英文)
 
 [role="tabbed-block"]
 ====
@@ -36,10 +34,7 @@ NetApp迁移顾问VM收集器脚本从vCenter收集VM配置信息、与RVTools�
 
 .步骤
 . 登录到Workload Factory。
-. 从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到VMware Cloud on AWS*。
-+
-此时将显示VMware迁移顾问主页。
-
+. 在VMware磁贴中，选择*访问和计划*。
 . 选择*创建新部署计划*，选择*使用迁移顾问VMware数据收集器*选项，然后选择*下一步*。
 +
 此时将显示*准备在AWS上迁移VMware Cloud *页面。
@@ -70,7 +65,7 @@ NetApp迁移顾问VM收集器脚本从vCenter收集VM配置信息、与RVTools�
 
 
 .结果
-该脚本将输出一个CSV文件、该文件名为 `list-vms-yyyy-MM-dd-HH-mm-ss.csv` 当前工作目录。CSV文件包含所有虚拟机及其属性的列表、以及它们的IOPS和吞吐量数据。
+该脚本会输出一个压缩文件、其中的时间戳采用当前工作目录中的名称。此.zip文件包含所有虚拟机及其属性的列表、以及这些虚拟机的IOPS和吞吐量数据。
 
 --
 .使用RVTools软件
@@ -97,4 +92,4 @@ https://www.robware.net/home["了解有关RVTools的更多信息"^]
 --
 ====
 .下一步是什么？
-link:launch-onboarding-advisor.html["使用迁移顾问创建VMware Cloud on AWS部署计划"](英文)
+link:launch-onboarding-advisor-native.html["使用迁移顾问创建Amazon EC2部署计划"](英文)
