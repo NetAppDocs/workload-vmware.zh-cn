@@ -471,4 +471,5 @@
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">迁移到基于AWS的VMware Cloud</block>
   <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">迁移到VMware Cloud on AWS的快速入门</block>
   <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">迁移到Amazon EC2的快速入门</block>
+  <block id="71f8c32a3420de60438e9dc0e0e66db0" category="list-text">从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到AWS本机计算*。此时将显示VMware迁移顾问主页。</block>
 </blocks>

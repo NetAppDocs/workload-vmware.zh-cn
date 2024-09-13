@@ -27,7 +27,7 @@ summary: 登录到NetApp工作负载工厂以访问VMware迁移顾问。您将�
 
 
 .步骤
-. 从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到VMware Cloud on AWS*。此时将显示VMware迁移顾问主页。
+. 从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到AWS本机计算*。此时将显示VMware迁移顾问主页。
 . 选择*创建新部署计划*。
 . 选择要用于使用当前VM配置填充Workload Factory的清单文件类型，然后选择*Next*。
 +
