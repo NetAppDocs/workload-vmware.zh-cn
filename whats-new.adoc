@@ -15,6 +15,18 @@ summary: 了解Workload Factory的VMware迁移顾问组件的新增功能。
 
 
 
+== 2024年9月19日
+
+
+
+=== VMware迁移顾问增强功能
+
+此版本的Workload Factory for VMware提供了一些功能和稳定性增强功能、并可在使用VMware迁移顾问时导入和导出迁移计划。
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]
+
+
+
 == 2024年9月1日
 
 

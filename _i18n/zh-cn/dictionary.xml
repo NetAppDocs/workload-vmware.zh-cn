@@ -435,8 +435,6 @@
   <block id="2371c65768dba03d44190d2797940527" category="list-text">*平均数据精简率*：从三种常见数据精简率中进行选择。选择"1：1 -无缩减"、"1：1.25 - 20%缩减"或"1：1.5 - 33%缩减"。</block>
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">请注意、如果选择的数量小于20%、则无法创建卷快照来进行保护和长期备份。</block>
   <block id="695c53d6a8635c5bd280e1390644dcd5" category="list-text">*VM快照保护*：启用此选项可使用快照保护VM。</block>
-  <block id="989b80d51d89a9c4e98f8e9d93a8b430" category="list-text">在*Review EC2 volumes*页面上，查看虚拟机信息、卷分类规则、卷分配以及将在部署过程中迁移的卷列表。</block>
-  <block id="0bd2351ba13aaa50e485f5d6ed8991d1" category="list-text">在*查看实例存储*页面上、查看分配给不同FSx for ONTAP集群的EC2实例和卷。</block>
   <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">页面顶部介绍了所有已部署VM和FSx for ONTAP文件系统的每月成本。您可以展开每个部分以查看"针对ONTAP文件系统配置的建议Amazon FSx "、"估计成本细分"、"卷配置"、"规模估算假设"和技术"免责声明"的详细信息。</block>
   <block id="772ab2cb66607567ceddf170a9c148d1" category="doc">使用迁移顾问为基于AWS的VMware Cloud创建部署计划</block>
   <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">迁移到VMware Cloud时、您可以使用迁移顾问为以下情形创建部署计划：</block>
@@ -471,7 +469,23 @@
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">迁移到基于AWS的VMware Cloud</block>
   <block id="aaa94acfa678f349154ecc14f4c48e40" category="sidebar">迁移到VMware Cloud on AWS的快速入门</block>
   <block id="8ca85249d2f6a1036c376d3281e10cd7" category="sidebar">迁移到Amazon EC2的快速入门</block>
-  <block id="71f8c32a3420de60438e9dc0e0e66db0" category="list-text">从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到AWS本机计算*。此时将显示VMware迁移顾问主页。</block>
   <block id="15cd8c066461a2900cdb71fc53b09930" category="list-text">选择*下载计划&gt;实例存储部署*以下载.csv格式的外部数据存储库部署计划、以便使用该计划创建基于云的新智能数据基础架构。</block>
   <block id="74f9ca267e4b5efb489a146170987dbb" category="list-text">选择*下载计划&gt;计划报告*以.pdf格式下载部署计划，以便分发该计划以供审阅。</block>
+  <block id="2792e29ba30bdded6461ac9b9f0816a4" category="doc">VMware迁移顾问增强功能</block>
+  <block id="bdcdfcdfcb9e0d2084c9c9ff58163d0b" category="paragraph">此版本的Workload Factory for VMware提供了一些功能和稳定性增强功能、并可在使用VMware迁移顾问时导入和导出迁移计划。</block>
+  <block id="2dbb83c0d88f8aa5c12c5445b2b248ee" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block></block>
+  <block id="aadc951fc26ce017c445dc2a4fc12d5d" category="list-text">从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到AWS本机计算*。此时将显示VMware迁移顾问启动屏幕。</block>
+  <block id="34229287aee7a67f52f7e30d46d92cf7" category="paragraph">查看相关信息、了解迁移顾问的优势。</block>
+  <block id="3389e3985ea11023e4391a5a8e11e3c2" category="list-text">准备好后，选择*Let's start*。</block>
+  <block id="26c8e4d27d311b3dd56356d32a6bace5" category="list-text">在*查看EC2卷分配*页面上、查看虚拟机信息、卷分类规则、卷分配以及将在部署过程中迁移的卷列表。</block>
+  <block id="84c81acf71fd02d43242aed2387e9584" category="list-text">在*查看实例存储分配*页面上、查看分配给不同FSx for ONTAP集群的EC2实例和卷。</block>
+  <block id="0c9d619e17114784eebf5b4294145625" category="list-text">在*查看迁移计划*页面上，查看计划迁移的所有VM的估计每月成本。</block>
+  <block id="ef3c7f794852a9bd24d0e9c87cce7d80" category="paragraph">页面顶部估计FSx for ONTAP文件系统和EBS卷每月节省的空间量。您可以展开每个部分、查看有关建议的文件系统配置、预计节省量细分、假设和技术免责声明的详细信息。</block>
+  <block id="d30cddb743993744da7757e5dc8d38a4" category="paragraph">如果您计划的新部署与过去使用的现有部署计划类似、则可以导入该计划、进行更改、然后将其另存为新的部署计划。</block>
+  <block id="9666bbc427ef045e019206b1e73f8b26" category="list-text">从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到AWS本机计算*。</block>
+  <block id="32a33bea1503730affb121be4db1856d" category="list-text">选择<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>并选择要在迁移顾问中导入的现有.json计划文件。</block>
+  <block id="381cf8f0eafd87b02005eb434ff3e0f0" category="paragraph">此时将显示Review Plan (审核计划)页面。</block>
+  <block id="eb5a861bf39cbc8f1c04a5223199b242" category="list-text">您可以选择*上一页*来访问上一页，并按照上一节所述修改计划的设置。</block>
+  <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">根据您的要求自定义计划后、您可以将计划保存或下载PDF文件格式的计划报告。</block>
+  <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024年9月19日</block>
 </blocks>
