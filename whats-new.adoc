@@ -15,6 +15,18 @@ summary: 了解Workload Factory的VMware迁移顾问组件的新增功能。
 
 
 
+== 2024年11月3日
+
+
+
+=== VMware迁移顾问数据精简率帮助
+
+此版本的Workload Factory for VMware具有一个数据精简率助手。在准备加入AWS云时、数据精简率助手可帮助您确定最适合您的VMware库存和存储资产的比率。
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]
+
+
+
 == 2024年9月19日
 
 

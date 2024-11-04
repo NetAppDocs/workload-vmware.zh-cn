@@ -488,4 +488,8 @@
   <block id="eb5a861bf39cbc8f1c04a5223199b242" category="list-text">您可以选择*上一页*来访问上一页，并按照上一节所述修改计划的设置。</block>
   <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">根据您的要求自定义计划后、您可以将计划保存或下载PDF文件格式的计划报告。</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024年9月19日</block>
+  <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">VMware迁移顾问数据精简率帮助</block>
+  <block id="10ced15d9df199f8cb002561b8728770" category="paragraph">此版本的Workload Factory for VMware具有一个数据精简率助手。在准备加入AWS云时、数据精简率助手可帮助您确定最适合您的VMware库存和存储资产的比率。</block>
+  <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">如果您不确定选择哪种比率，请选择*帮我决定*。此时将显示_Data精简比率助手_对话框。请选择适用于您的VM清单和存储空间的任何陈述。助理会建议适当的数据精简率。选择*应用*以使用建议的比率。</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
 </blocks>
