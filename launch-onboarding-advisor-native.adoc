@@ -13,7 +13,7 @@ summary: 登录到NetApp工作负载工厂以访问VMware迁移顾问。您将�
 [role="lead"]
 登录到NetApp工作负载工厂以访问VMware迁移顾问。您将按照向导中的步骤创建根据您的需求自定义的部署计划或迁移计划。
 
-请注意、您必须拥有用户名和密码才能访问Workload Factory。如果您没有访问权限、请立即创建帐户。请参阅说明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["此处"]。
+请注意、您必须拥有用户名和密码才能访问工作负载工厂。如果您没有访问权限、请立即创建帐户。请参阅说明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["此处"]。
 
 
 
@@ -23,17 +23,18 @@ summary: 登录到NetApp工作负载工厂以访问VMware迁移顾问。您将�
 
 .要求
 * 您必须已使用迁移顾问VM收集器(.zip文件)或RVTools (.xlsx文件)从现有系统创建清单文件。
-* 您必须能够从要登录到Workload Factory的系统访问清单文件。
+* 您必须能够从要登录到工作负载工厂的系统访问清单文件。
 
 
 .步骤
+. 使用其中一个登录到工作负载工厂 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
 . 从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到AWS本机计算*。此时将显示VMware迁移顾问启动屏幕。
 +
 查看相关信息、了解迁移顾问的优势。
 
 . 准备好后，选择*Let's start*。
 . 选择*创建新部署计划*。
-. 选择要用于使用当前VM配置填充Workload Factory的清单文件类型，然后选择*Next*。
+. 选择要用于在工作负载出厂时使用当前VM配置填充的清单文件类型，然后选择*Next*。
 +
 ** 选择*使用迁移顾问VMware数据收集器*以使用您使用VMware数据收集器创建的文件。
 ** 选择*使用RVTools*以使用您使用RVTools创建的. xlsx文件。
@@ -111,10 +112,10 @@ VM摘要*部分将从清单文件中填充、以反映VM数量和总存储容量
 如果您计划的新部署与过去使用的现有部署计划类似、则可以导入该计划、进行更改、然后将其另存为新的部署计划。
 
 .要求
-您必须能够从要登录到Workload Factory的系统访问现有部署计划的.json文件。
+您必须能够从要登录到工作负载工厂的系统访问现有部署计划的.json文件。
 
 .步骤
-. 登录到Workload Factory。
+. 使用其中一个登录到工作负载工厂 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
 . 从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到AWS本机计算*。
 . 选择*导入现有部署计划*。
 . 选择image:button-upload-file.png["上传按钮"]并选择要在迁移顾问中导入的现有.json计划文件。

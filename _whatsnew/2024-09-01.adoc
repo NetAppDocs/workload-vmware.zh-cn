@@ -6,4 +6,4 @@
 
 === 迁移到Amazon EC2
 
-现在、适用于VMware的Workload Factory支持使用VMware迁移顾问迁移到Amazon EC2。
+VMware的工作负载工厂现在支持使用VMware迁移顾问迁移到Amazon EC2。

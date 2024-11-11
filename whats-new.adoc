@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: 了解Workload Factory的VMware迁移顾问组件的新增功能。 
+summary: 了解工作负载工厂的VMware迁移顾问组件的新增功能。 
 ---
 = 新增功能
 :allow-uri-read: 
@@ -11,7 +11,7 @@ summary: 了解Workload Factory的VMware迁移顾问组件的新增功能。
 
 
 [role="lead"]
-了解Workload Factory的VMware Cloud迁移顾问组件的新增功能。
+了解工作负载工厂的VMware Cloud迁移顾问组件的新增功能。
 
 
 
@@ -33,7 +33,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === VMware迁移顾问增强功能
 
-此版本的Workload Factory for VMware提供了一些功能和稳定性增强功能、并可在使用VMware迁移顾问时导入和导出迁移计划。
+此版本的适用于VMware的工作负载工厂提供了一些功能和稳定性增强功能、并且能够在使用VMware迁移顾问时导入和导出迁移计划。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]
 
@@ -45,7 +45,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === 迁移到Amazon EC2
 
-现在、适用于VMware的Workload Factory支持使用VMware迁移顾问迁移到Amazon EC2。
+VMware的工作负载工厂现在支持使用VMware迁移顾问迁移到Amazon EC2。
 
 
 
@@ -53,6 +53,6 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 
 
-=== 适用于VMware的Workload Factory初始版本
+=== VMware工作负载工厂的初始版本
 
 初始版本支持使用VMware迁移顾问分析内部vSphere环境中的当前虚拟机配置、并生成一个计划、以便将建议的虚拟机布局部署到VMware Cloud on AWS中、并将适用于NetApp ONTAP文件系统的自定义Amazon FSx用作外部数据存储库。

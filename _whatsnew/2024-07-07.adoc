@@ -1,9 +1,9 @@
-= 适用于VMware的Workload Factory初始版本
+= VMware工作负载工厂的初始版本
 :allow-uri-read: 
 
 
 
 
-=== 适用于VMware的Workload Factory初始版本
+=== VMware工作负载工厂的初始版本
 
 初始版本支持使用VMware迁移顾问分析内部vSphere环境中的当前虚拟机配置、并生成一个计划、以便将建议的虚拟机布局部署到VMware Cloud on AWS中、并将适用于NetApp ONTAP文件系统的自定义Amazon FSx用作外部数据存储库。

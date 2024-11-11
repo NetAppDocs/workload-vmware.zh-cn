@@ -35,7 +35,7 @@ NetApp迁移顾问VM收集器脚本从vCenter收集VM配置信息、与RVTools�
 请注意、如果您计划从VM捕获长期统计信息(每日统计信息)、则必须在vSphere管理控制台中激活3级或以上的统计信息(VMware管理环境)。
 
 .步骤
-. 登录到Workload Factory。
+. 使用其中一个登录到工作负载工厂 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
 . 从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到VMware Cloud on AWS*。
 +
 此时将显示VMware迁移顾问主页。
