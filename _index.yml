@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: VMware文档的工作负载工厂
+  title: 适用于VMware文档的BlueXP  工作负载工厂
   summary: 简化从内部vSphere环境到VMware Cloud on AWS的迁移、并为ONTAP文件系统实施自定义FSx作为外部数据存储库。
   keywords: VMware, FSx, VMs, VMC, VMware Cloud on AWS, FSx for ONTAP
   lead: 简化从内部vSphere环境到VMware Cloud on AWS的迁移、并为ONTAP文件系统实施自定义FSx作为外部数据存储库。
