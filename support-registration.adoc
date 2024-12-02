@@ -7,7 +7,7 @@ summary: 要向NetApp技术支持创建支持案例、您需要先将NetApp支�
 = 注册以获得支持
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

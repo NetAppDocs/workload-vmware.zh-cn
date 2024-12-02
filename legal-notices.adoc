@@ -7,7 +7,7 @@ summary:
 = 法律声明
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]
@@ -47,8 +47,4 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。
 
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["工作负载工厂"^]
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-databases-notice.pdf["数据库的工作负载工厂"^]
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-genai-notice.pdf["适用于GenAI的工作负载工厂"^]
-* https://docs.netapp.com/us-en/workload-family/media/workload-factory-vmware-notice.pdf["适用于VMware的工作负载工厂"^]
-
+https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["BlueXP  工作负载工厂"^]

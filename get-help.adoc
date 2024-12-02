@@ -7,7 +7,7 @@ summary: NetApp可通过多种方式为工作负载工厂提供支持。全天�
 = 获取帮助
 :allow-uri-read: 
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 
 [role="lead"]

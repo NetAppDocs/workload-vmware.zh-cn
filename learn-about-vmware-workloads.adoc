@@ -2,22 +2,22 @@
 sidebar: sidebar 
 permalink: learn-about-vmware-workloads.html 
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: '适用于VMware的工作负载工厂提供了用于将数据从内部系统迁移到工作负载工厂的工具适用于VMware提供了用于将数据从内部系统迁移到VMware Cloud on AWS (VMC)或Amazon EC2的工具。' 
+summary: '适用于VMware的BlueXP  工作负载工厂提供了用于将数据从内部系统迁移到VMware Cloud on AWS (VMC)或Amazon EC2的工具。' 
 ---
-= 了解适用于VMware的工作负载工厂
+= 了解适用于VMware的BlueXP  工作负载工厂
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-适用于VMware的工作负载工厂提供了用于将数据从内部系统迁移到VMware Cloud on AWS (VMC)或Amazon EC2的工具。
+适用于VMware的BlueXP  工作负载工厂提供了用于将数据从内部系统迁移到VMware Cloud on AWS (VMC)或Amazon EC2的工具。
 
 
 
-== 什么是VMware的工作负载工厂？
+== 什么是适用于VMware的BlueXP  工作负载工厂？
 
-适用于VMware的工作负载工厂提供了一个迁移顾问、可用于分析内部vSphere环境中的当前虚拟机配置。然后、迁移顾问会生成一个计划、将建议的VM布局部署到AWS vSphere集群上的Amazon EC2或VMware Cloud、并将适用于NetApp ONTAP文件系统的自定义Amazon FSx用作外部数据存储库。
+适用于VMware的BlueXP  工作负载工厂提供了一个迁移顾问、可用于分析内部vSphere环境中的当前虚拟机配置。然后、迁移顾问会生成一个计划、将建议的VM布局部署到AWS vSphere集群上的Amazon EC2或VMware Cloud、并将适用于NetApp ONTAP文件系统的自定义Amazon FSx用作外部数据存储库。
 
 Amazon FSx for NetApp ONTAP是一个基于NetApp的ONTAP文件系统构建的外部NFS数据存储库、可以连接到Amazon EC2实例或AWS vSphere集群上的VMware Cloud。无需添加更多主机即可增加可用存储；只需使用适用于ONTAP卷的FSx作为外部数据存储库来补充vSAN数据存储库即可。这为您提供了一个灵活的高性能虚拟化存储基础架构、该基础架构可独立于计算资源进行扩展。
 

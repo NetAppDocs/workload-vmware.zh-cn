@@ -276,14 +276,6 @@
   <block id="2352c4e1f4d0024ade0869e00e6243f4" category="paragraph"><block ref="2352c4e1f4d0024ade0869e00e6243f4" category="inline-link-macro-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">开放源代码</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。</block>
-  <block id="22e5a7336ebe77138f0282cedcb069ab" category="inline-link">工作负载工厂</block>
-  <block id="7ffcbeca3b450b8d05f9cf0eedb617f8" category="list-text"><block ref="7ffcbeca3b450b8d05f9cf0eedb617f8" category="inline-link-rx"></block></block>
-  <block id="887f800d53dc2cd5a7894464a6f60a6b" category="inline-link">数据库的工作负载工厂</block>
-  <block id="7e505d4c691d86e5bd415f9ccb849966" category="list-text"><block ref="7e505d4c691d86e5bd415f9ccb849966" category="inline-link-rx"></block></block>
-  <block id="9591e2d54c998ae1c9d48fd5be7762e9" category="inline-link">适用于GenAI的工作负载工厂</block>
-  <block id="f38c7416013fc239c3dd3288d40a40c0" category="list-text"><block ref="f38c7416013fc239c3dd3288d40a40c0" category="inline-link-rx"></block></block>
-  <block id="404a5efb62a3a3f22b02593091042608" category="inline-link">适用于VMware的工作负载工厂</block>
-  <block id="9a211183d3fa82368d76fdbab5abdeda" category="list-text"><block ref="9a211183d3fa82368d76fdbab5abdeda" category="inline-link-rx"></block></block>
   <block id="2281d47edbe43f0701ce273bb95a9f2f" category="summary">使用VMware混合云扩展等工具将数据从旧虚拟机存储移动到连接到新虚拟机的FSx for NetApp ONTAP卷。通过VMware HCX核心功能、您可以将工作负载从内部数据中心透明地迁移到SDDC。</block>
   <block id="2066c133f5c3f51fd034acd791ddedb4" category="doc">将数据迁移到新基础架构</block>
   <block id="63796ed0675a30eed387ff515fb4109d" category="paragraph">使用VMware混合云扩展(HCX)等工具将数据从旧虚拟机存储移动到连接到新虚拟机的FSx for NetApp ONTAP卷。通过VMware HCX核心功能、您可以将工作负载从内部数据中心透明地迁移到软件定义的数据中心(Software-定义 的数据中心、SDDC)。</block>
@@ -376,7 +368,6 @@
   <block id="acac926eb24cce36b7b6f36c0db430ca" category="list-text">从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到VMware Cloud on AWS*。此时将显示VMware迁移顾问主页。</block>
   <block id="a268e8a21767df1e979dcf4c47b6f464" category="doc">迁移到Amazon EC2</block>
   <block id="1f1840a1cd78fc828b7bf5b09ef626dd" category="doc">在迁移到Amazon EC2之前捕获当前虚拟机配置</block>
-  <block id="1af00da7b1991dc3522efa12b13d06a5" category="list-text">在VMware磁贴中，选择*访问和计划*。</block>
   <block id="d33a9cde7de06ccdf8aba953dd2aeb0d" category="list-text">运行下载的数据收集器脚本、并为"Daily (每日)"或"Shourly (每小时)"虚拟机统计信息指定数据收集选项。</block>
   <block id="8109466383788459676a9b2ec067ebe7" category="paragraph">该脚本会输出一个压缩文件、其中的时间戳采用当前工作目录中的名称。此.zip文件包含所有虚拟机及其属性的列表、以及这些虚拟机的IOPS和吞吐量数据。</block>
   <block id="10ffe7f124f69e3702ce69e56c43925c" category="paragraph"><block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block>有关详细信息、请参见中的"命令行参数"一章。</block>
@@ -394,16 +385,7 @@
   <block id="d738890a4c9a0f96c08ae0ba66a626a1" category="doc">使用迁移顾问为Amazon EC2创建部署计划</block>
   <block id="12108488b525984a76d1a39aeb4948cb" category="paragraph">您可以将内部vSphere环境中的当前虚拟机配置迁移到Amazon EC2中的虚拟机、并将适用于NetApp ONTAP文件系统的自定义Amazon FSx用作外部数据存储库。</block>
   <block id="5dff619fafdcb02708f9c4517a7bb8fe" category="list-text">您必须已使用迁移顾问VM收集器(.zip文件)或RVTools (.xlsx文件)从现有系统创建清单文件。</block>
-  <block id="278a85e02b26dbd2e7a5074820679e8c" category="list-text">选择*使用迁移顾问VMware数据收集器*以使用您使用VMware数据收集器创建的文件。</block>
-  <block id="26a805e1dd0fca3151bedb2d8e12a651" category="paragraph">此时将显示"prepared for AWS Cloud boarding"页面。</block>
-  <block id="5d962e477a215e1da47c1123eb0453bc" category="list-text">在_Upload VM configuration_部分中、选择<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>并选择要使用的清单文件。</block>
-  <block id="6b5dae90780a08c5ba86866abd8a1432" category="list-text">使用迁移顾问VM收集器时、请选择.zip文件。</block>
   <block id="c3fb55d7fbab2ce4cf38cd35ab2765e2" category="paragraph">VM摘要*部分将从清单文件中填充、以反映VM数量和总存储容量。</block>
-  <block id="1a04b9149745d21476396398a73240e3" category="list-text">*考虑VMS*：指明将根据运行电源状态从清单文件中提取哪些VM。您可以导入所有虚拟机、也可以仅导入已启动、关闭或已暂停的虚拟机。</block>
-  <block id="5e6d5c629d61f338ad33388904a1a38d" category="list-text">在_Cloud Deployment configuration_部分中、输入有关所需Amazon EC2配置的详细信息。</block>
-  <block id="284c0194166a2962fd51534f6158914b" category="list-text">*区域*：选择要部署Amazon FSx for NetApp ONTAP文件系统的区域。</block>
-  <block id="57fd0f79436be23d539fc3dd6791b37f" category="paragraph">为了获得最佳性能和成本效益、该区域通常与现有Amazon EC2 SDDC的部署区域相同。</block>
-  <block id="aec55cbdf93104d8f633395f34d47241" category="list-text">*平均I/O块大小*：包含读取或写入操作的每个块的大小。默认大小为4 KB。对于大型顺序读写工作负载、块大小越大可能越好。对于对稀疏文件或大型文件执行小型随机写入的工作负载、较小的块大小可能会提高性能。</block>
   <block id="212e4a78a96c4a6a7cb8d8168f38a132" category="list-text">在_Target Capacity and protection Consid件_部分中、从几个存储选项中进行选择。</block>
   <block id="2371c65768dba03d44190d2797940527" category="list-text">*平均数据精简率*：从三种常见数据精简率中进行选择。选择"1：1 -无缩减"、"1：1.25 - 20%缩减"或"1：1.5 - 33%缩减"。</block>
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">请注意、如果选择的数量小于20%、则无法创建卷快照来进行保护和长期备份。</block>
@@ -429,7 +411,6 @@
   <block id="362f02ec410356642b41d807749588d9" category="paragraph"><block ref="d6918f6a6163624fe27be3a8b64bdb49" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="2f2f1ce9d4f5decb03f093128a1fc15e" category="paragraph">部署新的FSx for ONTAP文件系统、为Amazon EC2基础架构中的VM提供数据存储库。</block>
   <block id="d8329106d0f4da40a239ea890e93904c" category="doc">使用VMware迁移顾问快速开始迁移到AWS上的VMware Cloud</block>
-  <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024年9月1日</block>
   <block id="aebd84094284845d3e849298624e3ce8" category="sidebar">快速入门：迁移到基于AWS的VMware Cloud</block>
   <block id="a529cc49011230ace4aa0d605878b3a7" category="sidebar">快速入门：迁移到Amazon EC2</block>
   <block id="381900c88e88ebdef33aeaaba326b5d9" category="sidebar">迁移到基于AWS的VMware Cloud</block>
@@ -442,15 +423,9 @@
   <block id="aadc951fc26ce017c445dc2a4fc12d5d" category="list-text">从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到AWS本机计算*。此时将显示VMware迁移顾问启动屏幕。</block>
   <block id="34229287aee7a67f52f7e30d46d92cf7" category="paragraph">查看相关信息、了解迁移顾问的优势。</block>
   <block id="3389e3985ea11023e4391a5a8e11e3c2" category="list-text">准备好后，选择*Let's start*。</block>
-  <block id="26c8e4d27d311b3dd56356d32a6bace5" category="list-text">在*查看EC2卷分配*页面上、查看虚拟机信息、卷分类规则、卷分配以及将在部署过程中迁移的卷列表。</block>
-  <block id="84c81acf71fd02d43242aed2387e9584" category="list-text">在*查看实例存储分配*页面上、查看分配给不同FSx for ONTAP集群的EC2实例和卷。</block>
-  <block id="0c9d619e17114784eebf5b4294145625" category="list-text">在*查看迁移计划*页面上，查看计划迁移的所有VM的估计每月成本。</block>
   <block id="ef3c7f794852a9bd24d0e9c87cce7d80" category="paragraph">页面顶部估计FSx for ONTAP文件系统和EBS卷每月节省的空间量。您可以展开每个部分、查看有关建议的文件系统配置、预计节省量细分、假设和技术免责声明的详细信息。</block>
   <block id="d30cddb743993744da7757e5dc8d38a4" category="paragraph">如果您计划的新部署与过去使用的现有部署计划类似、则可以导入该计划、进行更改、然后将其另存为新的部署计划。</block>
   <block id="9666bbc427ef045e019206b1e73f8b26" category="list-text">从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到AWS本机计算*。</block>
-  <block id="32a33bea1503730affb121be4db1856d" category="list-text">选择<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>并选择要在迁移顾问中导入的现有.json计划文件。</block>
-  <block id="381cf8f0eafd87b02005eb434ff3e0f0" category="paragraph">此时将显示Review Plan (审核计划)页面。</block>
-  <block id="eb5a861bf39cbc8f1c04a5223199b242" category="list-text">您可以选择*上一页*来访问上一页，并按照上一节所述修改计划的设置。</block>
   <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">根据您的要求自定义计划后、您可以将计划保存或下载PDF文件格式的计划报告。</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024年9月19日</block>
   <block id="3197d9ffc65dc1fe1469440d8891e79d" category="doc">VMware迁移顾问数据精简率帮助</block>
@@ -472,11 +447,6 @@
   <block id="f8ca7604a7d532f5f35cb42769a74291" category="list-text">您必须能够从要登录到工作负载工厂的系统访问清单文件。</block>
   <block id="49560c1c66151469e4510dc332719b0f" category="list-text">选择要用于在工作负载出厂时使用当前VM配置填充的清单文件类型，然后选择*Next*。</block>
   <block id="9b6fcbe67fd66ce427a7c15ff055c322" category="paragraph">您必须能够从要登录到工作负载工厂的系统访问现有部署计划的.json文件。</block>
-  <block id="da815c20aaea2edb198e469b3c876791" category="summary">适用于VMware的工作负载工厂提供了用于将数据从内部系统迁移到工作负载工厂的工具适用于VMware提供了用于将数据从内部系统迁移到VMware Cloud on AWS (VMC)或Amazon EC2的工具。</block>
-  <block id="4f373148ed2de637be7edb26c4e2311a" category="doc">了解适用于VMware的工作负载工厂</block>
-  <block id="ddbac8a6a6590fc2ecb2b323c6e8e1ff" category="paragraph">适用于VMware的工作负载工厂提供了用于将数据从内部系统迁移到VMware Cloud on AWS (VMC)或Amazon EC2的工具。</block>
-  <block id="f050b6dd74962f8256e223aa2552ec0d" category="section-title">什么是VMware的工作负载工厂？</block>
-  <block id="eceaa4dccec237f43c9e610c6a989dd2" category="paragraph">适用于VMware的工作负载工厂提供了一个迁移顾问、可用于分析内部vSphere环境中的当前虚拟机配置。然后、迁移顾问会生成一个计划、将建议的VM布局部署到AWS vSphere集群上的Amazon EC2或VMware Cloud、并将适用于NetApp ONTAP文件系统的自定义Amazon FSx用作外部数据存储库。</block>
   <block id="70cb57a8d5d75d8762d6b082d319dec7" category="inline-link">工作负载出厂概述</block>
   <block id="41dde101808f5228034390c3766fcad7" category="paragraph">有关工作负载工厂的详细信息，请参见<block ref="5b162ed7e5df7e2d72a6505743e2b555" category="inline-link-rx"></block>。</block>
   <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">用于工作负载工厂的工具</block>
@@ -500,4 +470,45 @@
   <block id="034aea94174faaaaa75a9f1c1ac4b15a" category="summary">了解工作负载工厂的VMware迁移顾问组件的新增功能。</block>
   <block id="5df361f1373a0606daf80b69ecfa0a96" category="paragraph">了解工作负载工厂的VMware Cloud迁移顾问组件的新增功能。</block>
   <block id="c3aaf7c410f8a7244dafe42037dc12ce" category="sidebar">适用于VMware文档的BlueXP  工作负载工厂</block>
+  <block id="1d194f6c398ca78aaffd8c430203e1ec" category="doc">Amazon EC2迁移顾问改进</block>
+  <block id="1e5e06dbbf4cb0bb655126bc90757161" category="paragraph">此版本的适用于VMware的BlueXP  工作负载工厂对迁移顾问体验进行了多项改进：</block>
+  <block id="80384840ba856b44e35be4918f28a26b" category="list-text">*数据收集*：BlueXP  Workload Factory for VMware支持在使用迁移顾问时收集特定时间段的数据。</block>
+  <block id="2e47bf0e10f6acdee08b3889dc872c4c" category="list-text">*虚拟机选择*：适用于VMware的BlueXP  工作负载工厂现在支持选择要包括在迁移部署中的虚拟机。</block>
+  <block id="3f4f1b85f4effee9c5e9ae9034f0e684" category="list-text">*快速与高级体验*：使用迁移顾问时，您现在可以选择使用RVtools的快速迁移体验或使用迁移顾问数据收集器的高级体验。</block>
+  <block id="c20f4c2c66d387d7831ea5e0b0ec1825" category="list-text">选择“*详细计划*”磁贴，然后选择“*下一步*”。</block>
+  <block id="a9c684bfbdda0fc1f3c7654eb995d2a2" category="paragraph">"Code"(代码框)窗口将显示在页面右侧。</block>
+  <block id="9f0b77a1e3095470cfdf1a84bf5cf034" category="list-text">在代码框窗口中、选择<block ref="a800f53f7ef8a18e067b4b267fa3a526" category="inline-image-macro-rx" type="image"></block>将迁移顾问数据收集器脚本(名为"list-VMs.ps1")保存到目标系统、或者选择复制此脚本以便将其粘贴到<block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block>相应的系统上。</block>
+  <block id="cc4870c19a7e10403dc983ef555a28d0" category="list-text">选择您在制定部署计划过程中喜欢的详细程度和方法：</block>
+  <block id="5586b276ee5d10073c88e1ba47359329" category="list-text">*快速评估*：此选项使用RVMtools清单文件在加速过程中检索有关VM的信息、从而为您的云迁移制定设计蓝图。</block>
+  <block id="04f2339fe8588e01c3aa7e0fbd8490cf" category="list-text">*详细规划*：使用迁移顾问数据收集器清单文件收集详细信息、从而实现部署就绪设计。</block>
+  <block id="4fc22904e7ad82e45f6cc6942f96cbe0" category="open-title">快速评估</block>
+  <block id="6276c253f2d29f91f984ee9577150c8b" category="list-text">选择*快速评估*磁贴，然后选择*下一步*。</block>
+  <block id="7e3cc0b2d801781d73ed00ce40074dfe" category="paragraph">此时将显示*准备AWS Cloud启用*页面。</block>
+  <block id="23ad7ab0fd343203832fd708d413ee18" category="list-text">在_VM configuration UPLOAD_部分中、选择<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>并选择由RVTools创建的.xlsx文件。</block>
+  <block id="b201be50fb24455e1169e30ba042483c" category="list-text">*区域*：选择要部署Amazon FSx for NetApp ONTAP文件系统的区域。为了获得最佳性能和成本效益、该区域通常与现有Amazon EC2 SDDC的部署区域相同。</block>
+  <block id="3b4b72587570c96b11427b0d7983dc63" category="list-text">为此区域中的VM选择一个预测性能级别。建议您从较小的IOPS设置开始。在迁移或部署工作负载时创建文件系统后、您可以增加配置的SSD IOPS：</block>
+  <block id="8322562b9931621dac341ec2891a8ed7" category="list-text">*标准到高性能*：适用于平均IO速率介于20到5000 IOPS之间的虚拟机。</block>
+  <block id="fe6746d68f60ac87ac812195dbe0ba44" category="list-text">*极高性能*：适用于平均IO速率高于5000 IOPS的虚拟机。</block>
+  <block id="def2319cb1ab48e55abf938aae0948be" category="list-text">*性能极低*：适用于平均IO速率低于20 IOPS的虚拟机。</block>
+  <block id="b31024f3340bb98c95da565075ba28e4" category="list-text">在*范围*页面上、从列表中选择要包含在AWS云迁移中的VM、然后选择*下一步*。</block>
+  <block id="4db7ab627ca2119e30a51c404a814e9f" category="list-text">在*Classify*页面上，查看虚拟机信息、卷分类规则、卷分配以及将在部署过程中迁移的卷列表，然后选择*Next*。</block>
+  <block id="6e8e51789a8fdf8319fae75541361b0d" category="list-text">在*软件包*页面上、查看分配给不同FSx for ONTAP集群的EC2实例和卷、然后选择*下一步*。</block>
+  <block id="45de7b9580db1698613b43e8b89bb740" category="list-text">在*查看计划*页面上，查看计划迁移的所有VM的预计每月节省量和成本估计值。</block>
+  <block id="03d15192bc504e0564aa6cdec5bfe07e" category="open-title">详细规划</block>
+  <block id="4a50209580074fac47e3bfdd382fc71e" category="list-text">选择*详细规划*磁贴，然后选择*下一步*。</block>
+  <block id="fc48377a5cd8e99f7049cbb809dc2995" category="list-text">在_vm configuration UPLOAD_部分中、选择<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>并选择由迁移顾问数据收集器创建的.zip文件。</block>
+  <block id="7e06858f263dfcb3b89a2b54389be478" category="list-text">在_VM清单注意事项_部分中、选择要部署Amazon FSx for NetApp ONTAP文件系统的区域。为了获得最佳性能和成本效益、该区域通常与现有Amazon EC2 SDDC的部署区域相同。</block>
+  <block id="518090cfd67cd9305ed824ac9e5cc06e" category="paragraph">您可以选择*完成*以返回VMware迁移顾问页面。</block>
+  <block id="7726d5796471d8b93e1bd91aa1db9caa" category="list-text">选择*导入计划*。</block>
+  <block id="d117b15d4decf0a56ccac3c38c271055" category="list-text">选择要在迁移顾问中导入的现有.json计划文件，然后选择*Open*。</block>
+  <block id="42b7d26c8da56661da79cbe95791968e" category="paragraph">此时将显示*Review pla*(审核计划)页面。</block>
+  <block id="b989004e18a26f3c98cfe95fa122af6c" category="list-text">您可以选择*上一页*来访问上一页，并按照上一节所述修改计划的设置。</block>
+  <block id="fbcf13b4033589220687bf9717dd7cda" category="summary">适用于VMware的BlueXP  工作负载工厂提供了用于将数据从内部系统迁移到VMware Cloud on AWS (VMC)或Amazon EC2的工具。</block>
+  <block id="76882d4f1c13ac2d5609c95803006de5" category="doc">了解适用于VMware的BlueXP  工作负载工厂</block>
+  <block id="878b0838fec14a308c058b697894e8b9" category="section-title">什么是适用于VMware的BlueXP  工作负载工厂？</block>
+  <block id="b9fb9729caa36dac48ae61f984d2ec85" category="paragraph">适用于VMware的BlueXP  工作负载工厂提供了一个迁移顾问、可用于分析内部vSphere环境中的当前虚拟机配置。然后、迁移顾问会生成一个计划、将建议的VM布局部署到AWS vSphere集群上的Amazon EC2或VMware Cloud、并将适用于NetApp ONTAP文件系统的自定义Amazon FSx用作外部数据存储库。</block>
+  <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  工作负载工厂</block>
+  <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
+  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024年12月1日</block>
+  <block id="ee42de0e28fe9ae4fdaac41867872582" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>= 2024年9月1日</block>
 </blocks>
