@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 法律声明
+= 适用于VMware的BlueXP  工作负载工厂的法律声明
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

@@ -4,7 +4,7 @@ permalink: quick-start-native.html
 keywords: quick start 
 summary: 开始使用VMware迁移顾问、使用Amazon FSx for ONTAP作为外部NFS数据存储库将当前基础架构迁移到Amazon EC2。 
 ---
-= 使用VMware迁移顾问快速开始迁移到Amazon EC2
+= 使用VMware Workloads迁移顾问快速开始迁移到Amazon EC2
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -16,6 +16,7 @@ summary: 开始使用VMware迁移顾问、使用Amazon FSx for ONTAP作为外部
 开始之前，您应了解 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["操作模式"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"]登录到工作负载工厂
+[role="quick-margin-para"]
 您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在Workload Factory中设置一个帐户"^]使用其中一个登录 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 向您的帐户添加AWS凭据和权限

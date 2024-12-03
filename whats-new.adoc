@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
 summary: 了解工作负载工厂的VMware迁移顾问组件的新增功能。 
 ---
-= 新增功能
+= 适用于VMware的BlueXP  工作负载工厂新增功能
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

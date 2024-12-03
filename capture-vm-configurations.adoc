@@ -4,7 +4,7 @@ permalink: capture-vm-configurations.html
 keywords: vm workloads, capture vm details 
 summary: 您可以使用迁移顾问VM收集器脚本或RVTools捕获当前VM配置。我们建议您使用迁移顾问VM收集器脚本、因为它会收集VM配置和性能数据、以便制定最准确的计划。 
 ---
-= 在迁移到VMware Cloud之前捕获当前虚拟机配置
+= 在使用VMware工作负载迁移到VMware Cloud之前捕获VM配置
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

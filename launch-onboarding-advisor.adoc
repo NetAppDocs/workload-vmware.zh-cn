@@ -4,7 +4,7 @@ permalink: launch-onboarding-advisor.html
 keywords: overview, concepts, features, use case, workloads, how workload factory works 
 summary: 登录到NetApp工作负载工厂以访问VMware迁移顾问。您将按照向导中的步骤创建根据您的需求自定义的部署计划或迁移计划。 
 ---
-= 使用迁移顾问为基于AWS的VMware Cloud创建部署计划
+= 使用VMware工作负载迁移顾问为基于AWS的VMware Cloud创建部署计划
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
