@@ -11,7 +11,7 @@ summary: NetApp可通过多种方式为工作负载工厂提供支持。全天�
 
 
 [role="lead"]
-NetApp以多种方式为Workload Factory及其云服务提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。
+NetApp以多种方式为BlueXP  工作负载工厂及其云服务提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。
 
 
 
@@ -31,7 +31,7 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#g
 
 * 文档
 +
-您当前正在查看的Workload Factory文档。
+您当前正在查看的工作负载工厂文档。
 
 * https://kb.netapp.com["知识库"^]
 +
@@ -39,7 +39,7 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#g
 
 * http://community.netapp.com/["社区"^]
 +
-加入Workload Factory社区、关注正在进行的讨论或创建新的讨论。
+加入工作负载工厂社区、关注正在进行的讨论或创建新的讨论。
 
 
 
@@ -50,10 +50,10 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#g
 除了上述自助支持选项之外、您还可以在激活支持后与NetApp支持专家合作解决任何问题。
 
 .开始之前
-要使用*创建案例*功能，您必须先注册获得支持。 将您的NetApp支持站点凭据与您的工作负载出厂登录关联起来。link:support-registration.html["了解如何注册获取支持"](英文)
+要使用*创建案例*功能，您必须先注册支持。请将您的NetApp支持站点凭据与您的工作负载出厂登录名关联起来。link:support-registration.html["了解如何注册获取支持"](英文)
 
 .步骤
-. 在Workload Factory控制台的右上角，选择*Help > Support*。
+. 在工作负载工厂控制台的右上角，选择*Help > Support*。
 +
 选择此选项将打开BlueXP控制台一个新的浏览器选项卡并加载支持信息板。
 
@@ -124,7 +124,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 
 
 .步骤
-. 在Workload Factory控制台的右上角，选择*Help > Support*。
+. 在工作负载工厂控制台的右上角，选择*Help > Support*。
 +
 选择此选项将打开BlueXP控制台一个新的浏览器选项卡并加载支持信息板。
 

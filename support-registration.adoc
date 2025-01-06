@@ -11,9 +11,9 @@ summary: 要向NetApp技术支持创建支持案例、您需要先将NetApp支�
 
 
 [role="lead"]
-要获得特定于Workload Factory及其存储解决方案和服务的技术支持、需要注册支持。您必须从BlueXP控制台注册获得支持、BlueXP控制台是一个与Workload Factory不同的基于Web的控制台。
+要获得特定于BlueXP  工作负载工厂及其存储解决方案和服务的技术支持、需要注册支持。您必须从BlueXP  控制台注册获取支持、该控制台是工作负载出厂时单独的基于Web的控制台。
 
-注册获取支持不会为云提供商文件服务启用NetApp支持。有关与云提供商文件服务、其基础架构或任何使用该服务的解决方案相关的技术支持、请参阅该产品的Workload Factory文档中的"获得帮助"。
+注册获取支持不会为云提供商文件服务启用NetApp支持。有关与云提供商文件服务、其基础架构或任何使用该服务的解决方案相关的技术支持、请参阅该产品的工作负载工厂文档中的"获得帮助"。
 
 link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["适用于 ONTAP 的 Amazon FSX"^]
 
@@ -38,7 +38,7 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#g
 如果您是拥有NSS帐户的NetApp客户、则只需通过BlueXP注册支持即可。
 
 .步骤
-. 在Workload Factory控制台的右上角，选择*Help > Support*。
+. 在工作负载工厂控制台的右上角，选择*Help > Support*。
 +
 选择此选项将打开BlueXP控制台一个新的浏览器选项卡并加载支持信息板。
 
@@ -80,7 +80,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 如果您是NetApp的新客户、并且没有NSS帐户、请按照以下每个步骤进行操作。
 
 .步骤
-. 在Workload Factory控制台的右上角，选择*Help > Support*。
+. 在工作负载工厂控制台的右上角，选择*Help > Support*。
 +
 选择此选项将打开BlueXP控制台一个新的浏览器选项卡并加载支持信息板。
 
