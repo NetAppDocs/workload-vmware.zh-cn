@@ -36,7 +36,7 @@ NetApp迁移顾问VM收集器脚本从vCenter收集VM配置信息、与RVTools�
 
 .步骤
 . 使用其中一个登录到工作负载工厂 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
-. 从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到VMware Cloud on AWS*。
+. 从VMware Workloads (VMware工作负载)磁贴中、选择*评估和计划*、然后选择*迁移到VMware Cloud on AWS*。
 +
 此时将显示VMware迁移顾问主页。
 

@@ -34,7 +34,7 @@ summary: 登录到NetApp工作负载工厂以访问VMware迁移顾问。您将�
 
 .步骤
 . 使用其中一个登录到工作负载工厂 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
-. 从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到VMware Cloud on AWS*。
+. 从VMware Workloads (VMware工作负载)磁贴中、选择*评估和计划*、然后选择*迁移到VMware Cloud on AWS*。
 +
 此时将显示VMware迁移顾问主页。
 
@@ -158,7 +158,7 @@ VM摘要部分将从清单文件中填充、以反映VM数量和总存储容量�
 
 .步骤
 . 使用其中一个登录到工作负载工厂 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
-. 从VMware Workloads (VMware工作负载)磁贴中、选择*访问和计划*、然后选择*迁移到VMware Cloud on AWS*。此时将显示VMware迁移顾问主页。
+. 从VMware Workloads (VMware工作负载)磁贴中、选择*评估和计划*、然后选择*迁移到VMware Cloud on AWS*。此时将显示VMware迁移顾问主页。
 . 选择*导入现有部署计划*。
 . 选择 image:button-upload-file.png["上传按钮"] 并选择要在迁移顾问中导入的现有计划文件。
 . 选择*Next*(下一步*)，将显示Review plan (复审计划)页面。
