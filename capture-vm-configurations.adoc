@@ -50,13 +50,19 @@ NetApp迁移顾问VM收集器脚本从vCenter收集VM配置信息、与RVTools�
 .. 登录到下载了数据收集器的系统、其中安装了PowerShell和PowerCLI。
 .. 运行以下命令以连接到VMware vCenter Server：
 +
- Connect-VIServer -server <server_IP>
+[source, console]
+----
+Connect-VIServer -server <server_IP>
+----
 +
 将<server_IP>替换为VMware服务器的IP地址或主机名。
 
 .. 运行下载的数据收集器脚本、并为"Daily (每日)"或"Shourly (每小时)"虚拟机统计信息指定数据收集选项。
 +
- .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
+[source, console]
+----
+./list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
+----
 +
 其中：
 

@@ -496,7 +496,6 @@
   <block id="cde718e2f0bf0ef80eb31becc18c4787" category="list-text">*保存或下载迁移计划*：现在可以保存或下载迁移计划，并加载迁移计划以填充迁移顾问。保存迁移计划时、该计划将与您的工作负载工厂帐户一起保存。</block>
   <block id="42ec77b942403dfbfa1bb7908218848c" category="list-text">*改进的虚拟机选择*：适用于VMware的BlueXP  工作负载工厂现在支持筛选和搜索要包含在迁移部署中的虚拟机列表。</block>
   <block id="00cb1da4c4dda4c1e1894d6c1f8a7487" category="paragraph">NetApp迁移顾问VM收集器脚本从vCenter收集VM配置信息、与RVTools收集的信息类似、但是、它会捕获当前VM性能数据、以提供实际读写IOPS和吞吐量统计信息。您可以在以下两种模式中使用此脚本：*短期数据收集*长期数据收集</block>
-  <block id="2b2099b87f7c704c69c0981f3e339373" category="list-text">*TRUE*以1小时为间隔收集自定义时间段的IOPS和吞吐量数据。</block>
   <block id="b6a4501cc05e54e2e5a513c3b552183a" category="paragraph">NetApp以多种方式为BlueXP  工作负载工厂及其云服务提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
   <block id="261966eaf033c38f6934f2c8fc36d79c" category="paragraph">有关FSx for ONTAP、其基础架构或任何使用该服务的解决方案的技术支持、请参阅该产品的工作负载工厂文档中的"获得帮助"。</block>
   <block id="5b49df4e58e2a4750acd8bfa8687ccd6" category="paragraph">您当前正在查看的工作负载工厂文档。</block>
@@ -531,4 +530,8 @@
   <block id="b989004e18a26f3c98cfe95fa122af6c" category="list-text">您可以选择*上一页*来访问上一页，并按照上一节所述修改计划的设置。</block>
   <block id="a788f47234ccaf5adf5a6ea422148ef6" category="list-text">根据您的要求自定义计划后、您可以将计划保存或下载PDF文件格式的计划报告。</block>
   <block id="8ee9b2adbe4d5a2c623d823af805b9a0" category="list-text">从VMware Workloads (VMware工作负载)磁贴中、选择*评估和计划*、然后选择*迁移到VMware Cloud on AWS*。此时将显示VMware迁移顾问主页。</block>
+  <block id="3d749d00ccdbb179e634ecc56aff4377" category="list-text">运行已下载的数据收集器脚本、并为"ourly"或"Daily"虚拟机统计信息指定数据收集选项。</block>
+  <block id="b2d8e0c32623281035bb9ce3ea340526" category="list-text">*astHour *以20秒的间隔收集过去1小时的IOPS和吞吐量数据。</block>
+  <block id="c3aef4fe00d86c06f8e8b666bd7c9f02" category="list-text">*astday*以5分钟为间隔收集过去24小时的IOPS和吞吐量数据。</block>
+  <block id="f0cbed8418df3c7702700c7e26a8bca8" category="paragraph">或者、您也可以运行数据收集器脚本、而不指定任何选项；这样、您可以从交互式菜单中选择数据收集期间。</block>
 </blocks>

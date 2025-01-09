@@ -49,22 +49,31 @@ NetApp迁移顾问VM收集器脚本从vCenter收集VM配置信息、与RVTools�
 .. 登录到下载了数据收集器的系统、其中安装了PowerShell和PowerCLI。
 .. 运行以下命令以连接到VMware vCenter Server：
 +
- Connect-VIServer -server <server_IP>
+[source, console]
+----
+Connect-VIServer -server <server_IP>
+----
 +
 将<server_IP>替换为VMware服务器的IP地址或主机名。
 
-.. 运行下载的数据收集器脚本、并为"Daily (每日)"或"Shourly (每小时)"虚拟机统计信息指定数据收集选项。
+.. 运行已下载的数据收集器脚本、并为"ourly"或"Daily"虚拟机统计信息指定数据收集选项。
 +
- .list-vms.ps1 -isLongTermDataCollectionEnabled <true | false>
+[source, console]
+----
+./list-vms.ps1 -PerformanceStatisticsTimePeriod <LastHour | LastDay>
+----
 +
 其中：
 
 +
-*** *TRUE*以1小时为间隔收集自定义时间段的IOPS和吞吐量数据。
-*** *false*以20秒的间隔收集过去1小时的IOPS和吞吐量数据。
+*** *astHour *以20秒的间隔收集过去1小时的IOPS和吞吐量数据。
+*** *astday*以5分钟为间隔收集过去24小时的IOPS和吞吐量数据。
 
 
 
+
++
+或者、您也可以运行数据收集器脚本、而不指定任何选项；这样、您可以从交互式菜单中选择数据收集期间。
 
 
 
