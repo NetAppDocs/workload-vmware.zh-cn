@@ -11,7 +11,24 @@ summary: 了解工作负载工厂的VMware迁移顾问组件的新增功能。
 
 
 [role="lead"]
-了解工作负载工厂的VMware Cloud迁移顾问组件的新增功能。
+了解工作负载工厂的VMware迁移顾问组件的新增功能。
+
+
+
+== 2025年3月2日
+
+
+
+=== Amazon EC2迁移顾问改进
+
+此版本的适用于VMware的BlueXP  工作负载工厂对Amazon EC2迁移顾问体验进行了多项改进：
+
+* *估计实例类型*：迁移顾问现在可以检查您的环境要求、并为每个VM提供估计的Amazon EC2实例类型。您可以选择在迁移顾问的范围步骤中包括每个VM的估计实例类型。
+* *推荐Amazon EBS卷的能力*：由于特定地区的特定容量或性能需求、迁移顾问现在可以建议将数据卷迁移到Amazon Elelic Block Store (EBS)、而不是Amazon FSx for NetApp ONTAP。
+* *增强型文件系统自动分配*：Amazon FSx for NetApp ONTAP文件系统分配已得到改进、可以更好地优化成本并最大限度地降低吞吐量。
+
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]
 
 
 
@@ -44,11 +61,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 * *快速与高级体验*：使用迁移顾问时，您现在可以选择使用RVtools的快速迁移体验或使用迁移顾问数据收集器的高级体验。
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]
-
-
-
-== 2024年11月3日
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]= 2024年11月3日
 
 
 
@@ -56,7 +69,11 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 此版本的Workload Factory for VMware具有一个数据精简率助手。在准备加入AWS云时、数据精简率助手可帮助您确定最适合您的VMware库存和存储资产的比率。
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]= 2024年9月19日
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]
+
+
+
+== 2024年9月19日
 
 
 

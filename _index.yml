@@ -33,3 +33,11 @@ indexpage:
       url: launch-onboarding-advisor-native.html
     - title: 为ONTAP文件系统部署建议的FSx
       url: deploy-fsx-file-system.html
+  - title: 博客和社区
+    links:
+    - title: NetApp 社区
+      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
+    - title: BlueXP博客
+      url: https://bluexp.netapp.com/blog
+    - title: 云网络研讨会
+      url: https://bluexp.netapp.com/events
