@@ -478,7 +478,6 @@
   <block id="b9fb9729caa36dac48ae61f984d2ec85" category="paragraph">适用于VMware的BlueXP  工作负载工厂提供了一个迁移顾问、可用于分析内部vSphere环境中的当前虚拟机配置。然后、迁移顾问会生成一个计划、将建议的VM布局部署到AWS vSphere集群上的Amazon EC2或VMware Cloud、并将适用于NetApp ONTAP文件系统的自定义Amazon FSx用作外部数据存储库。</block>
   <block id="428b0b39be2352757edeb5f9f12a7bdd" category="inline-link">BlueXP  工作负载工厂</block>
   <block id="7cf449620aa459bc5c449db69b07e507" category="paragraph"><block ref="7cf449620aa459bc5c449db69b07e507" category="inline-link-rx"></block></block>
-  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024年12月1日</block>
   <block id="f292a76e9c79b833f21da297f0ad751c" category="doc">在使用VMware工作负载迁移到Amazon EC2之前捕获VM配置</block>
   <block id="3a23349f8d161f7653f1e95b602af0f5" category="doc">在使用VMware工作负载迁移到VMware Cloud之前捕获VM配置</block>
   <block id="3173329d2df7808ef89c684e36fe95db" category="doc">为ONTAP文件系统部署VMware工作负载建议的FSx</block>
@@ -539,10 +538,14 @@
   <block id="ff2dedc9d43416dc5120ca5c85f276db" category="paragraph">在VM列表中、您可以选择要显示为列的VM信息类型。例如、选择_Estimated instance_type_会 根据虚拟机资源要求显示一列、其中包含每个虚拟机的估计Amazon EC2实例类型。</block>
   <block id="f56dc26bb43a8ffda27f608798af3995" category="admonition">如果某个卷的容量或性能要求超过特定区域中Amazon FSx for NetApp ONTAP文件系统的功能、则迁移顾问建议将该卷部署在Amazon EBS文件系统上。</block>
   <block id="6928ceecf566ab44f308d64b3806a0bc" category="section-title">2025年3月2日</block>
-  <block id="a436f06d47357224bdd3d8f2871de84a" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>= 2024年11月3日</block>
   <block id="123186fd98b69e2b3d463c83c49edfe7" category="section-title">2024年9月19日</block>
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">博客和社区</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 社区</block>
   <block id="abd0fe91ce589ecf3c7bad0543ccad16" category="sidebar">BlueXP博客</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">云网络研讨会</block>
+  <block id="6e62567f7c9b240a118b25fc64f2991f" category="list-text">*增强的卷分配指导*：EC2迁移顾问的"分类"和"打包"步骤中的卷分配信息增强了可读性和可用性。系统会显示有关每个卷的更多有用信息、使您能够更好地识别卷并确定如何分配卷。</block>
+  <block id="5fc07f589f318bbf4f9475dbf3754c9f" category="list-text">*提高了数据收集器脚本的效率*：在为小型VM部署收集数据时、EC2迁移顾问数据收集器脚本可优化CPU利用率。</block>
+  <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025年3月30日</block>
+  <block id="2b689bb88bc16807c840177b45816e7f" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>= 2024年12月1日</block>
+  <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
 </blocks>
