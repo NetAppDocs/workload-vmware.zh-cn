@@ -412,7 +412,6 @@
   <block id="11bdb1b485383914846d0ec01ecbf8da" category="list-text">使用其中一个登录到工作负载工厂<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>。</block>
   <block id="d976ce7b00249b4ad474f3d0bbefedbc" category="summary">在确认为ONTAP文件系统或某些情况下的文件系统建议的FSx符合您的确切要求后、您可以使用工作负载工厂在AWS环境中部署该系统。</block>
   <block id="8d3bf2572336618eb2a21a708a9e620f" category="paragraph">确认为ONTAP文件系统(或某些情况下的多个文件系统)建议的FSx满足您的确切要求后、您可以使用工作负载工厂在AWS环境中部署该系统。</block>
-  <block id="2589791e68019a74d4c1966e01ee9a23" category="paragraph">根据您添加到工作负载工厂帐户的策略和权限、您可以使用工作负载工厂(使用自动化模式)完全部署FSx for ONTAP文件系统。如果您的权限较少(读取模式)或无权限(基本模式)、则需要使用CodeBox中的CloudFormation信息、并在AWS中自行部署FSx for ONTAP文件系统。</block>
   <block id="a17419346eeea7a8b754d54e457aad0b" category="list-text">*AWS凭据*：选择或添加可为工作负载工厂提供直接创建FSx for ONTAP文件系统所需权限的凭据。您还可以从CodeBox中选择CloudFormation代码、并在AWS中自行部署FSx for ONTAP文件系统。</block>
   <block id="894106a56db6962222de989043e29e02" category="summary">NetApp可通过多种方式为工作负载工厂提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。</block>
   <block id="b634387d5ccb17a06840d1d9c30bd867" category="summary">登录到NetApp工作负载工厂以访问VMware迁移顾问。您将按照向导中的步骤创建根据您的需求自定义的部署计划或迁移计划。</block>
@@ -422,13 +421,6 @@
   <block id="9b6fcbe67fd66ce427a7c15ff055c322" category="paragraph">您必须能够从要登录到工作负载工厂的系统访问现有部署计划的.json文件。</block>
   <block id="70cb57a8d5d75d8762d6b082d319dec7" category="inline-link">工作负载出厂概述</block>
   <block id="41dde101808f5228034390c3766fcad7" category="paragraph">有关工作负载工厂的详细信息，请参见<block ref="5b162ed7e5df7e2d72a6505743e2b555" category="inline-link-rx"></block>。</block>
-  <block id="200e3179449390bdf5f3f8d9a199630c" category="section-title">用于工作负载工厂的工具</block>
-  <block id="b5a374f3f5b31b5057808689d26fe2c4" category="paragraph">您可以将BlueXP  工作负载工厂与以下工具结合使用：</block>
-  <block id="b49621858369606c8835ffee4bc53434" category="list-text">*工作负载工厂控制台*：工作负载工厂控制台提供了一个可视化界面，可让您全面了解应用程序和项目。</block>
-  <block id="590410b3a112ba2f531f9aae44e29ed1" category="list-text">BlueXP  console*：BlueXP  控制台提供了混合接口体验，因此您可以将BlueXP  工作负载出厂配置与其他BlueXP  服务结合使用。</block>
-  <block id="23ae25c2ba38ca6ce35bbc556ab80a83" category="list-text">*REST API*：工作负载出厂REST API允许您部署和管理适用于ONTAP文件系统和其他AWS资源的FSx</block>
-  <block id="870c2713113a9cc14410aec5475c932f" category="list-text">*CloudFormation*：AWS CloudFormation代码可用于执行您在工作负载工厂控制台中定义的操作、以便在AWS帐户中对CloudFormation堆栈中的AWS和第三方资源进行建模、配置和管理。</block>
-  <block id="531a2642b7c023ef8b4ec401d5c39c4b" category="list-text">*Terraform BlueXP  工作负载工厂提供程序*：Terraform支持您构建和管理在工作负载工厂控制台中生成的基础架构工作流。</block>
   <block id="80d4b078f6c58ce0995857130402115f" category="paragraph">开始之前，您应了解<block ref="34271bc3c8a46444362a7c5af7a1adeb" category="inline-link-rx"></block>。</block>
   <block id="2fd605c5fdf1d57ba01b68838e68dc27" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>登录到工作负载工厂</block>
   <block id="d9eebdefd5feceb309eadc305ce81e6f" category="inline-link">在Workload Factory中设置一个帐户</block>
@@ -452,9 +444,6 @@
   <block id="9f0b77a1e3095470cfdf1a84bf5cf034" category="list-text">在代码框窗口中、选择<block ref="a800f53f7ef8a18e067b4b267fa3a526" category="inline-image-macro-rx" type="image"></block>将迁移顾问数据收集器脚本(名为"list-VMs.ps1")保存到目标系统、或者选择复制此脚本以便将其粘贴到<block ref="4b7dbf915ce902400e3f4172621123eb" category="inline-image-macro-rx" type="image"></block>相应的系统上。</block>
   <block id="cc4870c19a7e10403dc983ef555a28d0" category="list-text">选择您在制定部署计划过程中喜欢的详细程度和方法：</block>
   <block id="5586b276ee5d10073c88e1ba47359329" category="list-text">*快速评估*：此选项使用RVMtools清单文件在加速过程中检索有关VM的信息、从而为您的云迁移制定设计蓝图。</block>
-  <block id="04f2339fe8588e01c3aa7e0fbd8490cf" category="list-text">*详细规划*：使用迁移顾问数据收集器清单文件收集详细信息、从而实现部署就绪设计。</block>
-  <block id="4fc22904e7ad82e45f6cc6942f96cbe0" category="open-title">快速评估</block>
-  <block id="6276c253f2d29f91f984ee9577150c8b" category="list-text">选择*快速评估*磁贴，然后选择*下一步*。</block>
   <block id="7e3cc0b2d801781d73ed00ce40074dfe" category="paragraph">此时将显示*准备AWS Cloud启用*页面。</block>
   <block id="23ad7ab0fd343203832fd708d413ee18" category="list-text">在_VM configuration UPLOAD_部分中、选择<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>并选择由RVTools创建的.xlsx文件。</block>
   <block id="b201be50fb24455e1169e30ba042483c" category="list-text">*区域*：选择要部署Amazon FSx for NetApp ONTAP文件系统的区域。为了获得最佳性能和成本效益、该区域通常与现有Amazon EC2 SDDC的部署区域相同。</block>
@@ -465,8 +454,6 @@
   <block id="4db7ab627ca2119e30a51c404a814e9f" category="list-text">在*Classify*页面上，查看虚拟机信息、卷分类规则、卷分配以及将在部署过程中迁移的卷列表，然后选择*Next*。</block>
   <block id="6e8e51789a8fdf8319fae75541361b0d" category="list-text">在*软件包*页面上、查看分配给不同FSx for ONTAP集群的EC2实例和卷、然后选择*下一步*。</block>
   <block id="45de7b9580db1698613b43e8b89bb740" category="list-text">在*查看计划*页面上，查看计划迁移的所有VM的预计每月节省量和成本估计值。</block>
-  <block id="03d15192bc504e0564aa6cdec5bfe07e" category="open-title">详细规划</block>
-  <block id="4a50209580074fac47e3bfdd382fc71e" category="list-text">选择*详细规划*磁贴，然后选择*下一步*。</block>
   <block id="fc48377a5cd8e99f7049cbb809dc2995" category="list-text">在_vm configuration UPLOAD_部分中、选择<block ref="db832e36fbdf71ec25bff4aa1993346d" category="inline-image-macro-rx" type="image"></block>并选择由迁移顾问数据收集器创建的.zip文件。</block>
   <block id="7e06858f263dfcb3b89a2b54389be478" category="list-text">在_VM清单注意事项_部分中、选择要部署Amazon FSx for NetApp ONTAP文件系统的区域。为了获得最佳性能和成本效益、该区域通常与现有Amazon EC2 SDDC的部署区域相同。</block>
   <block id="518090cfd67cd9305ed824ac9e5cc06e" category="paragraph">您可以选择*完成*以返回VMware迁移顾问页面。</block>
@@ -512,7 +499,6 @@
   <block id="32411f6422d4823926cd1776f5933ad4" category="list-text">选择*从我的计算机*。</block>
   <block id="ce638fcfafd4d79a49524062225d7fbc" category="paragraph">要获得特定于BlueXP  工作负载工厂及其存储解决方案和服务的技术支持、需要注册支持。您必须从BlueXP  控制台注册获取支持、该控制台是工作负载出厂时单独的基于Web的控制台。</block>
   <block id="2cbcc262b0a39ec19c5f69bffccb70fb" category="paragraph">注册获取支持不会为云提供商文件服务启用NetApp支持。有关与云提供商文件服务、其基础架构或任何使用该服务的解决方案相关的技术支持、请参阅该产品的工作负载工厂文档中的"获得帮助"。</block>
-  <block id="bd901b05034bb9be1d918012998e8f7b" category="section-title">2025年1月5日</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024年9月1日</block>
   <block id="c86d184e30a296fa80a6a87a91997466" category="list-text">从VMware Workloads (VMware工作负载)磁贴中、选择*评估和计划*、然后选择*迁移到AWS本机计算*。此时将显示VMware迁移顾问启动屏幕。</block>
   <block id="1d9b4d532dc0a6a0e4f5f8e48c2bf2fc" category="list-text">从VMware Workloads (VMware工作负载)磁贴中、选择*评估和计划*、然后选择*迁移到VMware Cloud on AWS*。</block>
@@ -546,6 +532,51 @@
   <block id="6e62567f7c9b240a118b25fc64f2991f" category="list-text">*增强的卷分配指导*：EC2迁移顾问的"分类"和"打包"步骤中的卷分配信息增强了可读性和可用性。系统会显示有关每个卷的更多有用信息、使您能够更好地识别卷并确定如何分配卷。</block>
   <block id="5fc07f589f318bbf4f9475dbf3754c9f" category="list-text">*提高了数据收集器脚本的效率*：在为小型VM部署收集数据时、EC2迁移顾问数据收集器脚本可优化CPU利用率。</block>
   <block id="db54384248c75c5896f34bcb0879b66c" category="section-title">2025年3月30日</block>
-  <block id="2b689bb88bc16807c840177b45816e7f" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>= 2024年12月1日</block>
   <block id="d9f5899ddcae7952c9df69e075c822e2" category="section-title">2024年11月3日</block>
+  <block id="795a0e870c9420e8289ae895de63c851" category="paragraph">此版本的适用于VMware的BlueXP  工作负载工厂对Amazon EC2迁移顾问体验进行了以下改进：</block>
+  <block id="81e3939f348a9727ff017a61306371bd" category="paragraph">*将NetApp数据基础架构洞察作为数据源*：现在、工作负载工厂可直接与NetApp数据基础架构洞察连接、以便在使用EC2迁移顾问数据收集器时收集VMware部署信息。</block>
+  <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新了权限术语</block>
+  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">现在、工作负载出厂用户界面和文档使用"只读"来表示读取权限、使用"读写"来表示自动执行权限。</block>
+  <block id="f8e901b31808cd5fdd45bae1bb1b5200" category="paragraph">您可以使用迁移顾问VM数据收集器脚本、RVTools或NetApp数据基础架构洞察来捕获当前VM配置。我们建议您使用迁移顾问VM收集器脚本或数据基础架构洞察、因为这些选项可收集VM配置和性能数据、以获得最准确的计划。</block>
+  <block id="22a28a767d70781d263ac5d0d07edaf6" category="open-title">使用RVTools (快速评估)</block>
+  <block id="c3a0a2cbaabcb9856e249dfefdef2ff1" category="open-title">使用迁移顾问VM收集器脚本(详细规划)</block>
+  <block id="905f3af3e1ec084a67a1b487b9ac6b66" category="open-title">利用NetApp数据基础架构洞察力(详细规划)</block>
+  <block id="a0e5953d5eb8ffc03d66bca81a0c18e6" category="paragraph">NetApp数据基础架构洞察是一款云基础架构监控工具、可让您深入了解整个基础架构。您需要在迁移顾问和Data Infrastructure Insight之间启用临时API通信、以便迁移顾问可以收集有关VMware基础架构的信息。</block>
+  <block id="b5b31d8ce41e2f6be9d862f8948f3dcc" category="inline-link">详细了解数据基础架构洞察力</block>
+  <block id="70e33e04e2c32f73e731d6c181dfb01f" category="paragraph"><block ref="70e33e04e2c32f73e731d6c181dfb01f" category="inline-link-rx"></block></block>
+  <block id="64f9349e02e421debf3f6d20a5be5ed2" category="list-text">登录到您的Data Infrastructure Insight帐户。</block>
+  <block id="58b51871d59c9ea6e3dfb178bf676134" category="list-text">在侧导航菜单中，选择*Admin*。</block>
+  <block id="372be835c202d63d8125e0f349ef82e4" category="list-text">在显示的菜单中，选择*API Access*。</block>
+  <block id="1691ad67fe5d613f8659e3b1f3dbad92" category="list-text">在*API访问令牌*选项卡中，选择*+ API访问令牌*。</block>
+  <block id="0d9f4e7c4781ab54219dde884e55e7de" category="paragraph">此时将显示"Create an API Access令牌"对话框。</block>
+  <block id="8572681a78798eae07513e43042ec14e" category="list-text">提供API令牌的名称和说明。</block>
+  <block id="25301bbb0bd6feeaa7d0f92041e91809" category="list-text">在*此令牌将用于调用的API类型*下，选择以下选项之一：</block>
+  <block id="7afd7da52e07dd7febdaa6f50c36644d" category="list-text">采集单元</block>
+  <block id="9aedeaf1f77b8642abe528503b8c5de8" category="list-text">资产</block>
+  <block id="a8ab2a0cac3ada71ce8c170ef7fd84b5" category="list-text">数据收集</block>
+  <block id="1632bcc011087537a13d82cdf7c72e92" category="list-text">在*权限*下，选择*只读*。</block>
+  <block id="a30491a7247ae579cd45bb891810edc6" category="list-text">在*令牌过期时间*下、选择需要API令牌有效的时间长度。</block>
+  <block id="403c7f2f4480b30b6731e3047d4251f3" category="list-text">取消选中*自动旋转Kubernetes*的令牌。</block>
+  <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">选择 * 保存 * 。</block>
+  <block id="61a464c915eccf6999e7c204f359223d" category="list-text">选择*复制API访问令牌*。</block>
+  <block id="b75df169abd314f574bcc40ea5155622" category="list-text">请保存此令牌、以便在工作负载出厂迁移顾问中使用。</block>
+  <block id="0e580c33f97a1c7ca616a1e9f7fdd1e8" category="paragraph">根据您添加到工作负载工厂帐户的策略和权限、您可以使用工作负载工厂(使用读/写模式)完全部署FSx for ONTAP文件系统。如果您的权限较少(只读模式)或无权限(基本模式)、则需要使用CodeBox中的CloudFormation信息、并在AWS中自行部署FSx for ONTAP文件系统。</block>
+  <block id="cca1b6b092fdbaae02361708d86c5216" category="list-text">*详细规划*：这些选项使用迁移顾问数据收集器清单文件或对NetApp数据基础架构洞察力的直接API访问来收集详细信息、从而实现部署就绪设计。</block>
+  <block id="969dbeb4218261a227069d80a30e69d5" category="open-title">RVTools (快速评估)</block>
+  <block id="8834e6e76cc39ebd77730b20d1f3b50f" category="list-text">选择*RVTools*磁贴，然后选择*Next*。</block>
+  <block id="3cc6c29f47170a38b3e6942027d7a69c" category="open-title">迁移顾问数据收集器(详细规划)</block>
+  <block id="e996abdfd89eafe08b518bb9c53ffb5c" category="list-text">选择*迁移顾问数据收集器*磁贴并选择*下一步*。</block>
+  <block id="4fdc46a9c04edc23a039525075c001f6" category="open-title">NetApp数据基础架构洞察力(详细规划)</block>
+  <block id="f5cd0ecad07b6d4672d911e9b54865f1" category="list-text">选择* NetApp数据基础架构洞察力*磁贴并选择*下一步*。</block>
+  <block id="947d830ffc5683c6bbe8aa6121603afd" category="list-text">在_Data Infrastructure NetApp连接配置_部分中、输入Data Infrastructure Insight的租户端点。</block>
+  <block id="94d5cfc399e2d5a51a5607471312328b" category="paragraph">此URL应用于访问Data Infrastructure Insight。</block>
+  <block id="5085d7cec411dbaca9f86e65ed057ff3" category="list-text">如果您尚未为Data Infrastructure Insight生成API访问令牌、请按照页面上的说明创建一个。否则，请将您的API访问令牌粘贴到*Enter API Access令牌*文本框中。</block>
+  <block id="0f265823a78c858e83b858d5e6089fce" category="list-text">选择 * 连接 * 。</block>
+  <block id="5680d40c89174adbe60bc8bed6184bd1" category="paragraph">工作负载工厂从Data Infrastructure Insight收集信息。</block>
+  <block id="82b38fde955a89166e0b70bb9c3424a9" category="paragraph">VM清单摘要*部分将根据收集的信息进行填充、以反映VM数量和总存储容量。</block>
+  <block id="1c9640aa9075334712c6c2b922771c50" category="paragraph"><block ref="1c9640aa9075334712c6c2b922771c50" category="inline-link-rx"></block></block>
+  <block id="8019b706859e2e34cf0317637e794d77" category="paragraph">在创建部署计划之前、您可以使用迁移顾问VM收集器脚本、RVTools或NetApp数据基础架构洞察捕获当前VM配置。您还可以将现有部署计划导入为模板、然后修改任何必需的属性。</block>
+  <block id="dac96c84baa92faab0eb342df5283a1b" category="section-title">2025年5月4日</block>
+  <block id="985089c2a3b99769d99dd7f5ea48529c" category="paragraph"><block ref="2dbb83c0d88f8aa5c12c5445b2b248ee" category="inline-link-rx"></block>= 2025年1月5日</block>
+  <block id="5c8df45cbe01191b205c30373b7e5739" category="section-title">2024年12月1日</block>
 </blocks>

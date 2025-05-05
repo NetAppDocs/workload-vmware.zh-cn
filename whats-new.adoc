@@ -15,6 +15,26 @@ summary: 了解工作负载工厂的VMware迁移顾问组件的新增功能。
 
 
 
+== 2025年5月4日
+
+
+
+=== Amazon EC2迁移顾问改进
+
+此版本的适用于VMware的BlueXP  工作负载工厂对Amazon EC2迁移顾问体验进行了以下改进：
+
+*将NetApp数据基础架构洞察作为数据源*：现在、工作负载工厂可直接与NetApp数据基础架构洞察连接、以便在使用EC2迁移顾问数据收集器时收集VMware部署信息。
+
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]
+
+
+
+=== 更新了权限术语
+
+现在、工作负载出厂用户界面和文档使用"只读"来表示读取权限、使用"读写"来表示自动执行权限。
+
+
+
 == 2025年3月30日
 
 
@@ -44,11 +64,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 * *增强型文件系统自动分配*：Amazon FSx for NetApp ONTAP文件系统分配已得到改进、可以更好地优化成本并最大限度地降低吞吐量。
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]
-
-
-
-== 2025年1月5日
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]= 2025年1月5日
 
 
 
@@ -60,7 +76,11 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 * *改进的虚拟机选择*：适用于VMware的BlueXP  工作负载工厂现在支持筛选和搜索要包含在迁移部署中的虚拟机列表。
 
 
-https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]= 2024年12月1日
+https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]
+
+
+
+== 2024年12月1日
 
 
 

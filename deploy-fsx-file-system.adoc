@@ -13,7 +13,7 @@ summary: 在确认为ONTAP文件系统或某些情况下的文件系统建议的
 [role="lead"]
 确认为ONTAP文件系统(或某些情况下的多个文件系统)建议的FSx满足您的确切要求后、您可以使用工作负载工厂在AWS环境中部署该系统。
 
-根据您添加到工作负载工厂帐户的策略和权限、您可以使用工作负载工厂(使用自动化模式)完全部署FSx for ONTAP文件系统。如果您的权限较少(读取模式)或无权限(基本模式)、则需要使用CodeBox中的CloudFormation信息、并在AWS中自行部署FSx for ONTAP文件系统。
+根据您添加到工作负载工厂帐户的策略和权限、您可以使用工作负载工厂(使用读/写模式)完全部署FSx for ONTAP文件系统。如果您的权限较少(只读模式)或无权限(基本模式)、则需要使用CodeBox中的CloudFormation信息、并在AWS中自行部署FSx for ONTAP文件系统。
 
 .部署到VMware Cloud on AWS的要求
 * 要部署适用于ONTAP文件系统的FSx、必须使用基于AWS软件定义的数据中心(SDDC) 1.20或更高版本的VMware Cloud。

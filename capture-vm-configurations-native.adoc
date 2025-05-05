@@ -11,11 +11,33 @@ summary: 您可以使用迁移顾问VM收集器脚本或RVTools捕获当前VM配
 
 
 [role="lead"]
-您可以使用迁移顾问VM收集器脚本或RVTools捕获当前VM配置。我们建议您使用迁移顾问VM收集器脚本、因为它会收集VM配置和性能数据、以便制定最准确的计划。
+您可以使用迁移顾问VM数据收集器脚本、RVTools或NetApp数据基础架构洞察来捕获当前VM配置。我们建议您使用迁移顾问VM收集器脚本或数据基础架构洞察、因为这些选项可收集VM配置和性能数据、以获得最准确的计划。
 
 [role="tabbed-block"]
 ====
-.使用迁移顾问VM收集器脚本
+.使用RVTools (快速评估)
+--
+RVTools是一个Windows应用程序、可与vCenter和ESX服务器(5.x到8.0)交互、以捕获有关VMware虚拟环境的信息。它可收集有关VM、CPU、内存、磁盘、集群、 ESX主机、数据存储库等。您可以将此信息导出到一个xlsx文件、以便与迁移顾问一起使用。
+
+https://www.robware.net/home["了解有关RVTools的更多信息"^]
+
+.步骤
+. 从下载并安装RVTools 4.4.2或更高版本 https://www.robware.net/download["RVTools网站"^]
+. 启动RVTools并登录到目标vCenter Server。
++
+此操作将捕获有关此vCenter Server的信息。
+
+. 将VMware信息导出到xlsx或xls文件。
++
+ https://resources.robware.net/resources/prod/RVTools.pdf["RVTools文档"^]有关详细信息、请参见中的"命令行参数"一章。
+
+
+
+.结果
+包含结果的xlsx或xls文件将保存到您的工作目录中。
+
+--
+.使用迁移顾问VM收集器脚本(详细规划)
 --
 NetApp迁移顾问VM收集器脚本从vCenter收集VM配置信息、与RVTools收集的信息类似、但是、它会捕获当前VM性能数据、以提供实际读写IOPS和吞吐量统计信息。您可以在以下两种模式中使用该脚本：
 
@@ -85,26 +107,35 @@ Connect-VIServer -server <server_IP>
 该脚本会输出一个压缩文件、其中的时间戳采用当前工作目录中的名称。此.zip文件包含所有虚拟机及其属性的列表、以及这些虚拟机的IOPS和吞吐量数据。
 
 --
-.使用RVTools软件
+.利用NetApp数据基础架构洞察力(详细规划)
 --
-RVTools是一个Windows应用程序、可与vCenter和ESX服务器(5.x到8.0)交互、以捕获有关VMware虚拟环境的信息。它可收集有关VM、CPU、内存、磁盘、集群、 ESX主机、数据存储库等。您可以将此信息导出到一个xlsx文件、以便与迁移顾问一起使用。
+NetApp数据基础架构洞察是一款云基础架构监控工具、可让您深入了解整个基础架构。您需要在迁移顾问和Data Infrastructure Insight之间启用临时API通信、以便迁移顾问可以收集有关VMware基础架构的信息。
 
-https://www.robware.net/home["了解有关RVTools的更多信息"^]
+https://docs.netapp.com/us-en/data-infrastructure-insights/["详细了解数据基础架构洞察力"^]
 
 .步骤
-. 从下载并安装RVTools 4.4.2或更高版本 https://www.robware.net/download["RVTools网站"^]
-. 启动RVTools并登录到目标vCenter Server。
+. 登录到您的Data Infrastructure Insight帐户。
+. 在侧导航菜单中，选择*Admin*。
+. 在显示的菜单中，选择*API Access*。
+. 在*API访问令牌*选项卡中，选择*+ API访问令牌*。
 +
-此操作将捕获有关此vCenter Server的信息。
+此时将显示"Create an API Access令牌"对话框。
 
-. 将VMware信息导出到xlsx或xls文件。
+. 提供API令牌的名称和说明。
+. 在*此令牌将用于调用的API类型*下，选择以下选项之一：
 +
- https://resources.robware.net/resources/prod/RVTools.pdf["RVTools文档"^]有关详细信息、请参见中的"命令行参数"一章。
+** 采集单元
+** 资产
+** 数据收集
 
 
+. 在*权限*下，选择*只读*。
+. 在*令牌过期时间*下、选择需要API令牌有效的时间长度。
+. 取消选中*自动旋转Kubernetes*的令牌。
+. 选择 * 保存 * 。
+. 选择*复制API访问令牌*。
+. 请保存此令牌、以便在工作负载出厂迁移顾问中使用。
 
-.结果
-包含结果的xlsx或xls文件将保存到您的工作目录中。
 
 --
 ====
