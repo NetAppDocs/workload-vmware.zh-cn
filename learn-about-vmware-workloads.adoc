@@ -65,7 +65,20 @@ image:diagram-vmware-fsx-old-new.png["显示迁移后旧架构和新架构示例
 * 通过使用VPC对等而无需使用TransitGateway的单可用性配置降低成本和延迟
 
 
-https://raw.githubusercontent.com/NetAppDocs/workload-family/main/_include/learn-about-tools.adoc[]
+
+
+== 用于工作负载工厂的工具
+
+您可以将BlueXP  工作负载工厂与以下工具结合使用：
+
+* *工作负载工厂控制台*：工作负载工厂控制台提供应用程序和项目的可视化、整体视图。
+* BlueXP  console*：BlueXP  控制台提供了混合接口体验，因此您可以将BlueXP  工作负载出厂配置与其他BlueXP  服务结合使用。
+* *问我*：使用"问我人工智能"助手提出问题并了解有关工作负载工厂的更多信息、而无需退出工作负载工厂Web UI。从工作负载出厂帮助菜单访问"询问我"。
+* *CloudShell命令行界面*：工作负载工厂包括一个CloudShell命令行界面、用于通过一个基于浏览器的命令行界面跨帐户管理和操作AWS和NetApp环境。从工作负载出厂控制台的顶部栏访问CloudShell。
+* *REST API*：使用工作负载工厂REST API部署和管理适用于ONTAP文件系统和其他AWS资源的FSx。
+* *CloudFormation*：使用AWS CloudFormation代码执行您在工作负载出厂控制台中定义的操作、以便在您的AWS帐户中对CloudFormation堆栈中的AWS和第三方资源进行建模、配置和管理。
+* *Terraform BlueXP  工作负载工厂提供程序*：使用Terraform构建和管理在工作负载工厂控制台中生成的基础架构工作流。
+
 
 
 
