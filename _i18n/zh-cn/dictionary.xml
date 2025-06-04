@@ -425,10 +425,8 @@
   <block id="2fd605c5fdf1d57ba01b68838e68dc27" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block>登录到工作负载工厂</block>
   <block id="d9eebdefd5feceb309eadc305ce81e6f" category="inline-link">在Workload Factory中设置一个帐户</block>
   <block id="113933a0a6b3eb57d22f707e6384bd49" category="paragraph">您需要<block ref="5eb9de2715b74ed434f03d8a9fef9b70" category="inline-link-rx"></block>使用其中一个登录<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block>。</block>
-  <block id="de1e04d3212ed90a1e381e49a4b2d13d" category="paragraph">您可以在_Basic_模式下使用工作负载工厂、而无需添加凭据即可访问AWS帐户。在_read_或_Automate _模式下向工作负载工厂添加AWS凭据、可以为您的工作负载工厂帐户提供创建和管理适用于ONTAP文件系统的FSx以及在Amazon EC2中部署和管理工作负载所需的权限。</block>
   <block id="c01367c7ec78f01defe37cab59b14851" category="paragraph"><block ref="d162e97fcdf643050da77419fb18d12e" category="inline-link-rx"></block>(英文)</block>
   <block id="65b67cfacaf9f942b7e72202ad4253cf" category="paragraph"><block ref="f440c867abbb2e895fda5fc4c7c4b4d3" category="inline-link-macro-rx"></block>(英文)</block>
-  <block id="3157cd9076119066c34a23e78c720d17" category="paragraph">您可以在_Basic_模式下使用工作负载工厂、而无需添加凭据即可访问AWS帐户。在_read_或_Automate _模式下向工作负载工厂添加AWS凭据、可以为您的工作负载工厂帐户提供创建和管理适用于ONTAP文件系统的FSx以及在VMware Cloud中部署和管理工作负载所需的权限。</block>
   <block id="99518c9c883f7beb3f0b6f82063520fd" category="inline-link-macro">了解如何连接FSx for ONTAP文件系统</block>
   <block id="0df1d5b9b1a14b5b9e7736c356eb7cb8" category="paragraph"><block ref="45ba3a90dd25508f5576e9402f61bd51" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="056634bec4a153903ebb9b769277f4d7" category="summary">要向NetApp技术支持创建支持案例、您需要先将NetApp支持站点帐户添加到工作负载工厂、然后注册支持。</block>
@@ -536,7 +534,6 @@
   <block id="795a0e870c9420e8289ae895de63c851" category="paragraph">此版本的适用于VMware的BlueXP  工作负载工厂对Amazon EC2迁移顾问体验进行了以下改进：</block>
   <block id="81e3939f348a9727ff017a61306371bd" category="paragraph">*将NetApp数据基础架构洞察作为数据源*：现在、工作负载工厂可直接与NetApp数据基础架构洞察连接、以便在使用EC2迁移顾问数据收集器时收集VMware部署信息。</block>
   <block id="514f1fc0ac0ff6e4200d3637146367f1" category="section-title">更新了权限术语</block>
-  <block id="a7b97ab7d88b015e92ed51ef4bee9c25" category="paragraph">现在、工作负载出厂用户界面和文档使用"只读"来表示读取权限、使用"读写"来表示自动执行权限。</block>
   <block id="f8e901b31808cd5fdd45bae1bb1b5200" category="paragraph">您可以使用迁移顾问VM数据收集器脚本、RVTools或NetApp数据基础架构洞察来捕获当前VM配置。我们建议您使用迁移顾问VM收集器脚本或数据基础架构洞察、因为这些选项可收集VM配置和性能数据、以获得最准确的计划。</block>
   <block id="22a28a767d70781d263ac5d0d07edaf6" category="open-title">使用RVTools (快速评估)</block>
   <block id="c3a0a2cbaabcb9856e249dfefdef2ff1" category="open-title">使用迁移顾问VM收集器脚本(详细规划)</block>
@@ -560,7 +557,6 @@
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">选择 * 保存 * 。</block>
   <block id="61a464c915eccf6999e7c204f359223d" category="list-text">选择*复制API访问令牌*。</block>
   <block id="b75df169abd314f574bcc40ea5155622" category="list-text">请保存此令牌、以便在工作负载出厂迁移顾问中使用。</block>
-  <block id="0e580c33f97a1c7ca616a1e9f7fdd1e8" category="paragraph">根据您添加到工作负载工厂帐户的策略和权限、您可以使用工作负载工厂(使用读/写模式)完全部署FSx for ONTAP文件系统。如果您的权限较少(只读模式)或无权限(基本模式)、则需要使用CodeBox中的CloudFormation信息、并在AWS中自行部署FSx for ONTAP文件系统。</block>
   <block id="cca1b6b092fdbaae02361708d86c5216" category="list-text">*详细规划*：这些选项使用迁移顾问数据收集器清单文件或对NetApp数据基础架构洞察力的直接API访问来收集详细信息、从而实现部署就绪设计。</block>
   <block id="969dbeb4218261a227069d80a30e69d5" category="open-title">RVTools (快速评估)</block>
   <block id="8834e6e76cc39ebd77730b20d1f3b50f" category="list-text">选择*RVTools*磁贴，然后选择*Next*。</block>
@@ -586,5 +582,9 @@
   <block id="e234d079cc2fccaeed8041a81e1e8122" category="list-text">*CloudShell命令行界面*：工作负载工厂包括一个CloudShell命令行界面、用于通过一个基于浏览器的命令行界面跨帐户管理和操作AWS和NetApp环境。从工作负载出厂控制台的顶部栏访问CloudShell。</block>
   <block id="dfbf98e5a4263fb93c5b851bfc384ae3" category="list-text">*REST API*：使用工作负载工厂REST API部署和管理适用于ONTAP文件系统和其他AWS资源的FSx。</block>
   <block id="57f4ce64453b6cd8aa398c4f88d38c2e" category="list-text">*CloudFormation*：使用AWS CloudFormation代码执行您在工作负载出厂控制台中定义的操作、以便在您的AWS帐户中对CloudFormation堆栈中的AWS和第三方资源进行建模、配置和管理。</block>
-  <block id="06c2e2277da374dd2cc7b735a1d1e848" category="list-text">*Terraform BlueXP  工作负载工厂提供程序*：使用Terraform构建和管理在工作负载工厂控制台中生成的基础架构工作流。</block>
+  <block id="4ead5e435cb4f2c7cf627b1d1e84c333" category="paragraph">工作负载工厂用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。</block>
+  <block id="22e3b254750c8ee79058a0cf095f5b60" category="paragraph">根据您添加到工作负载工厂帐户的策略和权限，您可以完全使用工作负载工厂（使用读/写模式）部署 FSx for ONTAP 文件系统。如果您拥有的权限较少（只读模式）或没有权限（基本模式），则需要使用 Codebox 中的 CloudFormation 信息，并在 AWS 中自行部署 FSx for ONTAP 文件系统。</block>
+  <block id="af06e2a95bd9706f705a4480e8f40846" category="list-text">*Terraform BlueXP  工作负载工厂提供程序*：使用Terraform构建和管理在工作负载工厂控制台中生成的基础架构工作流。</block>
+  <block id="93aede4db8facb711d27bf36fdf38874" category="paragraph">您可以在_Basic_模式下使用工作负载工厂、而无需添加凭据即可访问AWS帐户。以_只读_或_读/写_模式将 AWS 凭证添加到工作负载工厂，可为您的工作负载工厂帐户提供创建和管理 FSx for ONTAP 文件系统以及在 Amazon EC2 中部署和管理工作负载所需的权限。</block>
+  <block id="a3510fa27dbfcf1faf64ffdbe7d3fbcf" category="paragraph">您可以在_Basic_模式下使用工作负载工厂、而无需添加凭据即可访问AWS帐户。以_只读_或_读/写_模式将 AWS 凭证添加到工作负载工厂，可为您的工作负载工厂帐户提供创建和管理 FSx for ONTAP 文件系统以及在 VMware Cloud 中部署和管理工作负载所需的权限。</block>
 </blocks>

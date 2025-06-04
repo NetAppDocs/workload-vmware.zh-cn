@@ -21,7 +21,7 @@ summary: 开始使用VMware迁移顾问、使用Amazon FSx for ONTAP作为外部
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 向您的帐户添加AWS凭据和权限
 [role="quick-margin-para"]
-您可以在_Basic_模式下使用工作负载工厂、而无需添加凭据即可访问AWS帐户。在_read_或_Automate _模式下向工作负载工厂添加AWS凭据、可以为您的工作负载工厂帐户提供创建和管理适用于ONTAP文件系统的FSx以及在VMware Cloud中部署和管理工作负载所需的权限。
+您可以在_Basic_模式下使用工作负载工厂、而无需添加凭据即可访问AWS帐户。以_只读_或_读/写_模式将 AWS 凭证添加到工作负载工厂，可为您的工作负载工厂帐户提供创建和管理 FSx for ONTAP 文件系统以及在 VMware Cloud 中部署和管理工作负载所需的权限。
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何添加凭据和权限"^](英文)
