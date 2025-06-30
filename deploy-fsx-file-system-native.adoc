@@ -4,7 +4,7 @@ permalink: deploy-fsx-file-system-native.html
 keywords: vm workloads, deploy fsx, deploy storage for vms 
 summary: 在确认为ONTAP文件系统或某些情况下的文件系统建议的FSx符合您的确切要求后、您可以使用工作负载工厂在AWS环境中部署该系统。 
 ---
-= 为ONTAP文件系统部署VMware工作负载建议的FSx
+= 为ONTAP文件系统部署建议的FSx
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

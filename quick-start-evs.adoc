@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: quick-start-evs.html 
+keywords: quick start 
+summary: 开始使用 VMware 迁移顾问将您当前的基础架构迁移到 Amazon EVS，并使用 Amazon FSx for ONTAP 作为外部 NFS 数据存储。 
+---
+= 使用 VMware 工作负载迁移顾问快速开始迁移到 Amazon EVS
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+开始使用 VMware 迁移顾问将您当前的基础架构迁移到 Amazon EVS，并使用 Amazon FSx for ONTAP 作为外部 NFS 数据存储。
+
+开始之前，您应了解 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["操作模式"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"]登录到工作负载工厂
+[role="quick-margin-para"]
+您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在Workload Factory中设置一个帐户"^]使用其中一个登录 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 向您的帐户添加AWS凭据和权限
+[role="quick-margin-para"]
+您可以在_Basic_模式下使用工作负载工厂、而无需添加凭据即可访问AWS帐户。以_只读_或_读/写_模式将 AWS 凭证添加到工作负载工厂，可为您的工作负载工厂帐户提供创建和管理 FSx for ONTAP 文件系统以及在 Amazon EC2 中部署和管理工作负载所需的权限。
+
+[role="quick-margin-para"]
+https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何添加凭据和权限"^](英文)
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 使用VMware迁移顾问创建部署计划
+[role="quick-margin-para"]
+启动 VMware 迁移顾问并手动配置您想要在 Amazon Elastic VMWare Service 基础设施上创建的 VM 环境，使用 Amazon FSx for ONTAP 文件系统作为外部 NFS 数据存储。
+
+[role="quick-margin-para"]
+link:launch-migration-advisor-evs-manual.html["了解如何使用VMware迁移顾问创建部署计划"](英文)
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 为ONTAP文件系统部署建议的FSx
+[role="quick-margin-para"]
+部署新的FSx for ONTAP文件系统、为Amazon EC2基础架构中的VM提供数据存储库。
+
+[role="quick-margin-para"]
+link:deploy-fsx-file-system-evs.html["了解如何部署新的FSx for ONTAP文件系统"](英文)
