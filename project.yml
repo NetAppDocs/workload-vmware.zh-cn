@@ -32,6 +32,8 @@ sidebar:
     entries:
     - title: 迁移到 Amazon Elastic VMware Service
       entries:
+      - title: 探索储蓄
+        url: "/calculate-evs-savings.html"
       - title: 使用迁移顾问创建部署计划
         url: "/launch-migration-advisor-evs-manual.html"
       - title: 为ONTAP文件系统部署建议的FSx
