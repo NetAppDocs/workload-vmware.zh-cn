@@ -6,6 +6,6 @@
 
 === VMware迁移顾问增强功能
 
-此版本的适用于VMware的工作负载工厂提供了一些功能和稳定性增强功能、并且能够在使用VMware迁移顾问时导入和导出迁移计划。
+此版本的 VMware Workload Factory 具有功能和稳定性增强功能，以及在使用 VMware 迁移顾问时导入和导出迁移计划的功能。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]

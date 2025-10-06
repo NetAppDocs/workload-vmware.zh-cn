@@ -1,0 +1,17 @@
+= BlueXP workload factory现为NetApp工作负载工厂
+:allow-uri-read: 
+
+
+
+
+=== BlueXP workload factory现为NetApp工作负载工厂
+
+BlueXP已重命名并重新设计，以更好地反映其在管理数据基础设施中的作用。因此， BlueXP workload factory已重命名为NetApp工作负载工厂。
+
+
+
+=== VMware 工作负载规划中心简介
+
+VMware 工作负载规划中心使您能够从一个地方查看和管理您的 VM 库存和迁移计划。您可以从不同的环境上传和保存多个 VM 清单，并开始计划将其中任何一个迁移到 AWS EC2 或 Amazon Elastic VMware 服务。您还可以创建并保存 AWS EC2 或 EVS 迁移计划。
+
+https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["探索 VMware 工作负载规划中心"]

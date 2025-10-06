@@ -2,24 +2,24 @@
 sidebar: sidebar 
 permalink: get-help.html 
 keywords: help, ticket, open support case, support, netapp support, technical support, call support, phone number, open ticket, web ticket, open an issue 
-summary: NetApp可通过多种方式为工作负载工厂提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。 
+summary: 'NetApp通过多种方式为 Workload Factory 提供支持。全天候提供广泛的免费自助支持选项，例如知识库 (KB) 文章和社区论坛。您的支持注册包含通过网络工单获取的远程技术支持。' 
 ---
-= 获取有关适用于VMware的BlueXP  工作负载工厂的帮助
+= 获取有关NetApp Workload Factory for VMware 的帮助
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-NetApp以多种方式为BlueXP  工作负载工厂及其云服务提供支持。全天候提供丰富的免费自助支持选项，例如知识库（ KB ）文章和社区论坛。您的支持注册包括通过 Web 服务单提供的远程技术支持。
+NetApp通过多种方式为 Workload Factory 及其云服务提供支持。全天候提供广泛的免费自助支持选项，例如知识库 (KB) 文章和社区论坛。您的支持注册包含通过网络工单获取的远程技术支持。
 
 
 
 == 获取FSx for ONTAP支持
 
-有关FSx for ONTAP、其基础架构或任何使用该服务的解决方案的技术支持、请参阅该产品的工作负载工厂文档中的"获得帮助"。
+有关 FSx for ONTAP、其基础架构或任何使用该服务的解决方案的技术支持，请参阅该产品的 Workload Factory 文档中的“获取帮助”。
 
-link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#getting-help["适用于 ONTAP 的 Amazon FSX"^]
+link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fsx-aws.html#getting-help["适用于 ONTAP 的 Amazon FSX"^]
 
 要获得特定于Workload Factory及其存储解决方案和服务的技术支持、请使用下面所述的支持选项。
 
@@ -31,15 +31,15 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#g
 
 * 文档
 +
-您当前正在查看的工作负载工厂文档。
+您当前正在查看的 Workload Factory 文档。
 
 * https://kb.netapp.com["知识库"^]
 +
-搜索工作负载工厂知识库、查找有助于解决问题的文章。
+搜索 Workload Factory 知识库以查找有助于解决问题的文章。
 
 * http://community.netapp.com/["社区"^]
 +
-加入工作负载工厂社区、关注正在进行的讨论或创建新的讨论。
+加入 Workload Factory 社区以关注正在进行的讨论或创建新的讨论。
 
 
 
@@ -50,12 +50,12 @@ link:https://docs.netapp.com/us-en/bluexp-fsx-ontap/start/concept-fsx-aws.html#g
 除了上述自助支持选项之外、您还可以在激活支持后与NetApp支持专家合作解决任何问题。
 
 .开始之前
-要使用*创建案例*功能，您必须先注册支持。请将您的NetApp支持站点凭据与您的工作负载出厂登录名关联起来。link:support-registration.html["了解如何注册获取支持"](英文)
+要使用*创建案例*功能，您必须首先注册支持。将您的NetApp支持站点凭据与您的 Workload Factory 登录名关联。link:support-registration.html["了解如何注册获取支持"] 。
 
 .步骤
-. 在工作负载工厂控制台的右上角，选择*Help > Support*。
+. 在 Workload Factory 控制台的右上角，选择 *帮助 > 支持*。
 +
-选择此选项将打开BlueXP控制台一个新的浏览器选项卡并加载支持信息板。
+选择此选项将在新浏览器选项卡中打开NetApp控制台并加载支持仪表板。
 
 . 在*资源*页面上、在技术支持下选择一个可用选项：
 +
@@ -91,7 +91,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 
 "您无权针对选定服务创建案例"
 
-此错误可能意味着NSS帐户及其关联的记录公司与BlueXP帐户序列号(即960xxxx)或工作环境序列号。您可以使用以下选项之一寻求帮助：
+此错误可能意味着 NSS 帐户及其关联的记录公司与NetApp控制台帐户序列号的记录公司不同（即。960xxxx）或系统序列号。您可以使用以下选项之一寻求帮助：
 
 * 使用产品内聊天功能
 * 请通过提交非技术案例 https://mysupport.netapp.com/site/help[]
@@ -101,7 +101,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 
 == 管理支持案例(预览)
 
-您可以直接从BlueXP查看和管理活动的和已解决的支持案例。您可以管理与您的NSS帐户和公司关联的案例。
+您可以直接从NetApp控制台查看和管理活动和已解决的支持案例。您可以管理与您的 NSS 帐户和公司相关的案例。
 
 案例管理以预览形式提供。我们计划改进此体验、并在即将发布的版本中添加增强功能。请通过产品内聊天向我们发送反馈。
 
@@ -124,13 +124,13 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 
 
 .步骤
-. 在工作负载工厂控制台的右上角，选择*Help > Support*。
+. 在 Workload Factory 控制台的右上角，选择 *帮助 > 支持*。
 +
-选择此选项将打开BlueXP控制台一个新的浏览器选项卡并加载支持信息板。
+选择此选项将打开NetApp控制台的新浏览器选项卡并加载支持仪表板。
 
-. 选择*案例管理*，如果出现提示，请将您的NSS帐户添加到BlueXP。
+. 选择*案例管理*，如果出现提示，请将您的 NSS 帐户添加到NetApp控制台。
 +
-"*案例管理*"页面显示了与您的BlueXP用户帐户关联的NSS帐户相关的已打开案例。此NSS帐户与* NSS管理*页面顶部显示的NSS帐户相同。
+*案例管理*页面显示与您的NetApp控制台用户帐户关联的 NSS 帐户相关的未结案例。这与出现在 *NSS 管理* 页面顶部的 NSS 帐户相同。
 
 . 也可以修改表中显示的信息：
 +

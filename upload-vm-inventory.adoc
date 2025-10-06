@@ -1,17 +1,27 @@
 ---
 sidebar: sidebar 
-permalink: capture-vm-configurations-native.html 
+permalink: upload-vm-inventory.html 
 keywords: vm workloads, capture vm details 
-summary: 您可以使用迁移顾问VM收集器脚本或RVTools捕获当前VM配置。我们建议您使用迁移顾问VM收集器脚本、因为它会收集VM配置和性能数据、以便制定最准确的计划。 
+summary: 您可以使用规划中心上传有关当前 VMware 环境的信息。 
 ---
-= 在使用VMware工作负载迁移到Amazon EC2之前捕获VM配置
+= 将虚拟机库存数据上传到NetApp Workload Factory
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-您可以使用迁移顾问VM数据收集器脚本、RVTools或NetApp数据基础架构洞察来捕获当前VM配置。我们建议您使用迁移顾问VM收集器脚本或数据基础架构洞察、因为这些选项可收集VM配置和性能数据、以获得最准确的计划。
+在创建迁移计划之前，您需要上传虚拟机库存数据。
+
+.步骤
+. 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 从 VMware 工作负载图块中，选择 *VMware 规划中心*。
++
+从规划中心，您可以上传虚拟机库存数据，查看以前的库存数据上传，并使用任何虚拟机库存数据集规划迁移。
+
+. 选择*上传虚拟机清单*。
+. 选择要使用的数据收集方法：
+
 
 [role="tabbed-block"]
 ====
@@ -22,6 +32,11 @@ RVTools是一个Windows应用程序、可与vCenter和ESX服务器(5.x到8.0)交
 https://www.robware.net/home["了解有关RVTools的更多信息"^]
 
 .步骤
+. 选择 *RVTools* 图块，然后选择 *Next*。
++
+此时将显示*准备AWS Cloud启用*页面。
+
+. 输入您将创建的 VM 清单数据集的名称。
 . 从下载并安装RVTools 4.4.2或更高版本 https://www.robware.net/download["RVTools网站"^]
 . 启动RVTools并登录到目标vCenter Server。
 +
@@ -31,13 +46,13 @@ https://www.robware.net/home["了解有关RVTools的更多信息"^]
 +
  https://resources.robware.net/resources/prod/RVTools.pdf["RVTools文档"^]有关详细信息、请参见中的"命令行参数"一章。
 
+. 选择image:button-upload-file.png["上传按钮"]并选择您导出的 RVTools 文件。
+. 选择*上传*。
+. 选择*完成*。
 
-
-.结果
-包含结果的xlsx或xls文件将保存到您的工作目录中。
 
 --
-.使用迁移顾问VM收集器脚本(详细规划)
+.使用数据收集器（详细规划）
 --
 NetApp迁移顾问VM收集器脚本从vCenter收集VM配置信息、与RVTools收集的信息类似、但是、它会捕获当前VM性能数据、以提供实际读写IOPS和吞吐量统计信息。您可以在以下两种模式中使用该脚本：
 
@@ -59,16 +74,7 @@ NetApp迁移顾问VM收集器脚本从vCenter收集VM配置信息、与RVTools�
 请注意、如果您计划从VM捕获长期统计信息(每日统计信息)、则必须在vSphere管理控制台中激活3级或以上的统计信息(VMware管理环境)。
 
 .步骤
-. 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
-. 从 VMware 工作负载图块中，选择 *VMware 规划中心*。
-+
-从规划中心，您可以上传您的虚拟机库存数据，查看以前的库存数据上传，并使用任何虚拟机库存数据集规划迁移。然后选择*迁移到 AWS 本机计算*。将显示 VMware 迁移顾问启动画面。
-
-+
-查看相关信息、了解迁移顾问的优势。
-
-. 准备好后，选择*Let's start*。
-. 选择“*详细计划*”磁贴，然后选择“*下一步*”。
+. 选择“*数据收集器*”图块，然后选择“*下一步*”。
 +
 "Code"(代码框)窗口将显示在页面右侧。
 
@@ -104,10 +110,11 @@ Connect-VIServer -server <server_IP>
 +
 或者、您也可以运行数据收集器脚本、而不指定任何选项；这样、您可以从交互式菜单中选择数据收集期间。
 
++
++ 脚本在当前工作目录中输出一个名称中带有时间戳的压缩文件。  .zip 文件包含所有虚拟机及其属性的列表，以及它们的 IOPS 和吞吐量数据。
 
+. 选择*上传*。
 
-.结果
-该脚本会输出一个压缩文件、其中的时间戳采用当前工作目录中的名称。此.zip文件包含所有虚拟机及其属性的列表、以及这些虚拟机的IOPS和吞吐量数据。
 
 --
 .利用NetApp数据基础架构洞察力(详细规划)
@@ -117,30 +124,29 @@ NetApp数据基础架构洞察是一款云基础架构监控工具、可让您�
 https://docs.netapp.com/us-en/data-infrastructure-insights/["详细了解数据基础架构洞察力"^]
 
 .步骤
-. 登录到您的Data Infrastructure Insight帐户。
-. 在侧导航菜单中，选择*Admin*。
-. 在显示的菜单中，选择*API Access*。
-. 在*API访问令牌*选项卡中，选择*+ API访问令牌*。
+. 选择“*Data Infrastructure Insights*”图块并选择“*下一步*”。
 +
-此时将显示"Create an API Access令牌"对话框。
+此时将显示*准备AWS Cloud启用*页面。
 
-. 提供API令牌的名称和说明。
-. 在*此令牌将用于调用的API类型*下，选择以下选项之一：
+. 输入您将创建的 VM 清单数据集的名称。
+. 输入Data Infrastructure Insights的租户端点。
 +
-** 采集单元
-** 资产
-** 数据收集
+此URL应用于访问Data Infrastructure Insight。
 
+. 如果您尚未为Data Infrastructure Insight生成API访问令牌、请按照页面上的说明创建一个。否则，请将您的API访问令牌粘贴到*Enter API Access令牌*文本框中。
+. 选择*上传*。
++
+工作负载工厂从Data Infrastructure Insights收集信息。
 
-. 在*权限*下，选择*只读*。
-. 在*令牌过期时间*下、选择需要API令牌有效的时间长度。
-. 取消选中*自动旋转Kubernetes*的令牌。
-. 选择 * 保存 * 。
-. 选择*复制API访问令牌*。
-. 保存此令牌以准备与 Workload Factory 迁移顾问一起使用。
 
 
 --
 ====
 .下一步是什么？
-link:launch-onboarding-advisor-native.html["使用迁移顾问创建Amazon EC2部署计划"](英文)
+从规划中心管理您上传的虚拟机库存数据，或创建部署计划。
+
+* link:explore-planning-center.html["探索 VMware 工作负载规划中心"]
+* link:launch-onboarding-advisor.html["创建 Amazon VMware Cloud 部署计划"]
+* link:launch-migration-advisor-evs.html["创建 Amazon Elastic VMware Service 部署计划"]
+* link:launch-onboarding-advisor-native.html["创建 Amazon EC2 部署计划"]
+

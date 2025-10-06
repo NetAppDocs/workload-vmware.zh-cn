@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: explore-planning-center.html 
+keywords: vm workloads, netapp Workload Factory 
+summary: 您可以使用 VMware 规划中心来管理已上传的库存数据和您创建的迁移计划。 
+---
+= 探索 VMware 规划中心
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+VMware 规划中心使您能够上传新的 VM 库存数据并创建新的迁移计划，以及管理已使用NetApp Workload Factory 保存的 VM 库存数据和迁移计划。
+
+
+
+== 管理虚拟机库存数据
+
+使用规划中心创建和管理 VM 库存数据。
+
+
+
+=== 上传虚拟机清单数据
+
+当您准备好使用 Workload Factory 探索迁移到 Amazon AWS 环境的选项时，您可以上传 VM 库存数据。参考link:upload-vm-inventory.html["上传虚拟机清单数据"]以获取说明。
+
+
+
+=== 重命名数据集
+
+您可以更改已保存数据集的名称。
+
+.步骤
+. 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 从 VMware 工作负载图块中，选择 *VMware 规划中心*。出现规划中心。
+. 选择要重命名的数据集的操作菜单（...），然后选择*重命名*。
+. 输入数据集的新名称并选择*保存*。
+
+
+
+
+=== 删除数据集
+
+当不再需要数据集时，您可以随时删除它。
+
+.步骤
+. 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 从 VMware 工作负载图块中，选择 *VMware 规划中心*。出现规划中心。
+. 选择要删除的数据集的操作菜单（...），然后选择*删除*。
+. 选择*删除*以确认操作。
+
+
+
+
+== 管理迁移计划
+
+使用迁移中心创建和管理迁移计划。
+
+
+
+=== 制定迁移计划
+
+您可以选择一个迁移计划并进行配置，以便将虚拟机迁移到您选择的 Amazon AWS 环境。
+
+.步骤
+. 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 从 VMware 工作负载图块中，选择 *VMware 规划中心*。出现规划中心。
+. 选择*迁移计划*菜单。
+. 选择您要配置的迁移计划的操作菜单 (...)，然后选择 *配置*。
+. 根据迁移计划，参考以下说明部署文件系统：
++
+** link:deploy-fsx-file-system.html["为 Amazon VMware Cloud 计划部署文件系统"]
+** link:deploy-fsx-file-system-native.html["为 Amazon EC2 计划部署文件系统"]
+** link:deploy-fsx-file-system-evs.html["为 Amazon Elastic VMware Service 计划部署文件系统"]
+
+
+
+
+
+
+=== 编辑迁移计划的注释
+
+如果您需要更改迁移计划的注释详细信息，请在规划中心内编辑注释。
+
+.步骤
+. 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 从 VMware 工作负载图块中，选择 *VMware 规划中心*。出现规划中心。
+. 选择*迁移计划*。
+. 选择要编辑的迁移计划的操作菜单 (...)，然后选择*编辑注释*。
+. 输入评论并选择*保存*。
+
+
+
+
+=== 创建迁移计划的 PDF 报告
+
+创建迁移计划详细信息的 PDF 报告。
+
+.步骤
+. 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 从 VMware 工作负载图块中，选择 *VMware 规划中心*。出现规划中心。
+. 选择*迁移计划*。
+. 选择要创建 PDF 报告的迁移计划的操作菜单 (...)，然后选择 *创建报告*。
+. 输入报告 PDF 的名称并选择*保存*。
+
+
+
+
+=== 删除迁移计划
+
+当不再需要迁移计划时，您可以随时删除它。
+
+.步骤
+. 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 从 VMware 工作负载图块中，选择 *VMware 规划中心*。出现规划中心。
+. 选择*迁移计划*。
+. 选择要删除的迁移计划的操作菜单 (...)，然后选择*删除*。
+. 选择“*删除*”确认操作。
+

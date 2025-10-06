@@ -1,19 +1,19 @@
 ---
 sidebar: sidebar 
 permalink: launch-migration-advisor-evs-manual.html 
-keywords: overview, concepts, features, use case, workloads, how workload factory works, migration, advisor, manual, specification, deploy, deployment, plan 
-summary: 登录到NetApp工作负载工厂以访问VMware迁移顾问。您将按照向导中的步骤创建根据您的需求自定义的部署计划或迁移计划。 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works, migration, manual, specification, deploy, deployment, plan 
+summary: 登录NetApp Workload Factory 以访问 VMware 规划中心。您可以手动创建 EVS 的部署计划。 
 ---
-= 使用 VMware 工作负载迁移顾问为 Amazon EVS 创建部署计划
+= 手动创建 Amazon EVS 的部署计划
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-登录到NetApp工作负载工厂以访问VMware迁移顾问。您将按照向导中的步骤创建根据您的需求自定义的部署计划或迁移计划。
+登录NetApp Workload Factory 以访问 VMware 规划中心。从那里，您可以手动创建根据您的需求定制的 Amazon EVS 部署计划或迁移计划。
 
-请注意、您必须拥有用户名和密码才能访问工作负载工厂。如果您没有访问权限、请立即创建帐户。请参阅说明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["此处"]。
+请注意，您必须拥有用户名和密码才能访问 Workload Factory。如果您没有访问权限，请立即创建一个帐户。查看说明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["此处"]。
 
 
 
@@ -26,10 +26,9 @@ summary: 登录到NetApp工作负载工厂以访问VMware迁移顾问。您将�
 
 
 .步骤
-. 使用其中一个登录到工作负载工厂 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
-. 或者，如果您从 Workload Factory 控制台访问工作负载工厂，请从 VMware 工作负载磁贴中选择 *计划和创建*，然后选择 *Amazon Elastic VMware 服务*。此时将显示VMware迁移顾问启动屏幕。
-. 选择“Amazon Elastic VMware 服务”图块。
-. 准备好后，选择*Let's start*。
+. 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 或者，如果您从 Workload Factory 控制台访问 Workload Factory，请从 VMware 工作负载磁贴中选择 *VMware 规划中心*，然后选择 *VMware 规划中心*。显示 VMware 规划中心。
+. 选择*手动创建 EVS 计划*。
 . 输入您的 VM 环境的要求。
 +
 [NOTE]
@@ -42,13 +41,13 @@ summary: 登录到NetApp工作负载工厂以访问VMware迁移顾问。您将�
 
 
 ====
-. 准备就绪后，选择“*下一步*”来查看迁移计划。
+. 准备就绪后，选择*审查计划*来审查迁移计划。
 . 查看计划。展开每个部分以查看计划详细信息。
-. 或者，当您对迁移计划满意时，您可以将其保存为模板或 PDF：
 +
-** 选择“导出计划”将迁移计划保存为模板 `.json`在您的计算机上格式化。您可以稍后导入此计划、以便在部署具有类似要求的系统时用作模板。
-** 选择“下载计划”以下载部署计划 `.pdf`格式，以便您可以分发计划以供审查。
+默认情况下，Workload Factory 将迁移计划保存到规划中心。您可以在页面顶部附近取消选择此选项。
+
+. 或者，当您对迁移计划满意时，您可以通过选择*导出计划（PDF）*将计划详细信息下载为 PDF 文档。
+. 当您准备好配置部署计划时，选择*配置*。
 
 
-. link:deploy-fsx-file-system-evs.html["为ONTAP文件系统部署VMware工作负载建议的FSx"](英文)
-
+link:deploy-fsx-file-system-evs.html["为ONTAP文件系统部署VMware工作负载建议的FSx"](英文)

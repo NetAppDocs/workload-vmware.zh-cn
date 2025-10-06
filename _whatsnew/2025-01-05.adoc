@@ -6,10 +6,10 @@
 
 === Amazon EC2迁移顾问改进
 
-此版本的适用于VMware的BlueXP  工作负载工厂对迁移顾问体验进行了多项改进：
+此版本的BlueXP Workload Factory for VMware 对迁移顾问体验进行了多项改进：
 
-* *保存或下载迁移计划*：现在可以保存或下载迁移计划，并加载迁移计划以填充迁移顾问。保存迁移计划时、该计划将与您的工作负载工厂帐户一起保存。
-* *改进的虚拟机选择*：适用于VMware的BlueXP  工作负载工厂现在支持筛选和搜索要包含在迁移部署中的虚拟机列表。
+* *保存或下载迁移计划*：您现在可以保存或下载迁移计划，并加载迁移计划以填充迁移顾问。当您保存迁移计划时，该计划将与您的 Workload Factory 帐户一起保存。
+* *改进的 VM 选择*：适用于 VMware 的BlueXP Workload Factory 现在支持过滤和搜索您想要包含在迁移部署中的 VM 列表。
 
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]

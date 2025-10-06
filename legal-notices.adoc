@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords:  
 summary:  
 ---
-= 适用于VMware的BlueXP  工作负载工厂的法律声明
+= NetApp Workload Factory for VMware 的法律声明
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
@@ -47,4 +47,4 @@ link:https://www.netapp.com/company/legal/privacy-policy/["https://www.netapp.co
 
 通知文件提供有关 NetApp 软件中使用的第三方版权和许可证的信息。
 
-https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["BlueXP  工作负载工厂"^]
+https://docs.netapp.com/us-en/workload-family/media/workload-factory-notice.pdf["NetApp工作负载工厂"^]

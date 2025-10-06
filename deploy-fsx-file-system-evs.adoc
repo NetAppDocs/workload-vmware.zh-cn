@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: deploy-fsx-file-system-evs.html 
 keywords: vm workloads, deploy fsx, deploy storage for vms, evs, elastic vmware service 
-summary: 在确认为ONTAP文件系统或某些情况下的文件系统建议的FSx符合您的确切要求后、您可以使用工作负载工厂在AWS环境中部署该系统。 
+summary: 在您验证推荐的 FSx for ONTAP文件系统（或在某些情况下的文件系统）满足您的确切要求后，您可以使用 Workload Factory 在您的 AWS 环境中部署该系统。 
 ---
 = 为ONTAP文件系统部署建议的FSx
 :allow-uri-read: 
@@ -11,9 +11,9 @@ summary: 在确认为ONTAP文件系统或某些情况下的文件系统建议的
 
 
 [role="lead"]
-确认为ONTAP文件系统(或某些情况下的多个文件系统)建议的FSx满足您的确切要求后、您可以使用工作负载工厂在AWS环境中部署该系统。
+在您验证推荐的 FSx for ONTAP文件系统（或在某些情况下为多个文件系统）满足您的确切要求后，您可以使用 Workload Factory 在您的 AWS 环境中部署该系统。
 
-根据您添加到工作负载工厂帐户的策略和权限，您可以完全使用工作负载工厂（使用读/写模式）部署 FSx for ONTAP 文件系统。如果您拥有的权限较少（只读模式）或没有权限（基本模式），则需要使用 Codebox 中的 CloudFormation 模板并在 AWS 中自行部署 FSx for ONTAP 文件系统。
+根据您添加到 Workload Factory 帐户的策略和权限，您可以使用 Workload Factory（使用读/写模式）完全部署 FSx for ONTAP文件系统。如果您拥有的权限较少（只读模式）或没有权限（基本模式），则需要使用 Codebox 中的 CloudFormation 模板并在 AWS 中自行部署 FSx for ONTAP文件系统。
 
 .部署到 Amazon Elastic VMware Service 的要求
 * 您必须拥有 Amazon Elastic VMware Service 订阅。
@@ -30,7 +30,7 @@ summary: 在确认为ONTAP文件系统或某些情况下的文件系统建议的
 
 . 在“文件系统常规配置”部分中，输入以下信息：
 +
-.. *AWS凭据*：选择或添加可为工作负载工厂提供直接创建FSx for ONTAP文件系统所需权限的凭据。您还可以从CodeBox中选择CloudFormation代码、并在AWS中自行部署FSx for ONTAP文件系统。
+.. *AWS 凭证*：选择或添加凭证，为 Workload Factory 提供直接创建 FSx for ONTAP文件系统所需的权限。您还可以从 Codebox 选择 CloudFormation 代码并在 AWS 中自行部署 FSx for ONTAP文件系统。
 .. *文件系统名称*：输入要用于此FSx for ONTAP文件系统的名称。
 .. *标签*：您可以选择添加标签来对此 FSx for ONTAP 文件系统进行分类。
 
@@ -40,7 +40,7 @@ summary: 在确认为ONTAP文件系统或某些情况下的文件系统建议的
 .. *区域和 VPC*：选择将部署 FSx for ONTAP 文件系统的区域和 VPC。
 .. *安全组*（仅限高级创建）：使用“高级创建”选项时，您可以选择 FSx for ONTAP VPC 的默认安全组，以便所有流量都可以访问 FSx for ONTAP 文件系统。您可以创建新的安全组，也可以选择现有的安全组。
 +
-如果启用*根据 EVS NFS 数据存储调整安全组配置*选项，工作负载工厂将根据 EVS NFS 数据存储的设置配置安全组。
+如果启用*根据 EVS NFS 数据存储调整安全组配置*选项，Workload Factory 将根据 EVS NFS 数据存储的设置配置安全组。
 
 +
 您可以向安全组添加入站规则，以限制其他 AWS 服务可以访问 FSx for ONTAP 文件系统。这将减少打开的服务数量。以下是最低端口和协议数量：
@@ -81,7 +81,7 @@ summary: 在确认为ONTAP文件系统或某些情况下的文件系统建议的
 
 . 在“EVS 集群附件”部分中，输入以下信息：
 +
-.. *数据存储区挂载选项*：可选地，启用*将数据存储区挂载到 EVS 集群*选项以自动将数据存储区连接到 Amazon EVS 集群。此选项还会导致工作负载工厂配置 VMware ESXi 主机设置，以便它们符合ONTAP最佳实践建议。在部署文件系统之前，您可以查看“*摘要*”部分中的计划详细信息，以查看已更改的设置。
+.. *数据存储区挂载选项*：可选地，启用*将数据存储区挂载到 EVS 集群*选项以自动将数据存储区连接到 Amazon EVS 集群。此选项还会导致 Workload Factory 配置 VMware ESXi 主机设置，以便它们符合ONTAP最佳实践建议。在部署文件系统之前，您可以查看“*摘要*”部分中的计划详细信息，以查看已更改的设置。
 .. *EVS 集群 vSphere 控制台详细信息*：输入应连接到 Amazon EVS 的 VMware vCenter 服务器的 IP 地址或 FQDN。
 .. *vSphere 管理员凭据密钥 ARN*：选择 vSphere 管理员凭据密钥 ARN。这些凭据用于挂载数据存储区并配置推荐的 VMware 设置。
 +

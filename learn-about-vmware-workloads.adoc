@@ -1,58 +1,54 @@
 ---
 sidebar: sidebar 
 permalink: learn-about-vmware-workloads.html 
-keywords: overview, concepts, features, use case, workloads, how workload factory works 
-summary: '适用于VMware的BlueXP  工作负载工厂提供了用于将数据从内部系统迁移到VMware Cloud on AWS (VMC)或Amazon EC2的工具。' 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works 
+summary: 'NetApp Workload Factory for VMware 提供了一些工具，可将您的数据从本地系统迁移到 Amazon EVS、VMware Cloud on AWS (VMC) 或 Amazon EC2。' 
 ---
-= 了解适用于VMware的BlueXP  工作负载工厂
+= 了解NetApp Workload Factory for VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-适用于VMware的BlueXP  工作负载工厂提供了用于将数据从内部系统迁移到VMware Cloud on AWS (VMC)或Amazon EC2的工具。
+NetApp Workload Factory for VMware 提供了将数据从本地系统迁移到 Amazon Elastic VMware Service (EVS)、VMware Cloud on AWS (VMC) 或 Amazon EC2 的工具。
 
 
 
-== 什么是适用于VMware的BlueXP  工作负载工厂？
+== 什么是NetApp Workload Factory for VMware？
 
-适用于VMware的BlueXP  工作负载工厂提供了一个迁移顾问、可用于分析内部vSphere环境中的当前虚拟机配置。然后、迁移顾问会生成一个计划、将建议的VM布局部署到AWS vSphere集群上的Amazon EC2或VMware Cloud、并将适用于NetApp ONTAP文件系统的自定义Amazon FSx用作外部数据存储库。
+NetApp Workload Factory for VMware 提供规划中心和迁移顾问，使您能够分析本地 vSphere 环境中的当前虚拟机配置。然后，迁移顾问会生成一个计划，将推荐的 VM 布局部署到 AWS vSphere 集群上的 Amazon EVS、Amazon EC2 或 VMware Cloud，并使用定制的Amazon FSx for NetApp ONTAP文件系统作为外部数据存储。规划中心充当 VMware 仪表板的工作负载工厂，使您能够管理已保存的 VM 库存数据集和已保存的迁移计划并提供已保存的任何迁移计划。
 
-Amazon FSx for NetApp ONTAP是一个基于NetApp的ONTAP文件系统构建的外部NFS数据存储库、可以连接到Amazon EC2实例或AWS vSphere集群上的VMware Cloud。无需添加更多主机即可增加可用存储；只需使用适用于ONTAP卷的FSx作为外部数据存储库来补充vSAN数据存储库即可。这为您提供了一个灵活的高性能虚拟化存储基础架构、该基础架构可独立于计算资源进行扩展。
+Amazon FSx for NetApp ONTAP是基于 NetApp 的ONTAP文件系统构建的外部 NFS 数据存储，可以连接到 Amazon EVS 或 Amazon EC2 实例或 VMware Cloud on AWS vSphere 集群。无需添加更多主机来增加可用存储；相反，只需使用 FSx for ONTAP卷作为外部数据存储来补充 vSAN 数据存储。这为您提供了灵活、高性能、虚拟化的存储基础架构，可独立于计算资源进行扩展。
 
-image:diagram-vmware-fsx-overview.png["显示架构的示意图。"]
-
-有关工作负载工厂的详细信息，请参见 https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["工作负载出厂概述"^]。
+有关 Workload Factory 的更多信息，请参阅 https://docs.netapp.com/us-en/workload-setup-admin/workload-factory-overview.html["工作负载工厂概述"^]。
 
 
 
-== VMware迁移顾问的工作原理
+== VMware 迁移顾问的工作原理
 
-迁移顾问可以帮助您将在任何VMware支持的数据存储库上运行的内部虚拟机(VM)及其数据迁移到Amazon EC2或VMware Cloud数据存储库、其中包括FSx for ONTAP文件系统上的补充NFS数据存储库。
-
-image:diagram-vmware-fsx-old-new.png["显示迁移后旧架构和新架构示例的示意图。"]
+迁移顾问可以帮助您将在任何 VMware 支持的数据存储上运行的本地虚拟机 (VM) 及其数据移动到 Amazon EVS、Amazon EC2 或 VMware Cloud 数据存储，其中包括 FSx for ONTAP文件系统上的补充 NFS 数据存储。
 
 请注意、您最多可以将四(4)个FSx for ONTAP卷连接到基于AWS的VMware Cloud上的一个vSphere集群。
 
 
 
-== 使用迁移顾问可以执行的操作
+== 移民顾问能为您做些什么
 
 迁移顾问提供以下功能：
 
 * 分析当前的内部VM配置
-* 确定要迁移到Amazon EC2或VMware Cloud on AWS的VM
+* 确定要迁移到 Amazon EC2、Amazon EVS 或 VMware Cloud on AWS 的虚拟机
 * 确定ONTAP卷在FSx上用作VM外部数据存储库所需的空间
 * 查看生成的报告以了解部署步骤
 * 执行实际部署
 
 
-迁移顾问支持为连接到单个FSx for ONTAP文件系统的单个Amazon EC2实例或VMware Cloud on AWS集群进行配置规划。
+迁移顾问支持针对连接到单个 FSx for ONTAP文件系统的单个 Amazon EVS 或 Amazon EC2 实例或 VMware Cloud on AWS 集群进行配置规划。
 
 
 
-== 使用迁移顾问的优势
+== 使用移民顾问的好处
 
 使用Amazon FSx for ONTAP作为外部NFS数据存储库、将当前基础架构的部分内容过渡到Amazon EC2或AWS上的VMware Cloud具有以下优势：
 
@@ -67,29 +63,43 @@ image:diagram-vmware-fsx-old-new.png["显示迁移后旧架构和新架构示例
 
 
 
-== 用于工作负载工厂的工具
+== 使用NetApp Workload Factory 的工具
 
-您可以将BlueXP  工作负载工厂与以下工具结合使用：
+您可以将NetApp Workload Factory 与以下工具一起使用：
 
-* *工作负载工厂控制台*：工作负载工厂控制台提供应用程序和项目的可视化、整体视图。
-* BlueXP  console*：BlueXP  控制台提供了混合接口体验，因此您可以将BlueXP  工作负载出厂配置与其他BlueXP  服务结合使用。
-* *问我*：使用"问我人工智能"助手提出问题并了解有关工作负载工厂的更多信息、而无需退出工作负载工厂Web UI。从工作负载出厂帮助菜单访问"询问我"。
-* *CloudShell命令行界面*：工作负载工厂包括一个CloudShell命令行界面、用于通过一个基于浏览器的命令行界面跨帐户管理和操作AWS和NetApp环境。从工作负载出厂控制台的顶部栏访问CloudShell。
-* *REST API*：使用工作负载工厂REST API部署和管理适用于ONTAP文件系统和其他AWS资源的FSx。
-* *CloudFormation*：使用AWS CloudFormation代码执行您在工作负载出厂控制台中定义的操作、以便在您的AWS帐户中对CloudFormation堆栈中的AWS和第三方资源进行建模、配置和管理。
-* *Terraform BlueXP  工作负载工厂提供程序*：使用Terraform构建和管理在工作负载工厂控制台中生成的基础架构工作流。
+* *Workload Factory 控制台*：Workload Factory 控制台提供您的应用程序和项目的可视化、整体视图。
+* * NetApp控制台*： NetApp控制台提供混合界面体验，以便您可以将 Workload Factory 与其他NetApp数据服务一起使用。
+* *问我*：使用问我 AI 助手来提问并了解有关 Workload Factory 的更多信息，而无需离开 Workload Factory 控制台。从 Workload Factory 帮助菜单访问“问我”。
+* *CloudShell CLI*：Workload Factory 包含一个 CloudShell CLI，可通过基于浏览器的单个 CLI 跨账户管理和操作 AWS 和NetApp环境。从 Workload Factory 控制台顶部栏访问 CloudShell。
+* *REST API*：使用 Workload Factory REST API 部署和管理您的 FSx for ONTAP文件系统和其他 AWS 资源。
+* *CloudFormation*：使用 AWS CloudFormation 代码执行您在 Workload Factory 控制台中定义的操作，以从您的 AWS 账户中的 CloudFormation 堆栈对 AWS 和第三方资源进行建模、配置和管理。
+* *Terraform NetApp Workload Factory 提供商*：使用 Terraform 构建和管理在 Workload Factory 控制台中生成的基础架构工作流。
 
 
 
 
 == 成本
 
-使用VMware迁移顾问无需任何费用。
+使用 Workload Factory for VMware 是免费的。
 
-您需要为根据迁移顾问的建议部署的AWS资源付费。
+您需要根据迁移顾问的建议支付所部署的 AWS 资源的费用。
 
 
 
 == 许可
 
-使用迁移顾问无需从NetApp获得特殊许可证。
+无需NetApp的特殊许可即可使用 Workload Factory for VMware。
+
+
+
+== 区域
+
+所有支持 FSx for ONTAP 的商业区域均支持 Workload Factory。 https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["查看支持的亚马逊区域。"^]
+
+以下 AWS 区域不受支持：
+
+* 中国地区
+* GovCloud（美国）区域
+* 秘密云
+* 绝密云
+

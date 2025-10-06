@@ -2,16 +2,34 @@
 sidebar: sidebar 
 permalink: whats-new.html 
 keywords: 'what"s new, features, new, release notes, enhancements, fixes' 
-summary: 了解工作负载工厂的VMware迁移顾问组件的新增功能。 
+summary: 了解 Workload Factory 的 VMware 迁移顾问组件的新功能。 
 ---
-= 适用于VMware的BlueXP  工作负载工厂新增功能
+= NetApp Workload Factory for VMware 的新功能
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
 
 
 [role="lead"]
-了解工作负载工厂的VMware迁移顾问组件的新增功能。
+了解 Workload Factory 的 VMware 迁移顾问组件的新功能。
+
+
+
+== 2025年10月5日
+
+
+
+=== BlueXP workload factory现为NetApp工作负载工厂
+
+BlueXP已重命名并重新设计，以更好地反映其在管理数据基础设施中的作用。因此， BlueXP workload factory已重命名为NetApp工作负载工厂。
+
+
+
+=== VMware 工作负载规划中心简介
+
+VMware 工作负载规划中心使您能够从一个地方查看和管理您的 VM 库存和迁移计划。您可以从不同的环境上传和保存多个 VM 清单，并开始计划将其中任何一个迁移到 AWS EC2 或 Amazon Elastic VMware 服务。您还可以创建并保存 AWS EC2 或 EVS 迁移计划。
+
+https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["探索 VMware 工作负载规划中心"]
 
 
 
@@ -31,7 +49,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manua
 
 您现在可以探索将 VMware 工作负载迁移到 Amazon Elastic VMware Service (EVS) 的潜在节省。节省计算器可让您比较使用 Amazon EVS 与Amazon FSx for NetApp ONTAP作为底层存储和不使用 Amazon FSx for NetApp ONTAP 作为底层存储的成本。当您调整环境特征时，计算器会实时显示潜在的节省。
 
-https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["探索使用BlueXP workload factory节省 Amazon Elastic VMware Service 成本的方法"]
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["探索使用BlueXP Workload Factory 节省 Amazon Elastic VMware Service 成本的方法"]
 
 
 
@@ -41,7 +59,7 @@ https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["探索
 
 === 引入对 Amazon Elastic VMWare Service 的迁移顾问支持
 
-BlueXP VMware 工作负载工厂现已支持 Amazon Elastic VMware Service。您可以使用迁移顾问快速将本地 VMware 工作负载迁移到 Amazon Elastic VMware Service，从而优化成本并更好地控制您的 VMware 环境，而无需重构或重新构建应用程序平台。
+BlueXP Workload Factory for VMware 现在支持 Amazon Elastic VMware Service。您可以使用迁移顾问将本地 VMware 工作负载快速迁移到 Amazon Elastic VMware Service，从而优化成本并更好地控制您的 VMware 环境，而无需重构或重新平台化您的应用程序。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["使用迁移顾问为 Amazon EVS 创建部署计划"]
 
@@ -53,7 +71,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manua
 
 === Amazon EC2迁移顾问改进
 
-此版本的适用于VMware的BlueXP  工作负载工厂对Amazon EC2迁移顾问体验进行了以下改进：
+此版本的BlueXP Workload Factory for VMware 对 Amazon EC2 迁移顾问体验进行了以下改进：
 
 *将NetApp数据基础架构洞察作为数据源*：现在、工作负载工厂可直接与NetApp数据基础架构洞察连接、以便在使用EC2迁移顾问数据收集器时收集VMware部署信息。
 
@@ -63,7 +81,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === 更新了权限术语
 
-工作负载工厂用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。
+Workload Factory 用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。
 
 
 
@@ -73,7 +91,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Amazon EC2迁移顾问改进
 
-此版本的适用于VMware的BlueXP  工作负载工厂对Amazon EC2迁移顾问体验进行了多项改进：
+此版本的BlueXP Workload Factory for VMware 对 Amazon EC2 迁移顾问体验进行了多项改进：
 
 * *增强的卷分配指导*：EC2迁移顾问的"分类"和"打包"步骤中的卷分配信息增强了可读性和可用性。系统会显示有关每个卷的更多有用信息、使您能够更好地识别卷并确定如何分配卷。
 * *提高了数据收集器脚本的效率*：在为小型VM部署收集数据时、EC2迁移顾问数据收集器脚本可优化CPU利用率。
@@ -89,7 +107,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Amazon EC2迁移顾问改进
 
-此版本的适用于VMware的BlueXP  工作负载工厂对Amazon EC2迁移顾问体验进行了多项改进：
+此版本的BlueXP Workload Factory for VMware 对 Amazon EC2 迁移顾问体验进行了多项改进：
 
 * *估计实例类型*：迁移顾问现在可以检查您的环境要求、并为每个VM提供估计的Amazon EC2实例类型。您可以选择在迁移顾问的范围步骤中包括每个VM的估计实例类型。
 * *推荐Amazon EBS卷的能力*：由于特定地区的特定容量或性能需求、迁移顾问现在可以建议将数据卷迁移到Amazon Elelic Block Store (EBS)、而不是Amazon FSx for NetApp ONTAP。
@@ -106,10 +124,10 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Amazon EC2迁移顾问改进
 
-此版本的适用于VMware的BlueXP  工作负载工厂对迁移顾问体验进行了多项改进：
+此版本的BlueXP Workload Factory for VMware 对迁移顾问体验进行了多项改进：
 
-* *保存或下载迁移计划*：现在可以保存或下载迁移计划，并加载迁移计划以填充迁移顾问。保存迁移计划时、该计划将与您的工作负载工厂帐户一起保存。
-* *改进的虚拟机选择*：适用于VMware的BlueXP  工作负载工厂现在支持筛选和搜索要包含在迁移部署中的虚拟机列表。
+* *保存或下载迁移计划*：您现在可以保存或下载迁移计划，并加载迁移计划以填充迁移顾问。当您保存迁移计划时，该计划将与您的 Workload Factory 帐户一起保存。
+* *改进的 VM 选择*：适用于 VMware 的BlueXP Workload Factory 现在支持过滤和搜索您想要包含在迁移部署中的 VM 列表。
 
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]
@@ -122,10 +140,10 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === Amazon EC2迁移顾问改进
 
-此版本的适用于VMware的BlueXP  工作负载工厂对迁移顾问体验进行了多项改进：
+此版本的NetApp Workload Factory for VMware 对迁移顾问体验进行了多项改进：
 
-* *数据收集*：BlueXP  Workload Factory for VMware支持在使用迁移顾问时收集特定时间段的数据。
-* *虚拟机选择*：适用于VMware的BlueXP  工作负载工厂现在支持选择要包括在迁移部署中的虚拟机。
+* *数据收集*：当您使用迁移顾问时， BlueXP Workload Factory for VMware 支持收集特定时间段的数据的功能。
+* *VM 选择*：适用于 VMware 的BlueXP Workload Factory 现在支持选择您想要包含在迁移部署中的 VM。
 * *快速与高级体验*：使用迁移顾问时，您现在可以选择使用RVtools的快速迁移体验或使用迁移顾问数据收集器的高级体验。
 
 
@@ -151,7 +169,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 === VMware迁移顾问增强功能
 
-此版本的适用于VMware的工作负载工厂提供了一些功能和稳定性增强功能、并且能够在使用VMware迁移顾问时导入和导出迁移计划。
+此版本的 VMware Workload Factory 具有功能和稳定性增强功能，以及在使用 VMware 迁移顾问时导入和导出迁移计划的功能。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.html["使用迁移顾问为Amazon EC2创建部署计划"]
 
@@ -171,6 +189,6 @@ VMware的工作负载工厂现在支持使用VMware迁移顾问迁移到Amazon E
 
 
 
-=== VMware工作负载工厂的初始版本
+=== VMware Workload Factory 的初始版本
 
 初始版本支持使用VMware迁移顾问分析内部vSphere环境中的当前虚拟机配置、并生成一个计划、以便将建议的虚拟机布局部署到VMware Cloud on AWS中、并将适用于NetApp ONTAP文件系统的自定义Amazon FSx用作外部数据存储库。

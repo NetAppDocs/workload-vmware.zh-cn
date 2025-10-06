@@ -6,10 +6,10 @@
 
 === Amazon EC2迁移顾问改进
 
-此版本的适用于VMware的BlueXP  工作负载工厂对迁移顾问体验进行了多项改进：
+此版本的NetApp Workload Factory for VMware 对迁移顾问体验进行了多项改进：
 
-* *数据收集*：BlueXP  Workload Factory for VMware支持在使用迁移顾问时收集特定时间段的数据。
-* *虚拟机选择*：适用于VMware的BlueXP  工作负载工厂现在支持选择要包括在迁移部署中的虚拟机。
+* *数据收集*：当您使用迁移顾问时， BlueXP Workload Factory for VMware 支持收集特定时间段的数据的功能。
+* *VM 选择*：适用于 VMware 的BlueXP Workload Factory 现在支持选择您想要包含在迁移部署中的 VM。
 * *快速与高级体验*：使用迁移顾问时，您现在可以选择使用RVtools的快速迁移体验或使用迁移顾问数据收集器的高级体验。
 
 

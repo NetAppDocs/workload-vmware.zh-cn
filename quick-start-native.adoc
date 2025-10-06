@@ -15,23 +15,23 @@ summary: 开始使用VMware迁移顾问、使用Amazon FSx for ONTAP作为外部
 
 开始之前，您应了解 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["操作模式"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"]登录到工作负载工厂
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"]登录工作负载工厂
 [role="quick-margin-para"]
-您需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在Workload Factory中设置一个帐户"^]使用其中一个登录 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
+你需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在 Workload Factory 上创建一个帐户"^]并使用以下任一方式登录 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 向您的帐户添加AWS凭据和权限
 [role="quick-margin-para"]
-您可以在_Basic_模式下使用工作负载工厂、而无需添加凭据即可访问AWS帐户。以_只读_或_读/写_模式将 AWS 凭证添加到工作负载工厂，可为您的工作负载工厂帐户提供创建和管理 FSx for ONTAP 文件系统以及在 Amazon EC2 中部署和管理工作负载所需的权限。
+您可以在_基本_模式下使用 Workload Factory，而无需添加凭证来访问您的 AWS 账户。以_只读_或_读/写_模式将 AWS 凭证添加到 Workload Factory，可为您的 Workload Factory 帐户提供创建和管理 FSx for ONTAP文件系统以及在 Amazon EC2 中部署和管理工作负载所需的权限。
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何添加凭据和权限"^](英文)
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"] 捕获vSphere环境中的当前虚拟机配置
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三个"]上传虚拟机清单数据
 [role="quick-margin-para"]
-在创建部署计划之前、您可以使用迁移顾问VM收集器脚本、RVTools或NetApp数据基础架构洞察捕获当前VM配置。您还可以将现有部署计划导入为模板、然后修改任何必需的属性。
+您可以使用规划中心上传有关当前 VM 环境的库存详细信息。使用数据收集器脚本、RVTools 或NetApp Data Infrastructure Insights捕获当前的 VM 配置并将数据上传到规划中心。
 
 [role="quick-margin-para"]
-link:capture-vm-configurations-native.html["了解如何捕获当前虚拟机配置"](英文)
+link:upload-vm-inventory.html["了解如何上传虚拟机清单数据"^] 。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-4.png["四个"] 使用VMware迁移顾问创建部署计划
 [role="quick-margin-para"]

@@ -1,13 +1,13 @@
 ---
 indexpage:
-  title: 适用于VMware文档的BlueXP  工作负载工厂
+  title: NetApp Workload Factory for VMware 文档
   summary: 简化从内部vSphere环境到VMware Cloud on AWS的迁移、并为ONTAP文件系统实施自定义FSx作为外部数据存储库。
   keywords: VMware, FSx, VMs, VMC, VMware Cloud on AWS, FSx for ONTAP
   lead: 简化从内部vSphere环境到VMware Cloud on AWS的迁移、并为ONTAP文件系统实施自定义FSx作为外部数据存储库。
   tiles:
   - title: 开始使用
     links:
-    - title: 了解适用于VMware的BlueXP  工作负载工厂
+    - title: 了解NetApp Workload Factory for VMware
       url: learn-about-vmware-workloads.html
     - title: 快速入门：迁移到 Amazon Elastic VMware Service
       url: quick-start-evs.html
@@ -15,26 +15,26 @@ indexpage:
       url: quick-start.html
     - title: 快速入门：迁移到Amazon EC2
       url: quick-start-native.html
+    - title: 探索 VMware 规划中心
+      url: explore-planning-center.html
   - title: 迁移到 Amazon Elastic VMware Service
     links:
     - title: 探索储蓄
       url: calculate-evs-savings.html
-    - title: 使用迁移顾问创建部署计划
+    - title: 手动创建部署计划
       url: launch-migration-advisor-evs-manual.html
+    - title: 使用迁移顾问创建部署计划
+      url: launch-migration-advisor-evs.html
     - title: 为ONTAP文件系统部署建议的FSx
       url: deploy-fsx-file-system.html
   - title: 迁移到Amazon EC2
     links:
-    - title: 捕获当前虚拟机配置
-      url: capture-vm-configurations-native.html
     - title: 使用迁移顾问创建部署计划
       url: launch-onboarding-advisor-native.html
     - title: 为ONTAP文件系统部署建议的FSx
       url: deploy-fsx-file-system.html
   - title: 迁移到基于AWS的VMware Cloud
     links:
-    - title: 捕获当前虚拟机配置
-      url: capture-vm-configurations.html
     - title: 使用迁移顾问创建部署计划
       url: launch-onboarding-advisor.html
     - title: 为ONTAP文件系统部署建议的FSx
@@ -45,9 +45,9 @@ indexpage:
       url: migrate-data.html
   - title: 博客和社区
     links:
+    - title: NetApp控制台
+      url: https://www.netapp.com/console
+    - title: NetApp数据服务
+      url: https://www.netapp.com/data-services/
     - title: NetApp 社区
-      url: https://community.netapp.com/t5/BlueXP-and-Services/ct-p/CDS
-    - title: BlueXP博客
-      url: https://bluexp.netapp.com/blog
-    - title: 云网络研讨会
-      url: https://bluexp.netapp.com/events
+      url: https://community.netapp.com/
