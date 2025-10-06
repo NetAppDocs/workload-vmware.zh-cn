@@ -15,3 +15,11 @@ BlueXP已重命名并重新设计，以更好地反映其在管理数据基础�
 VMware 工作负载规划中心使您能够从一个地方查看和管理您的 VM 库存和迁移计划。您可以从不同的环境上传和保存多个 VM 清单，并开始计划将其中任何一个迁移到 AWS EC2 或 Amazon Elastic VMware 服务。您还可以创建并保存 AWS EC2 或 EVS 迁移计划。
 
 https://docs.netapp.com/us-en/workload-vmware/explore-planning-center.html["探索 VMware 工作负载规划中心"]
+
+
+
+=== 引入对 Amazon Elastic VMWare Service 的迁移顾问支持
+
+BlueXP Workload Factory for VMware 现在允许您使用 Amazon Elastic VMware Service 迁移顾问将本地 VMware 工作负载快速迁移到 Amazon Elastic VMware Service。使用迁移顾问创建迁移计划后，该计划会自动保存在规划中心的迁移计划列表中。
+
+https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs.html["使用迁移顾问为 Amazon EVS 创建部署计划"]

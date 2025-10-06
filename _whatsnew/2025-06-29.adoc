@@ -6,6 +6,6 @@
 
 === 引入对 Amazon Elastic VMWare Service 的迁移顾问支持
 
-BlueXP Workload Factory for VMware 现在支持 Amazon Elastic VMware Service。您可以使用迁移顾问将本地 VMware 工作负载快速迁移到 Amazon Elastic VMware Service，从而优化成本并更好地控制您的 VMware 环境，而无需重构或重新平台化您的应用程序。
+BlueXP Workload Factory for VMware 现在支持 Amazon Elastic VMware Service。您可以手动将本地 VMware 工作负载迁移到 Amazon Elastic VMware Service，从而优化成本并更好地控制您的 VMware 环境，而无需重构或重新平台化您的应用程序。
 
 https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manual.html["使用迁移顾问为 Amazon EVS 创建部署计划"]
