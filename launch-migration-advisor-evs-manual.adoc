@@ -13,19 +13,20 @@ summary: 登录NetApp Workload Factory 以访问 VMware 规划中心。您可以
 [role="lead"]
 登录NetApp Workload Factory 以访问 VMware 规划中心。从那里，您可以手动创建根据您的需求定制的 Amazon EVS 部署计划或迁移计划。
 
-请注意，您必须拥有用户名和密码才能访问 Workload Factory。如果您没有访问权限，请立即创建一个帐户。查看说明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["此处"]。
-
-
-
-== 通过手动指定环境要求来创建部署计划
-
 您可以手动指定 Amazon Elastic VMware Service 中虚拟机的要求，并使用定制的 Amazon FSx for NetApp ONTAP 文件系统作为外部数据存储。
 
-.要求
+
+
+== 要求
+
+* 您必须拥有用户名和密码才能访问工作负载工厂。如果您还没有账号，请立即创建账号。请参阅说明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["此处"]。
 * 您必须拥有 Amazon Elastic VMware Service 订阅。
 
 
-.步骤
+
+
+== 步骤
+
 . 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
 . 或者，如果您从 Workload Factory 控制台访问 Workload Factory，请从 VMware 工作负载磁贴中选择 *VMware 规划中心*，然后选择 *VMware 规划中心*。显示 VMware 规划中心。
 . 选择*手动创建 EVS 计划*。
@@ -46,7 +47,10 @@ summary: 登录NetApp Workload Factory 以访问 VMware 规划中心。您可以
 +
 默认情况下，Workload Factory 将迁移计划保存到规划中心。您可以在页面顶部附近取消选择此选项。
 
-. 或者，当您对迁移计划满意时，您可以通过选择*导出计划（PDF）*将计划详细信息下载为 PDF 文档。
+. 您也可以选择将迁移计划导出为 PDF 或 CSV 文件，方法是选择页面右上角的“管理计划”，然后选择“下载报告 (.pdf)”或“下载 VM 存储部署 (.csv)”。
++
+.csv 文件会生成一张映射表，其中包含迁移计划中的所有虚拟机及其分配的存储卷。
+
 . 当您准备好配置部署计划时，选择*配置*。
 
 

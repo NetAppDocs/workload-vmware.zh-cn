@@ -19,9 +19,15 @@ summary: 开始使用 VMware 迁移顾问将您当前的基础架构迁移到 Am
 [role="quick-margin-para"]
 你需要 https://docs.netapp.com/us-en/workload-setup-admin/sign-up-saas.html["在 Workload Factory 上创建一个帐户"^]并使用以下任一方式登录 https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^]。
 
-.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"] 向您的帐户添加AWS凭据和权限
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["两个"]添加凭据和权限
 [role="quick-margin-para"]
-您可以在_基本_模式下使用 Workload Factory，而无需添加凭证来访问您的 AWS 账户。以_只读_或_读/写_模式将 AWS 凭证添加到 Workload Factory，可为您的 Workload Factory 帐户提供创建和管理 FSx for ONTAP文件系统以及在 Amazon EC2 中部署和管理工作负载所需的权限。
+选择 https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html["权限策略"]满足您的需求。
+
+[role="quick-margin-para"]
+如果您选择不授予权限，您可以开始使用 Workload Factory for Databases 来复制部分完成的代码示例。
+
+[role="quick-margin-para"]
+如果您选择授予权限，您需要…… https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["手动向帐户添加凭据"]这包括选择工作负载功能（例如数据库和人工智能），以及创建所需权限的 IAM 策略。
 
 [role="quick-margin-para"]
 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["了解如何添加凭据和权限"^](英文)
