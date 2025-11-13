@@ -13,7 +13,7 @@ summary: 开始使用 VMware 迁移顾问将您当前的基础架构迁移到 Am
 [role="lead"]
 开始使用 VMware 迁移顾问将您当前的基础架构迁移到 Amazon EVS，并使用 Amazon FSx for ONTAP 作为外部 NFS 数据存储。
 
-开始之前，您应了解 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["操作模式"^]。
+在开始之前，您应该了解： https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html [ NetApp Workload Factory的权限 ^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"]登录工作负载工厂
 [role="quick-margin-para"]

@@ -13,7 +13,7 @@ summary: 开始使用VMware迁移顾问、使用Amazon FSx for ONTAP作为外部
 [role="lead"]
 开始使用VMware迁移顾问、使用Amazon FSx for ONTAP作为外部NFS数据存储库将当前基础架构迁移到Amazon EC2。
 
-开始之前，您应了解 https://docs.netapp.com/us-en/workload-setup-admin/operational-modes.html["操作模式"^]。
+在开始之前，您应该了解： https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html [ NetApp Workload Factory的权限 ^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一个"]登录工作负载工厂
 [role="quick-margin-para"]

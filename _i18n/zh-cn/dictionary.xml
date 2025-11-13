@@ -33,9 +33,7 @@
   <block id="3f8f9b99b287380b37d3886a9f7e40f7" category="open-title">使用RVTools软件</block>
   <block id="18498b95c15ee1034dbf55a71b7c7b9d" category="paragraph">RVTools是一个Windows应用程序、可与vCenter和ESX服务器(5.x到8.0)交互、以捕获有关VMware虚拟环境的信息。它可收集有关VM、CPU、内存、磁盘、集群、 ESX主机、数据存储库等。您可以将此信息导出到一个xlsx文件、以便与迁移顾问一起使用。</block>
   <block id="344899ab535d99090285d73527e8b852" category="inline-link">了解有关RVTools的更多信息</block>
-  <block id="707b583376def9edad1fc8a7199124ea" category="paragraph"><block ref="707b583376def9edad1fc8a7199124ea" category="inline-link-rx"></block></block>
   <block id="5525d9548d578c70365c720a2035b2fa" category="inline-link">RVTools网站</block>
-  <block id="13613d07869f39104d3c7dc70d0a584e" category="list-text">从下载并安装RVTools 4.4.2或更高版本<block ref="c7c9965d016bc084e3044c04ae01ffcd" category="inline-link-rx"></block></block>
   <block id="93768280696f91c787d919221b25e927" category="list-text">启动RVTools并登录到目标vCenter Server。</block>
   <block id="1121913c71bf9c4dfefecfd1802408c4" category="paragraph">此操作将捕获有关此vCenter Server的信息。</block>
   <block id="418e7e2732f5b077d0a55b9086325810" category="list-text">将VMware信息导出到xlsx或xls文件。</block>
@@ -250,7 +248,6 @@
   <block id="cc788b7e72b2a734dd0985bd1e0e9fe3" category="inline-link">Amazon FSX for NetApp ONTAP 文档</block>
   <block id="0eb8b604056cff3e56816d6bff3e3b57" category="paragraph">有关管理FSx for ONTAP文件系统的信息、请转到<block ref="fbab171416a38225bcf6963b32f6d497" category="inline-link-rx"></block> 以查看可使用的备份和保护功能。</block>
   <block id="b7c19b7e4e8df7fa64586112497c63f5" category="summary">开始使用VMware迁移顾问、使用Amazon FSx for ONTAP作为外部NFS数据存储库将当前基础架构迁移到AWS上的VMware Cloud。</block>
-  <block id="ba8b072b83c1e6db56e40bf48ddb0871" category="inline-link">操作模式</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一个</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">两个</block>
   <block id="fb391f4cf6483b8b419032dc188bd9d8" category="inline-link">了解如何添加凭据和权限</block>
@@ -316,7 +313,6 @@
   <block id="a268e8a21767df1e979dcf4c47b6f464" category="doc">迁移到Amazon EC2</block>
   <block id="d33a9cde7de06ccdf8aba953dd2aeb0d" category="list-text">运行下载的数据收集器脚本、并为"Daily (每日)"或"Shourly (每小时)"虚拟机统计信息指定数据收集选项。</block>
   <block id="8109466383788459676a9b2ec067ebe7" category="paragraph">该脚本会输出一个压缩文件、其中的时间戳采用当前工作目录中的名称。此.zip文件包含所有虚拟机及其属性的列表、以及这些虚拟机的IOPS和吞吐量数据。</block>
-  <block id="10ffe7f124f69e3702ce69e56c43925c" category="paragraph"><block ref="cd808e8fbbf761268520721bfefac00c" category="inline-link-rx"></block>有关详细信息、请参见中的"命令行参数"一章。</block>
   <block id="bf9f27fc21322ff6302a870d86e2e722" category="inline-link-macro">使用迁移顾问创建Amazon EC2部署计划</block>
   <block id="414196819b55791be7e7314c3ef3e1cb" category="paragraph"><block ref="256f57bc6446332fd4641ea86650235a" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="f04f84e2375dd70545e2146f2d203aa3" category="paragraph">此时将显示VMware迁移顾问主页。</block>
@@ -358,7 +354,6 @@
   <block id="dc9ea462821ad27445bd89faaafc765c" category="paragraph">如果您不确定选择哪种比率，请选择*帮我决定*。此时将显示_Data精简比率助手_对话框。请选择适用于您的VM清单和存储空间的任何陈述。助理会建议适当的数据精简率。选择*应用*以使用建议的比率。</block>
   <block id="c9b4182f157d4d581536f53df8cd512d" category="paragraph">VMware的工作负载工厂现在支持使用VMware迁移顾问迁移到Amazon EC2。</block>
   <block id="dcafe9cce796ce855e87b270f0a5af59" category="inline-link">控制台体验</block>
-  <block id="80d4b078f6c58ce0995857130402115f" category="paragraph">开始之前，您应了解<block ref="34271bc3c8a46444362a7c5af7a1adeb" category="inline-link-rx"></block>。</block>
   <block id="c01367c7ec78f01defe37cab59b14851" category="paragraph"><block ref="d162e97fcdf643050da77419fb18d12e" category="inline-link-rx"></block>(英文)</block>
   <block id="65b67cfacaf9f942b7e72202ad4253cf" category="paragraph"><block ref="f440c867abbb2e895fda5fc4c7c4b4d3" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="99518c9c883f7beb3f0b6f82063520fd" category="inline-link-macro">了解如何连接FSx for ONTAP文件系统</block>
@@ -761,4 +756,15 @@
   <block id="ce8e7e98b5597e78e8fd7d6bc94729cb" category="inline-link">手动向帐户添加凭据</block>
   <block id="89de75212fc10daeec1259e132f3752a" category="paragraph">如果您选择授予权限，您需要……<block ref="869f3c251b5d8f71098ec6e85e90e6d1" category="inline-link-rx"></block>这包括选择工作负载功能（例如数据库和人工智能），以及创建所需权限的 IAM 策略。</block>
   <block id="78a1fd3770ad9cba75be7a432485a77e" category="section-title">2025年11月2日</block>
+  <block id="50d2e9de63b2a2c16916c2f1b6818a38" category="paragraph"><block ref="50d2e9de63b2a2c16916c2f1b6818a38" category="inline-link-rx"></block></block>
+  <block id="a64a69c3508f33cfd62281ba53751057" category="list-text">从以下位置下载并安装 RVTools 4.4.2 或更高版本：<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
+  <block id="862ba35dfdf3a7836d71ed579dfca3ec" category="paragraph">请参阅“命令行参数”章节。<block ref="cb13b358aa71a504b38a0472274f8ec0" category="inline-link-rx"></block> 详情请见下文。</block>
+  <block id="d6add28cedc07b8a80ae0bda37f86523" category="list-text">下载并安装 RVTools 4.4.2 或更高版本<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
+  <block id="33daaeb5c5025e30dc44f9f5bb7098a6" category="inline-link">资源部分的 RVTools 文档</block>
+  <block id="bc7e9c87828b6c8d46b8ee715cdad433" category="paragraph">请参阅“命令行参数”章节。<block ref="cba36d23348879ff4ac7b19a18786876" category="inline-link-rx"></block> 详情请见下文。</block>
+  <block id="c6e53b973f12d3e5f6edcac94bd4cafc" category="paragraph">在开始之前，您应该了解： https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.html [ NetApp Workload Factory的权限 ^]。</block>
+  <block id="ed642dbc1cfaad7c138d0206f75e0100" category="paragraph">在<block ref="bf6bdc955de5a25fe27ac07cc3dd7f22" category="inline-link-rx"></block></block>
+  <block id="3ef26b6ecf935dd06dce4ca8f1b4e86c" category="list-text">从以下位置下载并安装 RVTools 4.4.2 或更高版本：<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
+  <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">RVTools 文档位于“资源”部分</block>
+  <block id="aab95159d263780315dd964c73eaae67" category="paragraph">请参阅“命令行参数”章节。<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> 详情请见下文。</block>
 </blocks>
