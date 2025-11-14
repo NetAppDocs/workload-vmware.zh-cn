@@ -13,11 +13,7 @@ summary: 登录NetApp Workload Factory 以访问 VMware 迁移顾问。您将按
 [role="lead"]
 登录NetApp Workload Factory 以访问 VMware 迁移顾问。您将按照向导中的步骤创建根据您的需要定制的部署计划或迁移计划。
 
-迁移到VMware Cloud时、您可以使用迁移顾问为以下情形创建部署计划：
-
-* <<基于内部vSphere环境创建部署计划,将当前的内部vSphere环境迁移到VMware云。>>
-* <<Create a deployment plan based on an existing plan,根据具有类似要求的现有部署计划在云中部署系统。>>
-
+迁移到 VMware 云时，您可以使用迁移顾问将您当前的本地 vSphere 环境迁移到 VMware 云。
 
 请注意，您必须拥有用户名和密码才能访问 Workload Factory。如果您没有访问权限，请立即创建一个帐户。查看说明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["此处"]。
 

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="495f22292688acea8c30ad6ad16b09d3" category="summary">您可以使用迁移顾问VM收集器脚本或RVTools捕获当前VM配置。我们建议您使用迁移顾问VM收集器脚本、因为它会收集VM配置和性能数据、以便制定最准确的计划。</block>
-  <block id="29f021e47d424b1dde8f4e01c9c530a8" category="inline-link-macro">了解如何使用现有计划构建新计划</block>
-  <block id="b16e57a351e118b35fdca27cf5d83661" category="paragraph">如果您计划根据之前在本地保存的现有部署计划部署新系统、则可以跳过此步骤并选择现有部署计划。<block ref="d2cbff8d3a997fc87993c98dd8782aa2" category="inline-link-macro-rx"></block>(英文)</block>
   <block id="c423127be094663f098066c3efa8a37a" category="open-title">使用迁移顾问VM收集器脚本</block>
   <block id="e7bc9976408bfbd315fb5cead8d7c4e2" category="paragraph">NetApp迁移顾问VM收集器脚本从vCenter收集VM配置信息、与RVTools收集的信息类似、但是、它会捕获当前VM性能数据、以提供实际读写IOPS和吞吐量统计信息。</block>
   <block id="008d8f4c73b65286fe403c16e1624b81" category="paragraph">您需要启动迁移顾问才能从代码框窗口复制迁移顾问VM收集器脚本。</block>
@@ -154,8 +152,6 @@
   <block id="bb6d5d351525342dd6b3cf4d15b6f298" category="list-text">*关闭案例*：提供关闭案例的详细原因，然后选择*关闭案例*。</block>
   <block id="e93217b2f709a398ce3c0fb753beb05f" category="inline-image-macro">屏幕截图、显示在表的最后一列中选择菜单后可以执行的操作。</block>
   <block id="6f7cf78e14aa346236a87d9541221fb2" category="paragraph"><block ref="6f7cf78e14aa346236a87d9541221fb2" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="28a3e421e42b408e3e4ff1bca62ee052" category="inline-xref">根据具有类似要求的现有部署计划在云中部署系统。</block>
-  <block id="c31c21e843fdb59a8add150356c11304" category="list-text"><block ref="5fa6f23430006bdd76a7952ab9b38e33" category="inline-xref-macro-rx"></block></block>
   <block id="6c92285fa6d3e827b198d120ea3ac674" category="inline-link">此处</block>
   <block id="8209a613eadf680eb0da074479c79a0b" category="section-title">基于内部vSphere环境创建部署计划</block>
   <block id="c9ff8945d5f4f913ea03f4ded22549da" category="paragraph">您可以将内部vSphere环境中的当前虚拟机配置迁移到VMware Cloud on AWS中的虚拟机、并将适用于NetApp ONTAP文件系统的自定义Amazon FSx用作外部数据存储库。</block>
@@ -327,9 +323,6 @@
   <block id="905bff561253ba917bae9754d8ea5aa3" category="paragraph">请注意、如果选择的数量小于20%、则无法创建卷快照来进行保护和长期备份。</block>
   <block id="695c53d6a8635c5bd280e1390644dcd5" category="list-text">*VM快照保护*：启用此选项可使用快照保护VM。</block>
   <block id="80a8fb685950a12df8093b0708b54241" category="paragraph">页面顶部介绍了所有已部署VM和FSx for ONTAP文件系统的每月成本。您可以展开每个部分以查看"针对ONTAP文件系统配置的建议Amazon FSx "、"估计成本细分"、"卷配置"、"规模估算假设"和技术"免责声明"的详细信息。</block>
-  <block id="be0af0f3e1f270dc982344a36c5f734f" category="paragraph">迁移到VMware Cloud时、您可以使用迁移顾问为以下情形创建部署计划：</block>
-  <block id="dafb3c70bc12caaeab402760a87e98d9" category="inline-xref">将当前的内部vSphere环境迁移到VMware云。</block>
-  <block id="59bf0f7e79d795451ad94f36b9896e02" category="list-text"><block ref="d7d9086f96876c516cd0685f13fc1fe9" category="inline-xref-macro-rx"></block></block>
   <block id="547bc0b99ec96bc4efdb00bc0ff7eccd" category="list-text">*平均数据精简率*：从三个常见数据精简选择值中进行选择。选择"1：1 -无缩减"、"1：1.25 - 20%缩减"或"1：1.5 - 33%缩减"。</block>
   <block id="9b33daba55511d7238a85d7736fbd98f" category="list-text">*vSAN容错*：选择VM所需的容错级别。您可以选择"Auto"(自动)(建议选择)、也可以从多种RAID级别中进行选择。</block>
   <block id="794575b7b1daf584d278fad81412fd2b" category="paragraph">使用Amazon FSx for ONTAP作为外部NFS数据存储库、将当前基础架构的部分内容过渡到Amazon EC2或AWS上的VMware Cloud具有以下优势：</block>
@@ -767,4 +760,5 @@
   <block id="3ef26b6ecf935dd06dce4ca8f1b4e86c" category="list-text">从以下位置下载并安装 RVTools 4.4.2 或更高版本：<block ref="549b9bee8bb8949ccc74a6c46c4c0a8d" category="inline-link-rx"></block></block>
   <block id="3863e26226a4a1c8c510cbf42f224905" category="inline-link">RVTools 文档位于“资源”部分</block>
   <block id="aab95159d263780315dd964c73eaae67" category="paragraph">请参阅“命令行参数”章节。<block ref="bf8d7f7ef3081abb6d102edd73562460" category="inline-link-rx"></block> 详情请见下文。</block>
+  <block id="1e884770040a1369dfb00ff9fba06330" category="paragraph">迁移到 VMware 云时，您可以使用迁移顾问将您当前的本地 vSphere 环境迁移到 VMware 云。</block>
 </blocks>
