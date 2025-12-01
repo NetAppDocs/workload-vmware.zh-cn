@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: calculate-evs-savings.html 
-keywords: vm workloads, deploy fsx, deploy storage for vms, evs, savings, calculate, tco 
+keywords: vm workloads, deploy fsx, deploy storage for vms, evs, savings, calculate, tco, regions 
 summary: 计算将 Amazon EVS 与 FSx for ONTAP结合使用可以节省多少。 
 ---
 = 探索使用NetApp Workload Factory 节省 Amazon Elastic VMware Service 成本的方法
@@ -28,19 +28,20 @@ NOTE: 在继续之前，请查看储蓄计算器底部的免责声明，以了�
 . 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
 . 从 VMware 工作负载图块中，选择 *探索节省*，然后选择 *Amazon Elastic VMware Service (EVS)*。显示储蓄计算器。
 +
-*环境偏好设置*窗格提供了滑块，您可以根据环境需求进行调整。
+在“环境首选项”面板中，您可以选择 EVS 部署区域，并相应地调整 TCO 和节省预测。
 
+. 从“*区域*”下拉列表中，选择 EVS 部署区域以计算节省金额。
 . 根据需要调整以下滑块以查看您所选值的实时节省计算。如果使用键盘，您可以使用箭头键进行微调：
 +
-.. *所需物理 CPU（数量）*
-.. *所需物理内存 (GiB)*
-.. *所需虚拟机存储 (TiB)*
-.. *EVS 计费计划*
+** *所需物理 CPU（数量）*
+** *所需物理内存 (GiB)*
+** *所需虚拟机存储 (TiB)*
 
 
+. 在“EVS计费方案”下，选择您正在使用的方案。
 . 执行以下操作之一：
 +
-** 使用迁移顾问link:launch-migration-advisor-evs-manual.html["创建部署计划"]对于 Amazon EVS 环境，选择*创建详细评估*。
+** 使用迁移顾问 link:launch-migration-advisor-evs-manual.html["创建部署计划"] 对于 Amazon EVS 环境，请选择“规划 EVS 迁移”。
 ** 选择“*关闭*”以关闭 TCO 计算器。
 
 

@@ -1,0 +1,13 @@
+= 计算迁移到 Amazon Elastic VMware Service 为特定区域节省的成本
+:allow-uri-read: 
+
+
+
+
+=== 计算迁移到 Amazon Elastic VMware Service 为特定区域节省的成本
+
+现在，您可以探索不同云迁移部署选项的价值，优化解决方案评估方面的投入，并深入了解有可能在云端带来价值和节省的解决方案。
+
+您还可以查看使用 FSx for ONTAP进行 EVS 部署可以节省的 vCPU 核心数。
+
+https://docs.netapp.com/us-en/workload-vmware/calculate-evs-savings.html["探索使用NetApp Workload Factory 节省 Amazon Elastic VMware Service 成本的方法"]
