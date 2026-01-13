@@ -26,7 +26,11 @@ NOTE: 在继续之前，请查看储蓄计算器底部的免责声明，以了�
 
 .步骤
 . 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
-. 从 VMware 工作负载图块中，选择 *探索节省*，然后选择 *Amazon Elastic VMware Service (EVS)*。显示储蓄计算器。
+. 选择菜单 image:workloads-menu-icon.png["汉堡菜单图标用于导航至存储、EDA、AI、数据库、VMware 和管理等工作负载。"] 然后选择 *VMware*。
++
+显示规划中心。
+
+. 从 VMware 菜单中，选择“探索节省”。储蓄计算器已显示。
 +
 在“环境首选项”面板中，您可以选择 EVS 部署区域，并相应地调整 TCO 和节省预测。
 

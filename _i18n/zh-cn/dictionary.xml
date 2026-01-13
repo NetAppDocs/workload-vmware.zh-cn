@@ -378,7 +378,6 @@
   <block id="694a4615408e2c20273a3b2eddddc05f" category="list-text">在*范围*页面上、从列表中选择要包含在AWS迁移中的VM。您可以按每个VM的电源状态以及VM所在的数据中心和集群筛选此列表。</block>
   <block id="365d382b2d9ecca9b0d40171c69b38ff" category="list-text">执行以下操作之一：</block>
   <block id="b5cef683aab00353096b98823a237e69" category="section-title">2024年9月1日</block>
-  <block id="1d9b4d532dc0a6a0e4f5f8e48c2bf2fc" category="list-text">从VMware Workloads (VMware工作负载)磁贴中、选择*评估和计划*、然后选择*迁移到VMware Cloud on AWS*。</block>
   <block id="3d749d00ccdbb179e634ecc56aff4377" category="list-text">运行已下载的数据收集器脚本、并为"ourly"或"Daily"虚拟机统计信息指定数据收集选项。</block>
   <block id="b2d8e0c32623281035bb9ce3ea340526" category="list-text">*astHour *以20秒的间隔收集过去1小时的IOPS和吞吐量数据。</block>
   <block id="c3aef4fe00d86c06f8e8b666bd7c9f02" category="list-text">*astday*以5分钟为间隔收集过去24小时的IOPS和吞吐量数据。</block>
@@ -467,7 +466,6 @@
   <block id="b23b05aa1d44c04b2da76aa4c7408d6c" category="section-title">探索 EVS 环境的节省</block>
   <block id="15783568389e909d8a2f1f68183d26bb" category="paragraph">按照以下步骤探索计划迁移到 Amazon EVS 环境的潜在节省。</block>
   <block id="37ef970024a5557ba41801e6f2130fd9" category="admonition">在继续之前，请查看储蓄计算器底部的免责声明，以了解有关如何计算价格估算的更多信息。</block>
-  <block id="1811dba1a30bbfb16d7bd36ec7e8759c" category="list-text">从 VMware 工作负载图块中，选择 *探索节省*，然后选择 *Amazon Elastic VMware Service (EVS)*。显示储蓄计算器。</block>
   <block id="a48f1fc19140e11332765f3ad9d224e1" category="list-text">根据需要调整以下滑块以查看您所选值的实时节省计算。如果使用键盘，您可以使用箭头键进行微调：</block>
   <block id="b17baab6ba72f6d1c79c0b2294137330" category="list-text">*所需物理 CPU（数量）*</block>
   <block id="f1696c7a8437d9eca6a19bba82e206b9" category="list-text">*所需物理内存 (GiB)*</block>
@@ -502,8 +500,6 @@
   <block id="81ee9955f68100a5e460b3f794e65e9b" category="paragraph"><block ref="81ee9955f68100a5e460b3f794e65e9b" category="inline-link-rx"></block></block>
   <block id="122a56eb4649431a7f2dbb8886f047cc" category="doc">探索使用NetApp Workload Factory 节省 Amazon Elastic VMware Service 成本的方法</block>
   <block id="d516e280a366ca18651acbc6e4772bf0" category="list-text">使用以下方式之一登录 Workload Factory<block ref="17b71e2884d56fdbadfe752689dbd4d6" category="inline-link-rx"></block> 。</block>
-  <block id="a3f54610cbcda64610ceaeba76793123" category="list-text">从 VMware 工作负载图块中，选择 *VMware 规划中心*。</block>
-  <block id="2ee908dfa7d26403e44e0c3c2ce404f0" category="paragraph">从规划中心，您可以上传您的虚拟机库存数据，查看以前的库存数据上传，并使用任何虚拟机库存数据集规划迁移。然后选择*迁移到 AWS 本机计算*。将显示 VMware 迁移顾问启动画面。</block>
   <block id="d5db9fed5445fd6da0101158bde40fad" category="list-text">保存此令牌以准备与 Workload Factory 迁移顾问一起使用。</block>
   <block id="c450ceba09f988891c5496ca97845c53" category="summary">在您验证推荐的 FSx for ONTAP文件系统（或在某些情况下的文件系统）满足您的确切要求后，您可以使用 Workload Factory 在您的 AWS 环境中部署该系统。</block>
   <block id="5619c23907d6c8e136428b1ffb2d7cbd" category="paragraph">在您验证推荐的 FSx for ONTAP文件系统（或在某些情况下为多个文件系统）满足您的确切要求后，您可以使用 Workload Factory 在您的 AWS 环境中部署该系统。</block>
@@ -523,7 +519,6 @@
   <block id="5aee541b6cca4e5c8849f06d0b79da2d" category="paragraph">当您准备好使用 Workload Factory 探索迁移到 Amazon AWS 环境的选项时，您可以上传 VM 库存数据。参考<block ref="31e8e3bc37bd2e1bade95d88393c52bb" category="inline-link-macro-rx"></block>以获取说明。</block>
   <block id="4cfbd8d29274bc983e664e06493a4303" category="section-title">重命名数据集</block>
   <block id="0705a0d205a3ce08fe1389b4cf5d5aba" category="paragraph">您可以更改已保存数据集的名称。</block>
-  <block id="7fd30ff482388995a8513cf146671f4e" category="list-text">从 VMware 工作负载图块中，选择 *VMware 规划中心*。出现规划中心。</block>
   <block id="110fd890f0f123db41f3cef28e294e4d" category="list-text">选择要重命名的数据集的操作菜单（...），然后选择*重命名*。</block>
   <block id="2aa2935d11befe5eb053377a67c05f8f" category="list-text">输入数据集的新名称并选择*保存*。</block>
   <block id="58aa021adf712dc0e2813bcdcba181f3" category="section-title">删除数据集</block>
@@ -533,7 +528,6 @@
   <block id="f80ba210e2b7f5a6a678422254f971c2" category="section-title">管理迁移计划</block>
   <block id="35114aeb2258e143dcf714ece6d9d294" category="paragraph">使用迁移中心创建和管理迁移计划。</block>
   <block id="3659e24395e47e249a7cb0babacdce89" category="section-title">制定迁移计划</block>
-  <block id="d739eb8fed40a1b32724c4bd454b0f7b" category="list-text">选择*迁移计划*菜单。</block>
   <block id="956d376b583f5687a7637d9906bf6a8a" category="list-text">选择您要配置的迁移计划的操作菜单 (...)，然后选择 *配置*。</block>
   <block id="5a71691c5600510f5a4512966f318d3b" category="list-text">根据迁移计划，参考以下说明部署文件系统：</block>
   <block id="a4534545db06dd96615fb42a8dcdf091" category="inline-link-macro">为 Amazon VMware Cloud 计划部署文件系统</block>
@@ -544,7 +538,6 @@
   <block id="7e526b4bf6969bafd6a4c35e8b1f6858" category="list-text"><block ref="7e526b4bf6969bafd6a4c35e8b1f6858" category="inline-link-macro-rx"></block></block>
   <block id="47642a7e3c3b5c81c9ae2a3ea6b5b670" category="section-title">编辑迁移计划的注释</block>
   <block id="b8fcf4bb479081f2ff9078fded9fcbba" category="paragraph">如果您需要更改迁移计划的注释详细信息，请在规划中心内编辑注释。</block>
-  <block id="ed977dfdfe1506958cfaf0814d2d88aa" category="list-text">选择*迁移计划*。</block>
   <block id="85ff4660d4c9887c8c3642f5b88f5c0f" category="list-text">选择要编辑的迁移计划的操作菜单 (...)，然后选择*编辑注释*。</block>
   <block id="ffba1532f20138af6f125ed0e7922f0c" category="list-text">输入评论并选择*保存*。</block>
   <block id="80150f821562b98f3c468bc4b96f7cfc" category="section-title">删除迁移计划</block>
@@ -571,7 +564,6 @@
   <block id="47940e0522122bf1e695d6ef8be611b4" category="doc">手动创建 Amazon EVS 的部署计划</block>
   <block id="974141ff0d1eb54059bc869fa1e21956" category="paragraph">登录NetApp Workload Factory 以访问 VMware 规划中心。从那里，您可以手动创建根据您的需求定制的 Amazon EVS 部署计划或迁移计划。</block>
   <block id="aa852edb1debe256686d19ef81384df5" category="paragraph">请注意，您必须拥有用户名和密码才能访问 Workload Factory。如果您没有访问权限，请立即创建一个帐户。查看说明<block ref="8d9a8b8727a696c09218527f7717c32e" category="inline-link-rx"></block>。</block>
-  <block id="16c4fea5db1b123ee73083a03e23c825" category="list-text">或者，如果您从 Workload Factory 控制台访问 Workload Factory，请从 VMware 工作负载磁贴中选择 *VMware 规划中心*，然后选择 *VMware 规划中心*。显示 VMware 规划中心。</block>
   <block id="3a24ead84cf153dcdbed17a6f2a5453f" category="list-text">选择*手动创建 EVS 计划*。</block>
   <block id="d81d55a8a22e2c2e3489e48eb0ed356b" category="list-text">准备就绪后，选择*审查计划*来审查迁移计划。</block>
   <block id="09092a8424b4b288607f4a8069cab241" category="paragraph">默认情况下，Workload Factory 将迁移计划保存到规划中心。您可以在页面顶部附近取消选择此选项。</block>
@@ -674,7 +666,6 @@
   <block id="01e556e9ed381ddad48f5f248ea8c853" category="summary">您可以使用规划中心上传有关当前 VMware 环境的信息。</block>
   <block id="549db19de828407c882fab2f54c0d91b" category="doc">将虚拟机库存数据上传到NetApp Workload Factory</block>
   <block id="549d0e83e0f77a058ecb115d751ef72a" category="paragraph">在创建迁移计划之前，您需要上传虚拟机库存数据。</block>
-  <block id="d1b898a05a6055416cc6065195fac618" category="paragraph">从规划中心，您可以上传虚拟机库存数据，查看以前的库存数据上传，并使用任何虚拟机库存数据集规划迁移。</block>
   <block id="6c2c52acb8ece2370c8022ea7c978cb0" category="list-text">选择*上传虚拟机清单*。</block>
   <block id="d3157fb0911e0c33c9adcedf0e1598ec" category="list-text">选择要使用的数据收集方法：</block>
   <block id="56a20a27e57943bc4d91537b0e964977" category="list-text">选择 *RVTools* 图块，然后选择 *Next*。</block>
@@ -770,4 +761,11 @@
   <block id="5e3b7f958129022f75fe2931c55615b2" category="doc">问我关于人工智能助手首页集成的问题</block>
   <block id="65bcc541760e8f25e0281edbfdfbf7f3" category="paragraph">Workload Factory 控制台主页嵌入了 Ask me AI 助手，使您可以询问有关您自己的存储环境的问题，直接从您的环境中获取个性化见解，并参考以前的对话。您可以与“问我”进行交互，以了解您的工作负载、解决问题并了解更多关于工作负载工厂的信息——所有这些都无需离开控制台。</block>
   <block id="334f5b13a66630c66877aaf36ce24673" category="section-title">2026年1月4日</block>
+  <block id="342a19841e494c61bf9c06a5879eaffa" category="inline-image-macro">汉堡菜单图标用于导航至存储、EDA、AI、数据库、VMware 和管理等工作负载。</block>
+  <block id="daba095d05b7fd9d182dec54a6d16128" category="list-text">选择菜单 <block ref="d1917ed039a7bd34b3d1373e5ffc5ece" category="inline-image-macro-rx" type="image"></block> 然后选择 *VMware*。</block>
+  <block id="68cd9b93debb6e340198a3ce932bf558" category="list-text">从 VMware 菜单中，选择“探索节省”。储蓄计算器已显示。</block>
+  <block id="436af711d4993660c5c38d9cf698cc6e" category="paragraph">规划中心已显示。在规划中心，您可以上传虚拟机清单数据，查看之前的清单数据上传记录，并使用任何虚拟机清单数据集规划迁移，然后选择“迁移到 AWS 原生计算”。显示 VMware 迁移顾问启动画面。</block>
+  <block id="45f41cadcd45c9728fa28d6a1cb8d206" category="list-text">从 VMware 菜单中选择“评估和规划”，然后选择“迁移到 VMware Cloud on AWS”。</block>
+  <block id="9af7ccdef2ffa0cddc3f29f9b918947c" category="list-text">选择“开始！”。您可以通过选中复选框来选择不再显示此页面。</block>
+  <block id="034ce347094f8e8ed94fd4499edd6a02" category="paragraph">规划中心已显示。在规划中心，您可以上传虚拟机清单数据，查看以前的清单数据上传，并使用任何虚拟机清单数据集规划迁移。</block>
 </blocks>
