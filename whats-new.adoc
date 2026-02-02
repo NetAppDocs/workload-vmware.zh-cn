@@ -15,6 +15,26 @@ summary: 了解 Workload Factory 的 VMware 迁移顾问组件的新功能。
 
 
 
+== 2026 年 2 月 1 日
+
+
+
+=== Amazon Elastic VMware Service 的精心架构分析
+
+Workload Factory 现在为您的 Amazon Elastic VMware Service (EVS) 环境提供自动化的精心设计的分析。每日扫描可识别配置错位，并提供详细的补救建议，以帮助您保持最佳运营、安全性和成本效益。
+
+使用 AWS API 执行扫描，无需 vSphere 凭据或 vCenter 连接。结果可在 EVS 环境详细信息中的新 *Well-architected status* 选项卡中查看。
+
+此版本包括以下方面的见解：
+
+* *实例停止/终止保护状态*：标识没有 EC2 停止或终止保护的 EVS 节点。从 EC2 控制台停止或终止 EVS 节点可能会导致虚拟机数据不可用或数据丢失。
+* *群集节点分区放置对齐*：检测分区不对齐，如果分区在 AWS 可用区内发生故障，可能会导致严重的处理功率损失或停机。每个洞察都包括严重程度、受影响资源信息的详细调查结果以及基于 AWS 最佳实践的分步补救程序。
+
+
+link:view-evs-well-architected.html["实施精心设计的配置"]
+
+
+
 == 2026年1月4日
 
 

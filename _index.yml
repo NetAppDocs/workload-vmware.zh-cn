@@ -43,6 +43,12 @@ indexpage:
       url: connect-sddc-to-fsx.html
     - title: 将数据迁移到新基础架构
       url: migrate-data.html
+  - title: 管理和监控
+    links:
+    - title: EVS 配置的配置分析
+      url: configuration-analysis.html
+    - title: 实施精心设计的 EVS 配置
+      url: view-evs-well-architected.html
   - title: 博客和社区
     links:
     - title: NetApp控制台

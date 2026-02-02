@@ -78,7 +78,13 @@ Amazon FSx for NetApp ONTAP是基于 NetApp 的ONTAP文件系统构建的外部 
 
 
 
-== 成本
+== 针对 EVS 环境的精心设计分析
+
+"良好架构"选项卡提供 Amazon Elastic VMware Service (EVS) 环境的自动化日常分析，以确保与 AWS 和 NetApp 最佳实践保持一致。该选项卡可识别配置问题并提供详细的补救指导，以帮助您保持最佳运营、安全性和成本效益。
+
+自动扫描使用 AWS API 执行，不需要 vSphere 凭据。调查结果按配置区域组织，每个调查结果包括状态、严重程度级别、受影响的资源详细信息和分步补救程序。
+
+link:view-evs-well-architected.html["在 Workload Factory 中实施良好架构的 EVS 配置"].== 成本
 
 使用 Workload Factory for VMware 是免费的。
 

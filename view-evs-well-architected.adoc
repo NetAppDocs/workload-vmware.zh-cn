@@ -1,0 +1,210 @@
+---
+sidebar: sidebar 
+permalink: view-evs-well-architected.html 
+keywords: evs, well-architected, wad, best practices, recommendations, security, resiliency 
+summary: 在 Workload Factory 中查看 EVS 配置的良好架构状态，并遵循基于 AWS 和 NetApp 最佳实践的补救指导。 
+---
+= 实施精心设计的 EVS 配置
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用 Workload Factory 配置分析来查看您的 Amazon Elastic VMware Service (EVS) 配置的良好架构状态，并修复影响可靠性、安全性和成本的问题。
+
+
+
+== 关于此任务
+
+使用 AWS API 对所有发现的 EVS 环境进行自动每日扫描，分析您的 EVS 配置并识别可能影响可用性、弹性、安全性或成本优化的潜在问题。调查结果按配置区域进行组织，每个调查结果包括状态、严重程度级别、受影响的资源详细信息和分步补救程序。
+
+主要功能包括：
+
+* *自动每日扫描*：所有发现的 EVS 环境每天自动扫描一次，以确保见解保持最新。
+* *基于 AWS API 的扫描*：扫描使用 AWS API，无需 vSphere 凭据或与您的 vCenter 的连接。
+* *问题解决的详细指南*：每个已识别的问题都包含明确的解释、严重程度和分步解决程序。
+* *仅查看见解*：提供详细的调查结果和建议，无自动问题解决选项。
+
+
+
+
+=== 了解架构完善的洞察
+
+Well-architected 选项卡显示以下内容：
+
+* *配置名称*：正在评估的配置区域。
+* *Tags*：表明影响领域的标签（例如 Availability、Resiliency、Security）。
+* *状态*：要么是 "Optimized"（未发现问题），要么是 "Not optimized"（发现问题）。
+* *严重程度*：发现的重要性级别（例如，Warning）。
+* *资源类型*：正在评估的 AWS 资源类型。
+* *受影响的资源数量*：受此问题影响的资源数量。
+
+
+
+
+=== 扫描频率
+
+对于所有发现的 EVS 配置，都会自动执行精心设计的扫描。有关扫描计划的关键详细信息：
+
+* 每个 EVS 配置每天进行一次扫描。
+* 不同配置的扫描可以在不同的时间进行。
+* 如果对某个配置的扫描失败，仍将尝试扫描同一帐户中的其他配置。
+* Well-architected 状态选项卡上的时间戳卡显示当前配置的最后一次扫描完成的时间。
+
+
+
+NOTE: 当前不支持按需执行精心设计的扫描。所有扫描均按每日计划自动执行。
+
+
+
+== 开始之前
+
+* 对于 VMware 工作负载，您必须具有 https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["已添加 AWS 凭据"^]_View, planning, and analysis_ 权限。
+* 您的 AWS 帐户中必须至少有一个已发现的 Amazon Elastic VMware Service 环境。
+
+
+
+
+== 访问 well-architected 状态选项卡
+
+.步骤
+. 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 选择菜单 image:workloads-menu-icon.png["汉堡菜单图标用于导航至存储、EDA、AI、数据库、VMware 和管理等工作负载。"] 然后选择 *VMware*。
++
+显示规划中心。
+
+. 在 VMware 菜单中，选择 *Inventory*。
+. 从*虚拟化环境*列表中，选择要查看其架构良好的见解的已发现 EVS 环境。
+. 选择 *Well-architected status* 选项卡。
++
+此时将显示以下元素：
+
++
+** *自动每日分析时间戳*：显示对此环境执行最后一次扫描的时间。
+** *配置*：按配置区域组织调查结果，并显示其状态和详细信息。
+
+
+
+
+
+
+== 查看架构完善的评估
+
+
+
+=== 集群节点管理
+
+这将评估您的 EVS 集群节点是否配置了适当的 EC2 停止和终止保护。
+
+*状态*：
+
+* *已优化*：所有 EVS 节点都配置了 EC2 停止保护和终止保护。
+* *未优化*：至少有一个 EVS 节点未配置 EC2 停止保护或终止保护。
+
+
+*为什么这很重要*：
+
+EVS ESXi 节点应仅使用 vCenter 或其他 VMware 级管理工具进行管理。如果没有适当的 EC2 级保护，节点可能会意外停止或从 EC2 控制台终止，从而可能导致虚拟机数据不可用或数据丢失。
+
+*查看详细调查结果*：
+
+. 在 Well-architected status 选项卡中，找到 *Cluster node management*。
+. 选择 *View* 以打开调查结果对话框。
+
+
+对话框显示：
+
+* *调查结果摘要*：对您环境中发现的问题的详细说明。
+* *资源网格*：显示所有 EVS 节点及其保护状态的表格，包括：
++
+** 节点标识符
+** EC2 停止保护状态
+** EC2 终止保护状态
+
+
+* *需要采取行动*：分步问题解决程序。
+* *建议*：最佳实践指南。
+
+
+*补救措施*:
+
+要修复此问题，请为您的 EVS 节点启用停止和终止保护：
+
+* 按照  https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-stop-protection.html["用于启用停止保护的 AWS 文档"^] 中指定的程序进行。
+* 按照  https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_ChangingDisableAPITermination.html["用于启用终止保护的 AWS 文档"^] 中指定的程序进行。
+
+
+
+
+=== EVS 环境弹性
+
+这将评估您的 EVS 集群节点是否正确分布在分区放置组中。
+
+*状态*：
+
+* *优化*：所有节点都是配置有四个或更多分区的单个分区放置组的成员。
+* 如果满足以下条件之一，则 *未优化*：
++
+** 节点是多个放置组的成员。
+** 至少有一个节点是非分区放置组的成员。
+** 所有节点都是分区少于四个的分区放置组的成员。
+
+
+
+
+*为什么这很重要*：
+
+正确的分区放置可确保您的 EVS 群集节点分布在 AWS 可用区内的多个故障隔离硬件分区中。错位可能会导致处理能力的显著损失或停机。
+
+*查看详细调查结果*：
+
+. 在 Well-architected 状态选项卡中，找到 *EVS environment resiliency*。
+. 选择 *View* 以打开调查结果对话框。
+
+
+对话框显示：
+
+* *结果总结*：分区未对齐的详细说明。
+* *资源网格*：显示具有以下内容的 EVS 环境节点的表格：
++
+** 节点标识符
+** 放置组名称
+** 放置组类型
+** 放置组分区计数
+
+
+* *需采取行动*：分步修正程序
+* *建议*：最佳实践指南
+
+
+*补救措施*:
+
+要修复分区放置问题：
+
+* 向 EVS 环境添加新节点时，使用至少具有四个分区的分区放置组来配置新节点。
+* 如果要替换集群节点，请确保使用至少具有四个分区的分区放置组来配置替换节点。
+* 尝试将所有 EVS 节点整合到符合上述建议的单个放置组。
+
+
+*最佳实践建议*：
+
+创建或扩展 EVS 环境时，使用配置有四个或更高分区的单个分区放置组配置所有群集节点。
+
+
+
+== 下一步
+
+在审核您的 well-architected 见解并实施建议的变更后：
+
+* 每天监控精心设计的状态选项卡，以随时了解您的环境状况。
+* 对于任何"未优化"的结果，请遵循补救程序。
+* 查看 AWS 和 NetApp 文档，了解其他最佳实践。
+* 在扩展您的 EVS 环境之前，请考虑实施这些建议。
+
+
+.相关链接
+* https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs.html["使用迁移顾问为 Amazon EVS 创建部署计划"]
+* https://docs.netapp.com/us-en/workload-vmware/deploy-fsx-file-system-evs.html["为ONTAP文件系统部署建议的FSx"]
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html["AWS 置放群组文档"^]
+

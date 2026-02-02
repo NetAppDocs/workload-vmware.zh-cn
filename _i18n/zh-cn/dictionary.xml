@@ -217,7 +217,6 @@
   <block id="f9f61055f7c12e19b3df8a6b77099e20" category="list-text">除了增加或减小卷大小之外、还可以更改数据吞吐量、IOPS和文件系统大小</block>
   <block id="958d4e659e939db8e66a192e1e4f46f9" category="list-text">支持多可用性区域(AZ)部署的高可用性</block>
   <block id="0abb1f890b7655b5842e2e4271738b78" category="list-text">通过使用VPC对等而无需使用TransitGateway的单可用性配置降低成本和延迟</block>
-  <block id="20b4f77bd00b4f63a49ec8e08f3bf6a6" category="section-title">成本</block>
   <block id="0b9c6eef4e3d3a222eb04e910d252339" category="section-title">许可</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">法律声明</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="paragraph">法律声明提供对版权声明、商标、专利等的访问。</block>
@@ -768,4 +767,132 @@
   <block id="45f41cadcd45c9728fa28d6a1cb8d206" category="list-text">从 VMware 菜单中选择“评估和规划”，然后选择“迁移到 VMware Cloud on AWS”。</block>
   <block id="9af7ccdef2ffa0cddc3f29f9b918947c" category="list-text">选择“开始！”。您可以通过选中复选框来选择不再显示此页面。</block>
   <block id="034ce347094f8e8ed94fd4499edd6a02" category="paragraph">规划中心已显示。在规划中心，您可以上传虚拟机清单数据，查看以前的清单数据上传，并使用任何虚拟机清单数据集规划迁移。</block>
+  <block id="8f1b9e3fbbd44cf22e9f5ac28290aba0" category="doc">Amazon Elastic VMware Service 的精心架构分析</block>
+  <block id="f6c8ff445c3db04296fa83d4b2790691" category="paragraph">Workload Factory 现在为您的 Amazon Elastic VMware Service (EVS) 环境提供自动化的精心设计的分析。每日扫描可识别配置错位，并提供详细的补救建议，以帮助您保持最佳运营、安全性和成本效益。</block>
+  <block id="7e27d05efe618fad67c0e09d831368c6" category="paragraph">使用 AWS API 执行扫描，无需 vSphere 凭据或 vCenter 连接。结果可在 EVS 环境详细信息中的新 *Well-architected status* 选项卡中查看。</block>
+  <block id="b49141c08a1be0c2df4a29b08af10e5e" category="paragraph">此版本包括以下方面的见解：</block>
+  <block id="eb309475830119de69a172afb7c872e1" category="list-text">*实例停止/终止保护状态*：标识没有 EC2 停止或终止保护的 EVS 节点。从 EC2 控制台停止或终止 EVS 节点可能会导致虚拟机数据不可用或数据丢失。</block>
+  <block id="5e10e9fc9dc23fca9bdc4e8b00ae9469" category="list-text">*群集节点分区放置对齐*：检测分区不对齐，如果分区在 AWS 可用区内发生故障，可能会导致严重的处理功率损失或停机。每个洞察都包括严重程度、受影响资源信息的详细调查结果以及基于 AWS 最佳实践的分步补救程序。</block>
+  <block id="3ac4be70f27829fbadc2c932a5b029e4" category="inline-link-macro">实施精心设计的配置</block>
+  <block id="0f39698d75936e2b93022b9c574c0eb3" category="paragraph"><block ref="0f39698d75936e2b93022b9c574c0eb3" category="inline-link-macro-rx"></block></block>
+  <block id="811182fb87c3ac2818bca780e05e0c5c" category="summary">了解 Workload Factory 如何分析 Amazon Elastic VMware Service 配置以识别问题并提供最佳实践建议。</block>
+  <block id="b998e1ace581318d41cd37b71dfe5cac" category="doc">EVS 配置的配置分析</block>
+  <block id="ee876b0ee5fe63fbc90fddc929719edd" category="paragraph">Workload Factory 定期分析 Amazon Elastic VMware Service (EVS) 配置，以确定与最佳实践的不一致之处。使用结果来提高性能、成本效率和合规性。</block>
+  <block id="1c11d2e59190fe6a4e37f1e68abafcb4" category="paragraph">主要功能包括：</block>
+  <block id="ebc3bf5de769bc75ad8e36a90a0ed695" category="list-text">每日配置分析</block>
+  <block id="8c0981b34ea19373e1dcf1c3d034f097" category="list-text">自动最佳实践验证</block>
+  <block id="3583e4a3e4e2e122cff65b8ad9045348" category="list-text">主动可观察性</block>
+  <block id="16fcd85dc9469370b62b4b46381f8e2a" category="list-text">从见解到行动</block>
+  <block id="fc34f37e0124ad3486b3476b4c3bf8ba" category="section-title">良好架构状态</block>
+  <block id="ebd5767595bd56d8d385eee9f3e5317a" category="paragraph">在 Workload Factory 控制台中，列出了所有发现的 EVS 虚拟化环境的良好架构状态。良好架构状态分为"优化"或"未优化"。选择 *Inventory* 将引导您进入环境中的良好架构状态选项卡，您可以在其中找到该环境的所有配置。</block>
+  <block id="a4394e01049a42d14bd6258585de98b7" category="section-title">配置类别</block>
+  <block id="a5584aec16bb244b4e3daa5c56c07600" category="paragraph">Workload Factory 评估跨多个类别的 EVS 配置，以确保与 AWS 和 NetApp 最佳实践保持一致。每个类别都侧重于您 EVS 环境的特定方面：</block>
+  <block id="faeaec9eda6bc4c8cb6e1a9156a858be" category="list-text">可用性</block>
+  <block id="bc2da75aa54d732564f6242c6a869d0c" category="list-text">预期 EVS 配置的可访问性和可操作性。</block>
+  <block id="2fae32629d4ef4fc6341f1751b405e45" category="list-text">安全性</block>
+  <block id="6c02cf363d34d913745020138dfa79a6" category="list-text">EVS 配置保护数据和控制访问的程度（例如，EC2 停止和终止保护）。</block>
+  <block id="02bc0523497de72834c4c7990e32d155" category="list-text">故障恢复能力</block>
+  <block id="75927f968f22d6de4aff600752ad874d" category="list-text">EVS 配置从故障或中断中恢复的能力。</block>
+  <block id="01e12de62fa77fda2815719aed8ff892" category="paragraph-title">下一步</block>
+  <block id="eb9cf952bc2ab533d61d93bdca17a2a1" category="section-title">针对 EVS 环境的精心设计分析</block>
+  <block id="de4d561d9225c3e38ab8fb69845b3845" category="paragraph">"良好架构"选项卡提供 Amazon Elastic VMware Service (EVS) 环境的自动化日常分析，以确保与 AWS 和 NetApp 最佳实践保持一致。该选项卡可识别配置问题并提供详细的补救指导，以帮助您保持最佳运营、安全性和成本效益。</block>
+  <block id="6c4617868490733aeac61d81c4d1a4e9" category="paragraph">自动扫描使用 AWS API 执行，不需要 vSphere 凭据。调查结果按配置区域组织，每个调查结果包括状态、严重程度级别、受影响的资源详细信息和分步补救程序。</block>
+  <block id="add6a35f61fed94b5f8dbfe9beecaf4e" category="inline-link-macro">在 Workload Factory 中实施良好架构的 EVS 配置</block>
+  <block id="978188131a8faf177650cc05b5648337" category="paragraph"><block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>.== 成本</block>
+  <block id="fccfcfaaf4414d768ea3ae43ac15179f" category="paragraph-title"><block ref="ef78558f80439832e0f51cc22cee8b8c" category="inline-image-macro-rx" type="image"></block> 查看针对您的 EVS 环境的精心设计的见解</block>
+  <block id="9af4d557947285cd35bace6367e46950" category="paragraph">当您的 EVS 环境被发现时，Workload Factory 会自动执行每日精心设计的扫描，以识别配置问题并提供补救建议。</block>
+  <block id="849b694f18d5f2f0d81dfe44c89029ea" category="inline-link-macro">了解如何实施精心设计的配置</block>
+  <block id="5dc782d436d94215ab9c41482cff8c02" category="paragraph"><block ref="f09015d4a26b2878c118305ce478ca5f" category="inline-link-macro-rx"></block>。</block>
+  <block id="fc6485a9112c61e8addae60c9881529a" category="summary">在 Workload Factory 中查看 EVS 配置的良好架构状态，并遵循基于 AWS 和 NetApp 最佳实践的补救指导。</block>
+  <block id="74163cd660daafe169a986c2d540a418" category="doc">实施精心设计的 EVS 配置</block>
+  <block id="55f759553ee3b4403a36ef5481e92158" category="paragraph">使用 Workload Factory 配置分析来查看您的 Amazon Elastic VMware Service (EVS) 配置的良好架构状态，并修复影响可靠性、安全性和成本的问题。</block>
+  <block id="bbe48fb854ea022537208eeeff822f91" category="section-title">关于此任务</block>
+  <block id="992962ec039b953e3a26be2bbe0354ea" category="paragraph">使用 AWS API 对所有发现的 EVS 环境进行自动每日扫描，分析您的 EVS 配置并识别可能影响可用性、弹性、安全性或成本优化的潜在问题。调查结果按配置区域进行组织，每个调查结果包括状态、严重程度级别、受影响的资源详细信息和分步补救程序。</block>
+  <block id="46983665512cec916d21fde7e5cd3c92" category="paragraph">主要功能包括：</block>
+  <block id="d5bec1394e46fe7beb3bfc357658dbee" category="list-text">*自动每日扫描*：所有发现的 EVS 环境每天自动扫描一次，以确保见解保持最新。</block>
+  <block id="7178f1776bec85b1fa0d80ba102bb59c" category="list-text">*基于 AWS API 的扫描*：扫描使用 AWS API，无需 vSphere 凭据或与您的 vCenter 的连接。</block>
+  <block id="8157ddea6dba3cc417056b072b8b80f3" category="list-text">*问题解决的详细指南*：每个已识别的问题都包含明确的解释、严重程度和分步解决程序。</block>
+  <block id="1f4af7de884cca1c2591581301dfb2d3" category="list-text">*仅查看见解*：提供详细的调查结果和建议，无自动问题解决选项。</block>
+  <block id="8a932e11437d1c455e0309f4576aecfc" category="section-title">了解架构完善的洞察</block>
+  <block id="ba3c34291d7a94693a481a33bd15d66a" category="paragraph">Well-architected 选项卡显示以下内容：</block>
+  <block id="8092529325e1bffb70e26a2f0a96de8c" category="list-text">*配置名称*：正在评估的配置区域。</block>
+  <block id="fb65a696254587c809d66cfee810bcb9" category="list-text">*Tags*：表明影响领域的标签（例如 Availability、Resiliency、Security）。</block>
+  <block id="191370a235cb47e01e8bb5d93f56f68e" category="list-text">*状态*：要么是 "Optimized"（未发现问题），要么是 "Not optimized"（发现问题）。</block>
+  <block id="7e06d612ab32ad7e5b276e570d6052db" category="list-text">*严重程度*：发现的重要性级别（例如，Warning）。</block>
+  <block id="8b38d8216b4a9677a6565c6987244bfd" category="list-text">*资源类型*：正在评估的 AWS 资源类型。</block>
+  <block id="aed619db5443435ab1909111087c9354" category="list-text">*受影响的资源数量*：受此问题影响的资源数量。</block>
+  <block id="d17c25d685d870f3162fd07bd3759e9d" category="section-title">扫描频率</block>
+  <block id="ec009bfd9b9d35c799aa225e2210ad5d" category="paragraph">对于所有发现的 EVS 配置，都会自动执行精心设计的扫描。有关扫描计划的关键详细信息：</block>
+  <block id="200b6c38eb872375baba819532b25c35" category="list-text">每个 EVS 配置每天进行一次扫描。</block>
+  <block id="aac386e06e58e41f07f21274a2ce3cd3" category="list-text">不同配置的扫描可以在不同的时间进行。</block>
+  <block id="cbf4a11b9106a765a8d59f5bde22b92b" category="list-text">如果对某个配置的扫描失败，仍将尝试扫描同一帐户中的其他配置。</block>
+  <block id="2e23c7712db264116ae4e9427788e890" category="list-text">Well-architected 状态选项卡上的时间戳卡显示当前配置的最后一次扫描完成的时间。</block>
+  <block id="6b263d7d4b1960744986bbf27f19031b" category="admonition">当前不支持按需执行精心设计的扫描。所有扫描均按每日计划自动执行。</block>
+  <block id="6943da56f7bfefaf87bd63fa31f32343" category="inline-link">已添加 AWS 凭据</block>
+  <block id="de6391d66ba7208735ea026c0163bd82" category="list-text">对于 VMware 工作负载，您必须具有<block ref="1c3a105d12a49d2155fa535811f69d6c" category="inline-link-rx"></block>_View, planning, and analysis_ 权限。</block>
+  <block id="7c751b705d8b34dd77f43768750957ae" category="list-text">您的 AWS 帐户中必须至少有一个已发现的 Amazon Elastic VMware Service 环境。</block>
+  <block id="bcfe7032eb38dd46f96fae8e821cb2f5" category="section-title">访问 well-architected 状态选项卡</block>
+  <block id="9a1e15b3cbcb65c9396541d3f9c5193b" category="list-text">在 VMware 菜单中，选择 *Inventory*。</block>
+  <block id="744339c5b641ba182ae35bbb4cfc33a4" category="list-text">从*虚拟化环境*列表中，选择要查看其架构良好的见解的已发现 EVS 环境。</block>
+  <block id="97136f0d9a483a6fdfdfc42b5a59cfe7" category="list-text">选择 *Well-architected status* 选项卡。</block>
+  <block id="a563ade9a0b771335a4862de1340dc24" category="paragraph">此时将显示以下元素：</block>
+  <block id="4898eb92487a19f75bf5dd69bf5044ca" category="list-text">*自动每日分析时间戳*：显示对此环境执行最后一次扫描的时间。</block>
+  <block id="327c34fae86c3c2d78f5cfa847ccf61c" category="list-text">*配置*：按配置区域组织调查结果，并显示其状态和详细信息。</block>
+  <block id="3cecc2f68d529e2866ede0865952d12e" category="section-title">查看架构完善的评估</block>
+  <block id="dc1feaa4afec46ae71e1b4ce87c52cc9" category="section-title">集群节点管理</block>
+  <block id="1bb51698a0663f165dbe5f273c5c5673" category="paragraph">这将评估您的 EVS 集群节点是否配置了适当的 EC2 停止和终止保护。</block>
+  <block id="5a82da798b8d52a1877e0af59310a695" category="paragraph">*状态*：</block>
+  <block id="2177db57d319d13e0bf2ae908c5ad3fd" category="list-text">*已优化*：所有 EVS 节点都配置了 EC2 停止保护和终止保护。</block>
+  <block id="645739737a5dbda70addbb1793f629c5" category="list-text">*未优化*：至少有一个 EVS 节点未配置 EC2 停止保护或终止保护。</block>
+  <block id="813bbde82916c6d5352808ebeccf0b78" category="paragraph">*为什么这很重要*：</block>
+  <block id="47ba39ae7dbe55540d6304890df50c31" category="paragraph">EVS ESXi 节点应仅使用 vCenter 或其他 VMware 级管理工具进行管理。如果没有适当的 EC2 级保护，节点可能会意外停止或从 EC2 控制台终止，从而可能导致虚拟机数据不可用或数据丢失。</block>
+  <block id="852fec60fb308754480e33bb8725f7d0" category="paragraph">*查看详细调查结果*：</block>
+  <block id="5b924baabf30c77d336ab00807a2e592" category="list-text">在 Well-architected status 选项卡中，找到 *Cluster node management*。</block>
+  <block id="2f0a4abe3577a24388d3503c76df1f1e" category="list-text">选择 *View* 以打开调查结果对话框。</block>
+  <block id="f771ae48bfbea0e9bd4510a2944d7c27" category="paragraph">对话框显示：</block>
+  <block id="beceff88971536474ce183c2c49086a3" category="list-text">*调查结果摘要*：对您环境中发现的问题的详细说明。</block>
+  <block id="521b5581051893604e80bc8d9a9b2a47" category="list-text">*资源网格*：显示所有 EVS 节点及其保护状态的表格，包括：</block>
+  <block id="1e64edfa54c534cdd3eab5eafafdc723" category="list-text">节点标识符</block>
+  <block id="79a2c7f2446afac26daa7c86e7c7552d" category="list-text">EC2 停止保护状态</block>
+  <block id="e26fc7b3b268da15eeb1541c027f3181" category="list-text">EC2 终止保护状态</block>
+  <block id="dd3ff4b0d866a1f342fc31bf10649488" category="list-text">*需要采取行动*：分步问题解决程序。</block>
+  <block id="2fb2741679a033656b8deb871364d1ba" category="list-text">*建议*：最佳实践指南。</block>
+  <block id="801eec1f5aa15441f8563024525f7de2" category="paragraph">*补救措施*:</block>
+  <block id="0dcf33d70ce0ac99ae40cb18631345ea" category="paragraph">要修复此问题，请为您的 EVS 节点启用停止和终止保护：</block>
+  <block id="f1f93afb3b5ca94caad02f19d5690631" category="inline-link">用于启用停止保护的 AWS 文档</block>
+  <block id="3de60d42654be51b8431224f33d26e80" category="list-text">按照 <block ref="39a165446f78431d50e534c995c99eb1" category="inline-link-rx"></block> 中指定的程序进行。</block>
+  <block id="0ed28b656053bbc9750b2cb527e317cd" category="inline-link">用于启用终止保护的 AWS 文档</block>
+  <block id="ecf75ab49e92be6325b9b3a05088f6a0" category="list-text">按照 <block ref="723a60649762a3af21a294f7843f9b4c" category="inline-link-rx"></block> 中指定的程序进行。</block>
+  <block id="ce129dbc888eb33b14b32d1fa034d7b7" category="section-title">EVS 环境弹性</block>
+  <block id="c049b3d231c8b43b1fd719fd9a8215e5" category="paragraph">这将评估您的 EVS 集群节点是否正确分布在分区放置组中。</block>
+  <block id="30323180fe07f0de31c13be7ab8edff5" category="list-text">*优化*：所有节点都是配置有四个或更多分区的单个分区放置组的成员。</block>
+  <block id="bb6b44588620725c2fafc527d3a36108" category="list-text">如果满足以下条件之一，则 *未优化*：</block>
+  <block id="5ceff40676061e4d49313b93769e0092" category="list-text">节点是多个放置组的成员。</block>
+  <block id="80e60c8a90e80f84fb5d310b198db129" category="list-text">至少有一个节点是非分区放置组的成员。</block>
+  <block id="0a410fbafeb1762934b94f77af190020" category="list-text">所有节点都是分区少于四个的分区放置组的成员。</block>
+  <block id="4c9e98121a4fe72e482aafa4e8b548dd" category="paragraph">正确的分区放置可确保您的 EVS 群集节点分布在 AWS 可用区内的多个故障隔离硬件分区中。错位可能会导致处理能力的显著损失或停机。</block>
+  <block id="c5b0e174597ee5abfad58c8d92e612ab" category="list-text">在 Well-architected 状态选项卡中，找到 *EVS environment resiliency*。</block>
+  <block id="0e3b484d9d0687e5c5b32b8f2ad39c25" category="list-text">*结果总结*：分区未对齐的详细说明。</block>
+  <block id="ae7e05a26896efe16ac92af493496bfe" category="list-text">*资源网格*：显示具有以下内容的 EVS 环境节点的表格：</block>
+  <block id="9a4247fce420e054bc53b23a77efaa26" category="list-text">放置组名称</block>
+  <block id="035f6ab94403d611f603c8115478662d" category="list-text">放置组类型</block>
+  <block id="3cba1eb347e09ee7cfb864eb01fccac4" category="list-text">放置组分区计数</block>
+  <block id="bb4564e55d348d7a7b7061c258291236" category="list-text">*需采取行动*：分步修正程序</block>
+  <block id="626f65450b25b8256e989a7d96d9dd8c" category="list-text">*建议*：最佳实践指南</block>
+  <block id="1741ef00400e675fccbb26bb1e459a1c" category="paragraph">要修复分区放置问题：</block>
+  <block id="190ae6870996db4b351353f26146dfe2" category="list-text">向 EVS 环境添加新节点时，使用至少具有四个分区的分区放置组来配置新节点。</block>
+  <block id="9bc8310ff2c5946d58c2c80b2c49c003" category="list-text">如果要替换集群节点，请确保使用至少具有四个分区的分区放置组来配置替换节点。</block>
+  <block id="b4f5ac9ad226f10eca619b94888a2179" category="list-text">尝试将所有 EVS 节点整合到符合上述建议的单个放置组。</block>
+  <block id="ceb2f3b962adcc18ee161b7e14839412" category="paragraph">*最佳实践建议*：</block>
+  <block id="fe90fa535ae4fff7efe640e795799979" category="paragraph">创建或扩展 EVS 环境时，使用配置有四个或更高分区的单个分区放置组配置所有群集节点。</block>
+  <block id="f2dd5e328e06e8cf91d1b5390e4cd997" category="paragraph">在审核您的 well-architected 见解并实施建议的变更后：</block>
+  <block id="139deeaf3f0b706655accefb5d2c2384" category="list-text">每天监控精心设计的状态选项卡，以随时了解您的环境状况。</block>
+  <block id="1a2bd51e6c9820e6b845fcee8b825038" category="list-text">对于任何"未优化"的结果，请遵循补救程序。</block>
+  <block id="84125effdc43235cd3e3b49417a766ea" category="list-text">查看 AWS 和 NetApp 文档，了解其他最佳实践。</block>
+  <block id="0b3b97923e2348ff9e1f39e9effff018" category="list-text">在扩展您的 EVS 环境之前，请考虑实施这些建议。</block>
+  <block id="f6bd0d7447ff66cc6b859603a88fbde9" category="list-title">相关链接</block>
+  <block id="ab9fa5da04b047baee14c97180c20a08" category="inline-link">AWS 置放群组文档</block>
+  <block id="5686150fea51f3258859e4fd15d8a797" category="list-text"><block ref="5686150fea51f3258859e4fd15d8a797" category="inline-link-rx"></block></block>
+  <block id="d1fabbd85b7cc34641739e525d26f652" category="section-title">2026 年 2 月 1 日</block>
+  <block id="5eb43e1edd4f0757c83c6d6f6632ff94" category="sidebar">管理和监控</block>
 </blocks>
