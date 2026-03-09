@@ -149,4 +149,5 @@ https://docs.netapp.com/us-en/data-infrastructure-insights/["详细了解数据�
 * link:launch-onboarding-advisor.html["创建 Amazon VMware Cloud 部署计划"]
 * link:launch-migration-advisor-evs.html["创建 Amazon Elastic VMware Service 部署计划"]
 * link:launch-onboarding-advisor-native.html["创建 Amazon EC2 部署计划"]
+* link:launch-migration-advisor-gcve.html["创建 Google Cloud VMware Engine 部署计划"]
 

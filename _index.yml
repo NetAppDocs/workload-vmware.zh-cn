@@ -15,6 +15,8 @@ indexpage:
       url: quick-start.html
     - title: 快速入门：迁移到Amazon EC2
       url: quick-start-native.html
+    - title: 快速入门：迁移到 Google Cloud VMware Engine
+      url: quick-start-gcve.html
     - title: 探索 VMware 规划中心
       url: explore-planning-center.html
   - title: 迁移到 Amazon Elastic VMware Service
@@ -27,6 +29,10 @@ indexpage:
       url: launch-migration-advisor-evs.html
     - title: 为ONTAP文件系统部署建议的FSx
       url: deploy-fsx-file-system.html
+  - title: 迁移到 Google Cloud VMware Engine
+    links:
+    - title: 使用迁移顾问创建部署计划
+      url: launch-migration-advisor-gcve.html
   - title: 迁移到Amazon EC2
     links:
     - title: 使用迁移顾问创建部署计划

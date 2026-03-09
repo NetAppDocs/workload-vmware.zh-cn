@@ -1,0 +1,290 @@
+---
+sidebar: sidebar 
+permalink: launch-migration-advisor-gcve.html 
+keywords: overview, concepts, features, use case, workloads, how Workload Factory works, migration, gcve, google cloud vmware engine, gcnv, deployment, plan 
+summary: 从 VMware 规划中心，您可以启动 Google Cloud VMware Engine 迁移顾问，以帮助创建根据您的需求定制的迁移计划。 
+---
+= 使用迁移顾问为 Google Cloud VMware Engine 创建部署计划
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+从 VMware 规划中心，您可以启动 Google Cloud VMware Engine 迁移顾问，以帮助创建根据您的需求定制的迁移计划。
+
+您可以创建部署计划，将虚拟机迁移到 Google Cloud VMware Engine，并将自定义的 Google Cloud NetApp Volumes 用作外部 NFS 数据存储区。迁移顾问中的选项可能因用于收集虚拟机清单数据的工具而异。
+
+
+
+== 要求
+
+* 你必须有link:upload-vm-inventory.html["上传虚拟机清单"]。
+* 您必须拥有用户名和密码才能访问 Workload Factory。如果您没有访问权限，请立即创建账号。请参阅说明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["此处"^]。
+* 您必须在同时提供 Google Cloud VMware Engine 和 Google Cloud NetApp Volumes 服务的地区订阅 Google Cloud VMware Engine。
+
+
+
+
+== 步骤
+
+. 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
+. 选择菜单 image:workloads-menu-icon.png["汉堡菜单图标用于导航至存储、EDA、AI、数据库、VMware 和管理等工作负载。"] 然后选择 *VMware*。
++
+显示规划中心。
+
+. 从下拉菜单中选择 *Google Cloud*。
+. 从 VM 库存表中，选择要用于制定部署计划的库存旁边的 *Start planning*。
++
+此时将显示 *准备 Google Cloud 入门* 向导。
+
+. 输入所需信息。
+
+
+
+
+=== 配置迁移首选项
+
+. 在“虚拟机配置上传”部分中，查看有关用于创建迁移计划的数据集的信息。  *VM 库存摘要*部分由库存文件填充，以反映 VM 的数量和总存储容量。
+. 在 _VM inventory considerations_ 部分中，选择选项以过滤 VM 列表并配置迁移计划的设计方式：
++
+.. *VM 库存注意事项*：根据其电源状态选择要包括的 VM：
++
+*** *开机*（默认选择）
+*** *已关闭*
+*** *已暂停*
+
+
+.. *要考虑的 VM 存储*：选择如何调整 Google Cloud NetApp Volumes 数据存储的大小：
++
+*** *已利用*：根据虚拟机的实际使用容量来调整数据存储。
+*** *已配置*（默认）：根据 VM 的总配置容量调整数据存储区大小。
+
+
+.. *需要考虑的 VM 内存*：选择如何计算所需的 Google Cloud VMware Engine 集群计算资源：
++
+*** *已利用*：根据虚拟机的实际内存使用情况计算。
+*** *已配置*（默认）：根据分配给虚拟机的总内存计算。
+
+
+.. *虚拟机性能评估*：此选项仅在使用 RVTools 作为数据源时显示。选择预期性能水平：
++
+*** *低*：每个 VM 平均 50 IOPS。
+*** *Standard*：每个 VM 平均 200 IOPS（默认选择）。
+*** *高*：每个 VM 平均 800 IOPS。
+
+
+
+
+. 在 _Google Cloud VMware Engine 部署区域_ 部分：
++
+.. *区域*：选择将部署 Google Cloud VMware Engine 和 Google Cloud NetApp Volumes 的 Google Cloud 区域。只有同时提供这两种服务的区域才会显示在列表中。
+
+
+. 在 _VM 存储容量和保护注意事项_ 部分中：
++
+.. *容量余量百分比*：输入要添加以实现增长的额外容量的百分比。默认值为 20%，这也是建议的最小值。
++
+
+NOTE: 如果选择的净空小于 20%，则会自动禁用快照保护。
+
+.. *VM 快照保护*：启用此选项（默认启用）以使用 ONTAP 默认快照策略通过快照保护 VM。
+
+
+. 选择 * 下一步 * 。
+
+
+
+
+=== 选择集群配置
+
+. 在 *Select preferred Google Cloud VMware Engine cluster configuration* 页面上，配置您的 Google Cloud VMware Engine 集群首选项并查看推荐的配置。
+. 在 _Architecture preferences_ 部分中：
++
+.. *允许 Google Cloud VMware Engine VE2 节点类型*：启用时（默认），会同时考虑 VE1 和 VE2 节点类型。禁用此选项可将配置仅限于 VE1 节点。
+.. *允许 Google Cloud NetApp Volumes 标准卷*：禁用（默认）时，配置设计中仅使用 Premium 和 Extreme 服务级别，这是推荐的最佳做法。Premium 和 Extreme 卷提供区域可用性，使其能够抵御可用性区域故障。标准卷仅提供区域可用性，并且不针对 AZ 故障提供保护。启用此选项可包括标准服务级别卷，这可以降低不需要 AZ 级别弹性的低性能工作负载的成本。
+
+
+. 在 _集群配置_ 部分，查看可用的 Google Cloud VMware Engine 集群配置：
++
+配置按估计的总成本（从低到高）排序，并显示以下不同的组合：
+
++
+** Google Cloud VMware Engine 节点类型（VE1 或 VE2）
+** 估计总成本
+** 预计节省金额
+** 节点计数
+** VSAN 容错设置：FTT（容错类型）和 FTM（容错方法）
+** 超额存储容量（TiB）
+** 仅存储节点类型
+
+
+. 单击首选集群配置旁边的单选按钮来选择它。
++
+默认情况下，选择第一个（最低成本）配置。
+
+. 选择 * 下一步 * 。
+
+
+
+
+=== 选择 VM 布局
+
+. 在 *自动虚拟机选择* 页面上，查看根据所需的外部存储容量和首选项自动选择的最佳虚拟机布局。
+. 查看 _VM inventory_ 部分，其中显示：
++
+** 总体 VM 计数
+** 总容量（根据您之前的选择，已配置或已利用）
++
+您可以展开此部分以查看以下详细信息：
+
+** 聚合平均 IOPS
+** 聚合吞吐量 (MB/s)
+** 聚合峰值 IOPS
+** 聚合峰值吞吐量 (MB/s)
+
+
+. 在 _VM selection preferences_ 部分中，选择优化方法：
++
+** *成本* （默认值）：将 I/O 密度最高的虚拟机分配给 vSAN 存储，这有助于最大限度地降低 Google Cloud NetApp Volumes 成本，同时满足性能要求。
+** *保护*：将存储容量最高的虚拟机分配给 Google Cloud NetApp Volumes 外部数据存储区，从而通过 Google Cloud NetApp Volumes 快照和复制功能提供更好的可恢复性。
+
+
+. 查看 _External datastore configuration_ 部分，其中显示了如何在 Google Cloud NetApp Volumes 和 vSAN 存储之间分配虚拟机和容量。
++
+您可以展开此部分以查看以下详细信息：* 聚合平均 IOPS * 聚合吞吐量 (MB/s) * 聚合峰值 IOPS * 聚合峰值吞吐量 (MB/s)
+
+. 在为 Google Cloud NetApp Volumes NFS 数据存储选择的虚拟机表中，您可以：
++
+** 根据您选择的优化方法查看自动选择的虚拟机。
+** 使用复选框手动选择或取消选择单个虚拟机。
+** 按集群、操作系统或数据中心筛选虚拟机。
+** 按任何可见列（例如 VM 名称、配置的容量、平均读取 IOPS）对 VM 进行排序。
+** 单击 image:icon-table-columns.png["列选择器图标"] 以显示或隐藏其他列。
++
+
+NOTE: 如果您手动修改虚拟机选择，您可以选择 *Reset* ，根据您的优化偏好还原为自动选择。
+
+
+
+. 选择 * 下一步 * 。
+
+
+
+
+=== 查看 NFS 数据存储分配
+
+. 在 *Review instance store assignment* 页面上，查看详细的数据存储布局和 VM 分配。
+. 使用 *Total* 和 *Per datastore* 选项卡在聚合视图和每个数据存储区详细信息之间切换。
+. 在 *Total* 标签卡中：
++
+.. 查看 _Storage Capacity analysis_ 图表，其中显示：
++
+*** Google Cloud NetApp Volumes 逻辑容量
+*** VM 配置的容量
+*** VM 级别可用空间（如果选择了已配置容量）
+*** 总体容量余量
+*** 快照缓冲区容量（如果启用了快照保护）
+
+
+.. 查看 _Detailed information_ 部分，其中显示：
++
+*** 整体 VM 调配容量
+*** 总体容量余量
+*** 可用空间（如果选择了预配置容量）
+*** 所有 Google Cloud NetApp Volumes 存储池的整体逻辑容量
+*** Google Cloud NetApp Volumes 存储池计数和类型
+*** 虚拟机总数和配置容量
+*** 聚合虚拟机平均 IOPS（如果可用）
+*** 平均 I/O 密度（带有工具提示解释计算）
+*** 聚合 VM 平均吞吐量（如果可用）
+
+
+
+
+. 在 *Per datastore* 选项卡中：
++
+.. 选择一个数据存储库选项卡以查看其详细信息。
+.. 查看该数据存储库的详细信息，其中包括：
++
+*** 容量分解图
+*** 数据存储库属性：
++
+**** 总体 VM 利用容量
+**** 总体容量余量
+**** 可用空间（如果选择了预配置容量）
+**** 数据存储逻辑容量
+**** 数据存储区服务级别（Standard、Premium、Extreme）
+**** 虚拟机总数和配置容量
+**** 聚合虚拟机平均 IOPS（如果可用）
+**** 平均数据存储 I/O 密度（如果可用）
+**** 聚合 VM 平均吞吐量（如果可用）
+
+
+
+
+.. 查看 _Virtual machines_ 表，其中显示分配给此数据存储的所有 VM，以及 VM 名称、容量、群集、操作系统、IOPS、吞吐量和其他属性的列。
+
+
+. 选择 * 下一步 * 。
+
+
+
+
+=== 查看并保存部署计划
+
+. 在 *查看您的迁移计划* 页面上，在保存之前查看和自定义您的部署计划。
+. 从下拉菜单中，选择您的定价方案：
++
+** *按需*（默认）：即用即付定价
++
+
+NOTE: 评价页面上显示的定价会根据您选择的方案进行调整。
+
+
+
+. 请查看 _Estimated savings_ 部分：
++
+.. _Google Cloud VMware Engine 配置替代方案比较_图表比较：
++
+*** Google Cloud VMware Engine vSAN-only 配置每月预估成本（计算节点 + storage-only 节点）
+*** Google Cloud VMware Engine vSAN + 外部数据存储区每月估计成本（计算节点 + Google Cloud NetApp Volumes 外部数据存储区）
+*** 节省百分比和美元金额
+
+
+.. _预计节省明细_ 表格对比了两种配置，详细列出了节点数量、存储容量、Google Cloud NetApp Volumes 池信息，以及每月和每年的成本节省。
+
+
+. 查看 _Google Cloud NetApp Volumes 建议的配置_ 部分。它突出显示：
++
+** 存储池数量和类型
+** 整体存储池容量
+** 数据存储区（卷）计数
+** 数据存储区聚合吞吐量
+** 估计每月费用
++
+... _Suggested configuration details_ 部分提供了按服务级别（Standard、Premium、Extreme）的明细，包括存储池计数、容量、数据存储区计数、吞吐量详细信息、容量余量、快照缓冲区和每月估计总成本。
+... _Estimated cost analysis_ 部分按服务级别（Standard、Premium、Extreme）细分成本，包括容量成本、冷容量、复制数据、备份使用率和容量，以及每月估计总成本。
+... _Volume configuration_ 表列出了每个计划的 Google Cloud NetApp Volumes 卷，其中包含名称、池类型、协议（NFSv3）、容量、余量、快照策略和分层策略等详细信息。
+
+
+
+
+. 查看 _Solution design assumptions_ 和 _Disclaimer_ 部分。
+. 对迁移计划感到满意后，有以下几种选择：
++
+.. 选择页面顶部的 *Manage plan*。
+.. 选择要下载的内容：
++
+*** *下载报告*：包含所有计划详细信息的全面 PDF 文档
+*** *下载实例存储部署*：将虚拟机映射到其分配的数据存储的 CSV 文件
+
+
+
+
+. 选择 *Provision* 以使用 Terraform Infrastructure-as-Code 配置 Google Cloud NetApp Volumes NFS 数据存储库。
++
+代码框显示生成的 Terraform 代码。您可以将此代码复制到剪贴板，也可以将其作为文件下载，以便在自己的 Terraform 环境中执行。
+
+. 选择 *创建* 以创建 Google Cloud NetApp Volumes NFS 数据存储库。
+
