@@ -82,7 +82,6 @@ VMware 规划中心使您能够上传新的 VM 库存数据并创建新的迁移
 ** link:deploy-fsx-file-system.html["为 Amazon VMware Cloud 计划部署文件系统"]
 ** link:deploy-fsx-file-system-native.html["为 Amazon EC2 计划部署文件系统"]
 ** link:deploy-fsx-file-system-evs.html["为 Amazon Elastic VMware Service 计划部署文件系统"]
-** link:deploy-gcnv-datastores.html["为 Google Cloud VMware Engine 套餐部署 Google Cloud NetApp Volumes 数据存储区"]
 
 
 
