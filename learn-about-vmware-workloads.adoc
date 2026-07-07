@@ -84,7 +84,11 @@ Amazon FSx for NetApp ONTAP 是基于 NetApp ONTAP 文件系统构建的外部 N
 
 自动扫描使用 AWS API 执行，不需要 vSphere 凭据。调查结果按配置区域组织，每个调查结果包括状态、严重程度级别、受影响的资源详细信息和分步补救程序。
 
-link:view-evs-well-architected.html["在 Workload Factory 中实施良好架构的 EVS 配置"].== 成本
+link:view-evs-well-architected.html["在 Workload Factory 中实施良好架构的 EVS 配置"].
+
+
+
+== 成本
 
 使用 Workload Factory for VMware 是免费的。
 
@@ -105,7 +109,6 @@ link:view-evs-well-architected.html["在 Workload Factory 中实施良好架构�
 以下 AWS 区域不受支持：
 
 * 中国地区
-* GovCloud（美国）区域
 * 秘密云
 * 绝密云
 

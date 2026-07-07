@@ -15,6 +15,30 @@ summary: 了解 Workload Factory 的 VMware 迁移顾问组件的新功能。
 
 
 
+== 2026年7月6日
+
+
+
+=== EVS TCO 计算器中的 i7i.metal-24xl 实例支持
+
+EVS TCO 计算器现在支持 AWS i7i.metal-24xl EC2 实例作为集群主机。与 i4i.metal 配置相比，这些实例将计算的 EVS 起始成本降低了约 33%，将 vSAN 存储的 EVS 起始成本降低了约 25%。
+
+计算器会自动比较两种实例类型，并选择最具成本效益的选项。新的比较版块会并排显示 EVS 主机配置，以便更轻松地找到满足您需求的最佳设置。
+
+link:calculate-evs-savings.html["计算 EVS 的预计节省金额"]
+
+
+
+== 2026 年 5 月 31 日
+
+
+
+=== 在 NetApp Workload Factory 中支持 AWS GovCloud (US)
+
+NetApp Workload Factory 支持 AWS GovCloud (US) 账户。使用 GovCloud 账户，您可以在 AWS GovCloud (US) 区域中部署和管理存储工作负载。
+
+
+
 == 2026 年 3 月 09 日
 
 
