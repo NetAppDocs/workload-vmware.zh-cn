@@ -15,6 +15,7 @@ NetApp Workload Factory for VMware 提供了将数据从本地系统移动到 Am
 
 
 
+[[what-is-netapp-workload-factory-for-vmware]]
 == 什么是NetApp Workload Factory for VMware？
 
 NetApp Workload Factory for VMware 提供了规划中心和迁移顾问，使您能够在本地 vSphere 环境中分析当前的虚拟机配置。然后，迁移顾问生成一个计划，将推荐的虚拟机布局部署到 Amazon EVS、Amazon EC2、VMware Cloud on AWS vSphere 群集或 Google Cloud VMware Engine，使用自定义的云原生存储作为外部数据存储。对于 AWS 环境，这包括 Amazon FSx for NetApp ONTAP 文件系统。对于 Google Cloud 环境，这包括 Google Cloud NetApp Volumes。规划中心充当 Workload Factory for VMware 仪表板，使您能够管理已保存的虚拟机清单数据集，并保存迁移计划和设置已保存的任何迁移计划。
@@ -25,6 +26,7 @@ Amazon FSx for NetApp ONTAP 是基于 NetApp ONTAP 文件系统构建的外部 N
 
 
 
+[[how-the-vmware-migration-advisors-work]]
 == VMware 迁移顾问的工作原理
 
 迁移顾问可以帮助您将运行在任何 VMware 支持的数据存储上的本地虚拟机 (VM) 及其数据迁移到 Amazon EVS、Amazon EC2、VMware Cloud 或 Google Cloud VMware Engine 数据存储，其中包括 FSx for ONTAP 文件系统或 Google Cloud NetApp Volumes 上的补充 NFS 数据存储。
@@ -33,6 +35,7 @@ Amazon FSx for NetApp ONTAP 是基于 NetApp ONTAP 文件系统构建的外部 N
 
 
 
+[[what-you-can-do-with-the-migration-advisors]]
 == 移民顾问能为您做些什么
 
 迁移顾问提供以下功能：
@@ -48,6 +51,7 @@ Amazon FSx for NetApp ONTAP 是基于 NetApp ONTAP 文件系统构建的外部 N
 
 
 
+[[benefits-of-using-the-migration-advisors]]
 == 使用移民顾问的好处
 
 使用云原生存储作为外部 NFS 数据存储，将当前基础架构的一部分过渡到 Amazon EC2、Amazon EBS、VMware Cloud on AWS 或 Google Cloud VMware Engine，可带来以下好处：
@@ -63,6 +67,7 @@ Amazon FSx for NetApp ONTAP 是基于 NetApp ONTAP 文件系统构建的外部 N
 
 
 
+[[tools-to-use-netapp-workload-factory]]
 == 使用NetApp Workload Factory 的工具
 
 您可以将NetApp Workload Factory 与以下工具一起使用：
@@ -73,11 +78,12 @@ Amazon FSx for NetApp ONTAP 是基于 NetApp ONTAP 文件系统构建的外部 N
 * *CloudShell CLI*：Workload Factory 包含一个 CloudShell CLI，可通过基于浏览器的单个 CLI 跨账户管理和操作 AWS 和NetApp环境。从 Workload Factory 控制台顶部栏访问 CloudShell。
 * *REST API*：使用 Workload Factory REST API 部署和管理您的 FSx for ONTAP文件系统和其他 AWS 资源。
 * *CloudFormation*：使用 AWS CloudFormation 代码执行您在 Workload Factory 控制台中定义的操作，以从您的 AWS 账户中的 CloudFormation 堆栈对 AWS 和第三方资源进行建模、配置和管理。
-* *Terraform NetApp Workload Factory 提供商*：使用 Terraform 构建和管理在 Workload Factory 控制台中生成的基础架构工作流。
+* *NetApp Terraform 提供程序*：使用 Terraform 构建和管理在 Workload Factory 控制台中生成的基础设施工作流。
 
 
 
 
+[[well-architected-analysis-for-evs-environments]]
 == 针对 EVS 环境的精心设计分析
 
 "良好架构"选项卡提供 Amazon Elastic VMware Service (EVS) 环境的自动化日常分析，以确保与 AWS 和 NetApp 最佳实践保持一致。该选项卡可识别配置问题并提供详细的补救指导，以帮助您保持最佳运营、安全性和成本效益。
@@ -88,6 +94,7 @@ link:view-evs-well-architected.html["在 Workload Factory 中实施良好架构�
 
 
 
+[[cost]]
 == 成本
 
 使用 Workload Factory for VMware 是免费的。
@@ -96,12 +103,14 @@ link:view-evs-well-architected.html["在 Workload Factory 中实施良好架构�
 
 
 
+[[licensing]]
 == 许可
 
 无需NetApp的特殊许可即可使用 Workload Factory for VMware。
 
 
 
+[[regions]]
 == 区域
 
 所有支持 FSx for ONTAP 的商业区域均支持 Workload Factory。 https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["查看支持的亚马逊区域。"^]

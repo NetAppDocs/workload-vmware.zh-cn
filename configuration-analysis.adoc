@@ -23,22 +23,27 @@ Workload Factory 定期分析 Amazon Elastic VMware Service (EVS) 配置，以�
 
 
 
+[[how-it-works]]
 == 工作原理
 
 Workload Factory 每天分析在 Amazon FSx for NetApp ONTAP 文件系统部署上运行的工作负载。该分析提供了精心设计的状态、见解和建议。
 
 每日分析完成后，配置在 Well-architected 仪表板中显示为"优化"或"未优化"。您可以找到总优化分数、按类别划分的配置问题以及配置问题和建议列表。您可以查看配置问题的建议。有些问题可以由 Workload Factory 自动修复，而其他问题则需要手动干预。在这种情况下，Workload Factory 会提供详细说明，以帮助您实施建议的更改。
 
-您可以忽略不适用于您环境的配置分析。这样可以避免不必要的警报和不准确的优化结果。当您忽略特定配置分析时，Workload Factory 不将配置包含在总优化分数中。
+您可以忽略不适用于您环境的配置分析。这样可以避免不必要的警报和不准确的优化结果。
+
+您还可以用简单的语言创建自定义规则，以根据组织的标准和 NetApp 最佳实践验证您的环境。通过试运行测试规则，然后安排它们在您的环境中运行。link:https://docs.netapp.com/us-en/console-well-architected/learn-custom-rules.html["详细了解自定义规则"^]。
 
 
 
+[[why-it-matters]]
 == 为什么很重要
 
 Workload Factory 通过将持续评估与建议见解和补救措施相结合，将最佳实践应用于大型存储、数据库和 VMware 环境。在 Workload Factory 控制台中应用的自动修复可减少人为错误，确保统一管理，并保持整个工作负载基础架构的性能和可靠性。
 
 
 
+[[analysis-requirements]]
 == 分析要求
 
 要进行完整的配置分析，必须执行以下操作：
@@ -56,6 +61,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/add-credentials.html["�
 
 
 
+[[best-practices-and-recommendations-for-evs-workloads]]
 == EVS 工作负载的最佳实践和建议
 
 Workload Factory 为运行架构良好的 Amazon Elastic VMware Service (EVS) 工作负载提供了最佳实践和建议。精心设计的分析评估 EVS 配置，以帮助确保您的 VMware 环境在可靠性、安全性、卓越运营、成本优化和性能效率方面得到优化。在 VMware 中精心设计的状态选项卡中，您可以找到见解和建议，以帮助为您的 EVS 环境实施精心设计的最佳实践。
@@ -64,6 +70,7 @@ Workload Factory 为运行架构良好的 Amazon Elastic VMware Service (EVS) �
 
 
 
+[[reliability]]
 === 可靠性
 
 可靠性可确保工作负载正确、一致地执行其预期功能，即使在发生中断时也是如此。
@@ -76,6 +83,7 @@ Workload Factory 为运行架构良好的 Amazon Elastic VMware Service (EVS) �
 
 
 
+[[security]]
 === 安全性
 
 安全强调通过风险评估和缓解策略保护数据、系统和资产。

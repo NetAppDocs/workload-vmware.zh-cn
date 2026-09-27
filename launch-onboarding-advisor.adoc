@@ -19,6 +19,7 @@ summary: 登录NetApp Workload Factory 以访问 VMware 迁移顾问。您将按
 
 
 
+[[create-a-deployment-plan-based-on-an-on-premises-vsphere-environment]]
 == 基于内部vSphere环境创建部署计划
 
 您可以将内部vSphere环境中的当前虚拟机配置迁移到VMware Cloud on AWS中的虚拟机、并将适用于NetApp ONTAP文件系统的自定义Amazon FSx用作外部数据存储库。

@@ -4,6 +4,7 @@
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Amazon EC2迁移顾问改进
 
 此版本的NetApp Workload Factory for VMware 对迁移顾问体验进行了多项改进：

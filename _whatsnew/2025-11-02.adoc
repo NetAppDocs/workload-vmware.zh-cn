@@ -4,6 +4,7 @@
 
 
 
+[[introducing-the-amazon-elastic-vmware-service-preferences-in-the-fsx-for-ontap-file-system-deployment-wizard]]
 === 在 FSx for ONTAP文件系统部署向导中引入 Amazon Elastic VMware Service 首选项
 
 当您部署 FSx for ONTAP文件系统以用作 Amazon Elastic VMware Service 的外部 NFS 数据存储时，现在可以选择数据存储将连接到的 EVS 环境。此功能会自动填充部署向导中的多个字段，以简化部署过程。
@@ -12,6 +13,7 @@ https://docs.netapp.com/us-en/workload-vmware/deploy-fsx-file-system-evs.html["�
 
 
 
+[[permissions-changes-for-vmware-workloads]]
 === VMware 工作负载的权限变更
 
 VMware 工作负载能够更清晰地说明特定操作所需的权限，并允许您精细地选择所需的权限。添加凭据时，您将有两个权限选项可供选择，而不是之前的权限模型（_只读_和_读/写_）。新的权限模型将权限策略分解如下：
@@ -26,6 +28,7 @@ link:https://docs.netapp.com/us-en/workload-setup-admin/permissions-reference.ht
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Amazon EC2迁移顾问改进
 
 此版本的NetApp Workload Factory for VMware 对迁移顾问体验进行了多项改进：

@@ -4,6 +4,7 @@
 
 
 
+[[new-ask-me-bookmark-available-in-workload-factory]]
 === Workload Factory 中提供了新的 Ask Me 书签
 
 我们在 Workload Factory 控制台的每个屏幕上添加了一个新的 Ask Me 书签。这项改进使您在需要帮助时可以更轻松、更快地访问 Ask Me。Ask Me 是我们的人工智能助手，使您可以询问有关您自己的工作负载环境的问题，直接从您的环境中获取个性化见解，并参考以前的对话。

@@ -15,18 +15,21 @@ VMware 规划中心使您能够上传新的 VM 库存数据并创建新的迁移
 
 
 
+[[manage-vm-inventory-data]]
 == 管理虚拟机库存数据
 
 使用规划中心创建和管理 VM 库存数据。
 
 
 
+[[upload-vm-inventory-data]]
 === 上传虚拟机清单数据
 
 当您准备好使用 Workload Factory 探索迁移到 Amazon AWS 环境的选项时，您可以上传 VM 库存数据。参考link:upload-vm-inventory.html["上传虚拟机清单数据"]以获取说明。
 
 
 
+[[rename-a-dataset]]
 === 重命名数据集
 
 您可以更改已保存数据集的名称。
@@ -43,6 +46,7 @@ VMware 规划中心使您能够上传新的 VM 库存数据并创建新的迁移
 
 
 
+[[delete-a-dataset]]
 === 删除数据集
 
 当不再需要数据集时，您可以随时删除它。
@@ -59,12 +63,14 @@ VMware 规划中心使您能够上传新的 VM 库存数据并创建新的迁移
 
 
 
+[[manage-migration-plans]]
 == 管理迁移计划
 
 使用迁移中心创建和管理迁移计划。
 
 
 
+[[provision-a-migration-plan]]
 === 制定迁移计划
 
 您可以选择迁移计划并进行配置，以便将虚拟机迁移到您选择的 Amazon AWS 环境。
@@ -88,6 +94,7 @@ VMware 规划中心使您能够上传新的 VM 库存数据并创建新的迁移
 
 
 
+[[edit-the-comment-for-a-migration-plan]]
 === 编辑迁移计划的注释
 
 如果您需要更改迁移计划的注释详细信息，请在规划中心内编辑注释。
@@ -105,6 +112,7 @@ VMware 规划中心使您能够上传新的 VM 库存数据并创建新的迁移
 
 
 
+[[create-a-pdf-or-csv-report-of-a-migration-plan]]
 === 创建迁移计划的 PDF 或 CSV 报告
 
 生成一份包含迁移计划详细信息的 PDF 或 CSV 报告。
@@ -122,6 +130,7 @@ VMware 规划中心使您能够上传新的 VM 库存数据并创建新的迁移
 
 
 
+[[delete-a-migration-plan]]
 === 删除迁移计划
 
 当不再需要迁移计划时，您可以随时删除它。

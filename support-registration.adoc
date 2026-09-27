@@ -19,6 +19,7 @@ link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fs
 
 
 
+[[support-registration-overview]]
 == 支持注册概述
 
 注册您的帐户 ID 支持订阅（位于NetApp控制台中的“支持资源”页面上的 20 位 960xxxxxxxxx 序列号）作为您的单一支持订阅 ID。每个NetApp帐户级支持订阅都必须注册。
@@ -27,12 +28,14 @@ link:https://docs.netapp.com/us-en/storage-management-fsx-ontap/start/concept-fs
 
 
 
+[[register-your-account-for-netapp-support]]
 == 注册您的帐户以获得NetApp支持
 
 要注册支持并激活支持权利，您帐户中的一名用户必须将NetApp支持站点帐户与其NetApp控制台登录名关联。如何注册NetApp支持取决于您是否已经拥有NetApp支持站点 (NSS) 帐户。
 
 
 
+[[existing-customer-with-an-nss-account]]
 === 具有NSS帐户的现有客户
 
 如果您是拥有 NSS 帐户的NetApp客户，则只需通过NetApp控制台注册即可获得支持。
@@ -59,6 +62,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 
 
 
+[[existing-customer-but-no-nss-account]]
 === 现有客户、但无NSS帐户
 
 如果您是现有NetApp客户，拥有现有许可证和序列号但没有 NSS 帐户，则需要创建一个 NSS 帐户并将其与您的NetApp控制台登录关联。
@@ -75,6 +79,7 @@ image:https://raw.githubusercontent.com/NetAppDocs/workload-family/main/media/sc
 
 
 
+[[brand-new-to-netapp]]
 === NetApp的新品牌
 
 如果您是NetApp的新客户、并且没有NSS帐户、请按照以下每个步骤进行操作。

@@ -4,6 +4,7 @@
 
 
 
+[[improved-migration-advisor-support-for-amazon-elastic-vmware-service]]
 === 改进了对 Amazon Elastic VMWare Service 的迁移顾问支持
 
 NetApp Workload Factory 现在支持自动部署和安装Amazon FSx for NetApp ONTAP文件系统。这样，当迁移到 Amazon EVS 环境完成后，您就可以开始在 FSx for ONTAP文件系统上部署虚拟机。
@@ -12,6 +13,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-migration-advisor-evs-manua
 
 
 
+[[calculate-cost-savings-of-migrating-to-amazon-elastic-vmware-service]]
 === 计算迁移到 Amazon Elastic VMware Service 节省的成本
 
 您现在可以探索将 VMware 工作负载迁移到 Amazon Elastic VMware Service (EVS) 的潜在节省。节省计算器可让您比较使用 Amazon EVS 与Amazon FSx for NetApp ONTAP作为底层存储和不使用 Amazon FSx for NetApp ONTAP 作为底层存储的成本。当您调整环境特征时，计算器会实时显示潜在的节省。

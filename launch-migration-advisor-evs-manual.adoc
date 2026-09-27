@@ -17,6 +17,7 @@ summary: 登录NetApp Workload Factory 以访问 VMware 规划中心。您可以
 
 
 
+[[requirements]]
 == 要求
 
 * 您必须拥有用户名和密码才能访问工作负载工厂。如果您还没有账号，请立即创建账号。请参阅说明 https://docs.netapp.com/us-en/workload-setup-admin/quick-start.html["此处"]。
@@ -25,6 +26,7 @@ summary: 登录NetApp Workload Factory 以访问 VMware 规划中心。您可以
 
 
 
+[[steps]]
 == 步骤
 
 . 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。

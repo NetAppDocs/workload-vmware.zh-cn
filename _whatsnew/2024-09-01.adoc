@@ -4,6 +4,7 @@
 
 
 
+[[migrate-to-amazon-ec2]]
 === 迁移到Amazon EC2
 
 VMware的工作负载工厂现在支持使用VMware迁移顾问迁移到Amazon EC2。

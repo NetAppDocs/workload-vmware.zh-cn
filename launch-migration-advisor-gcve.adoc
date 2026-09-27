@@ -17,6 +17,7 @@ summary: 从 VMware 规划中心，您可以启动 Google Cloud VMware Engine �
 
 
 
+[[requirements]]
 == 要求
 
 * 你必须有link:upload-vm-inventory.html["上传虚拟机清单"]。
@@ -26,6 +27,7 @@ summary: 从 VMware 规划中心，您可以启动 Google Cloud VMware Engine �
 
 
 
+[[steps]]
 == 步骤
 
 . 使用以下方式之一登录 Workload Factory https://docs.netapp.com/us-en/workload-setup-admin/console-experiences.html["控制台体验"^] 。
@@ -43,6 +45,7 @@ summary: 从 VMware 规划中心，您可以启动 Google Cloud VMware Engine �
 
 
 
+[[configure-migration-preferences]]
 === 配置迁移首选项
 
 . 在“虚拟机配置上传”部分中，查看有关用于创建迁移计划的数据集的信息。  *VM 库存摘要*部分由库存文件填充，以反映 VM 的数量和总存储容量。
@@ -96,6 +99,7 @@ NOTE: 如果选择的净空小于 20%，则会自动禁用快照保护。
 
 
 
+[[select-a-cluster-configuration]]
 === 选择集群配置
 
 . 在 *Select preferred Google Cloud VMware Engine cluster configuration* 页面上，配置您的 Google Cloud VMware Engine 集群首选项并查看推荐的配置。
@@ -128,6 +132,7 @@ NOTE: 如果选择的净空小于 20%，则会自动禁用快照保护。
 
 
 
+[[select-a-vm-layout]]
 === 选择 VM 布局
 
 . 在 *自动虚拟机选择* 页面上，查看根据所需的外部存储容量和首选项自动选择的最佳虚拟机布局。
@@ -172,6 +177,7 @@ NOTE: 如果您手动修改虚拟机选择，您可以选择 *Reset* ，根据�
 
 
 
+[[review-nfs-datastore-assignments]]
 === 查看 NFS 数据存储分配
 
 . 在 *Review instance store assignment* 页面上，查看详细的数据存储布局和 VM 分配。
@@ -231,6 +237,7 @@ NOTE: 如果您手动修改虚拟机选择，您可以选择 *Reset* ，根据�
 
 
 
+[[review-and-save-your-deployment-plan]]
 === 查看并保存部署计划
 
 . 在 *查看您的迁移计划* 页面上，在保存之前查看和自定义您的部署计划。

@@ -4,6 +4,7 @@
 
 
 
+[[amazon-ec2-migration-advisor-improvements]]
 === Amazon EC2迁移顾问改进
 
 此版本的BlueXP Workload Factory for VMware 对 Amazon EC2 迁移顾问体验进行了以下改进：
@@ -14,6 +15,7 @@ https://docs.netapp.com/us-en/workload-vmware/launch-onboarding-advisor-native.h
 
 
 
+[[updated-permissions-terminology]]
 === 更新了权限术语
 
 Workload Factory 用户界面和文档现在使用“只读”来指代读取权限，使用“读/写”来指代自动化权限。

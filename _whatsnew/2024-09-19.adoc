@@ -4,6 +4,7 @@
 
 
 
+[[vmware-migration-advisor-enhancements]]
 === VMware迁移顾问增强功能
 
 此版本的 VMware Workload Factory 具有功能和稳定性增强功能，以及在使用 VMware 迁移顾问时导入和导出迁移计划的功能。

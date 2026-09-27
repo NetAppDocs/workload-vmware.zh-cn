@@ -17,6 +17,7 @@ summary: 计算将 Amazon EVS 与 FSx for ONTAP结合使用可以节省多少。
 
 
 
+[[explore-savings-for-evs-environments]]
 == 探索 EVS 环境的节省
 
 按照以下步骤探索计划迁移到 Amazon EVS 环境的潜在节省。
