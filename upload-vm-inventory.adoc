@@ -4,7 +4,7 @@ permalink: upload-vm-inventory.html
 keywords: vm workloads, capture vm details 
 summary: 您可以使用规划中心上传有关当前 VMware 环境的信息。 
 ---
-= 将虚拟机库存数据上传到NetApp Workload Factory
+= 将 VM 清单数据上传到 Workload Factory for VMware
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

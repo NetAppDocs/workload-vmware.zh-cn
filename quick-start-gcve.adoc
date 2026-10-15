@@ -4,7 +4,7 @@ permalink: quick-start-gcve.html
 keywords: quick start, gcve, google cloud vmware engine, gcnv, google cloud netapp volumes 
 summary: 开始使用 VMware 迁移顾问，将您当前的基础架构迁移到使用 Google Cloud NetApp Volumes 作为外部 NFS 数据存储的 Google Cloud VMware Engine。 
 ---
-= 使用 VMware 工作负载迁移顾问迁移到 Google Cloud VMware Engine 的快速入门
+= Google Cloud VMware Engine 迁移快速入门
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

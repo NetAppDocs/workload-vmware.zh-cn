@@ -4,7 +4,7 @@ permalink: quick-start-evs.html
 keywords: quick start 
 summary: 开始使用 VMware 迁移顾问将您当前的基础架构迁移到 Amazon EVS，并使用 Amazon FSx for ONTAP 作为外部 NFS 数据存储。 
 ---
-= 使用 VMware 工作负载迁移顾问快速开始迁移到 Amazon EVS
+= Amazon EVS 迁移快速入门
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

@@ -4,7 +4,7 @@ permalink: support-registration.html
 keywords: support registration, register for support, support, nss account, add nss account, 
 summary: 在向NetApp技术支持部门提交支持案例之前，您需要向 Workload Factory 添加一个NetApp支持站点帐户，然后注册以获得支持。 
 ---
-= 注册以获取NetApp Workload Factory for VMware 的支持
+= 注册 NetApp Workload Factory 以获得 VMware 支持
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/

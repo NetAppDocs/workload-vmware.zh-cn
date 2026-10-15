@@ -4,7 +4,7 @@ permalink: quick-start-native.html
 keywords: quick start 
 summary: 开始使用VMware迁移顾问、使用Amazon FSx for ONTAP作为外部NFS数据存储库将当前基础架构迁移到Amazon EC2。 
 ---
-= 使用VMware Workloads迁移顾问快速开始迁移到Amazon EC2
+= Amazon EC2 迁移快速入门
 :allow-uri-read: 
 :icons: font
 :imagesdir: ./media/
