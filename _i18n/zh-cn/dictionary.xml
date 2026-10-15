@@ -42,8 +42,6 @@
   <block id="a409bb04787a5ddb8911b653d035c75e" category="summary">部署FSx for ONTAP文件系统后、您需要将该系统连接到VMware Cloud on AWS基础架构。SDDC通过使用VPC对等功能将网络连接扩展到外部ONTAP存储卷、为连接到FSx for NFS文件系统提供了一些网络选项。</block>
   <block id="07413029412abf4b07d59a7418a48d98" category="doc">将FSx for ONTAP文件系统连接到基于AWS的VMware Cloud</block>
   <block id="ff8452c1f30c7c23563874f41490c4aa" category="paragraph">部署适用于ONTAP文件系统的FSx后、您需要将该系统连接到VMware Cloud on AWS基础架构。软件定义的数据中心(Software-定义 的Data Center、SDDC)通过使用VPC对等功能将网络连接扩展到外部NFS存储卷、提供了用于连接到FSx for ONTAP文件系统的网络选项。</block>
-  <block id="36789903991e7a805b64dce62ee3cb41" category="inline-link">有关详细信息、请查看Amazon VPC对等文档</block>
-  <block id="3f44cc30db3785a317875ea3b608f92d" category="paragraph"><block ref="3f44cc30db3785a317875ea3b608f92d" category="inline-link-rx"></block></block>
   <block id="35e4dc1372c9892d7d45c118016255bf" category="paragraph">下图显示了如何使用VPC对等将单个可用性区域(AZ) SDDC集群连接到FSx for ONTAP单可用性区域(AZ)部署。</block>
   <block id="40c5156ee08f8bf4b4ba3c18de0844d9" category="inline-image-macro">显示如何使用VPC对等将单可用性分区SDDC集群连接到适用于ONTAP单可用性分区部署的FSx的示意图。</block>
   <block id="9d06593ee15f520ce9a945a1bbad4daf" category="paragraph"><block ref="9d06593ee15f520ce9a945a1bbad4daf" category="inline-image-macro-rx" type="image"></block></block>
@@ -1075,4 +1073,48 @@
   <block id="8817b0c6f0795c52cab62044416eee8a" category="inline-link-macro">详细了解自定义规则</block>
   <block id="821af7226458ea25572e88e8ab2026e4" category="paragraph">您还可以用简单的语言创建自定义规则，以根据组织的标准和 NetApp 最佳实践验证您的环境。通过试运行测试规则，然后安排它们在您的环境中运行。<block ref="ce039b478eb432b675a03c04866f31ab" category="inline-link-macro-rx"></block>。</block>
   <block id="06e2f75907573850abfa673fd6e8572a" category="list-text">*NetApp Terraform 提供程序*：使用 Terraform 构建和管理在 Workload Factory 控制台中生成的基础设施工作流。</block>
+  <block id="b1980e2ec22c1bd0d98ba755ec8c6e01" category="inline-link">阅读 Amazon FSx for NetApp ONTAP 与 VMware Cloud on AWS 的 VPC 对等连接</block>
+  <block id="0ced83efbc83d6325bf854e3d9ff902a" category="paragraph"><block ref="0ced83efbc83d6325bf854e3d9ff902a" category="inline-link-rx"></block></block>
+  <block id="38c274fda05ac23bc0c0e3ae43dd64a4" category="summary">有关适用于 VMware 迁移规划和架构完善的分析的 NetApp Workload Factory 的常见问题解答。</block>
+  <block id="921197c062d49527e44f758465813b42" category="doc">适用于 VMware 的 NetApp Workload Factory 常见问题解答</block>
+  <block id="9c5f05ee10a27623a15b9e8038e413b7" category="paragraph">本常见问题解答回答了有关 NetApp Workload Factory for VMware 的常见问题。它侧重于评估或准备 VMware 工作负载迁移时有用的迁移规划概念、清单、存储、成本、支持的区域和 EVS 分析。</block>
+  <block id="d437e7d8b6513f91bbd58e0b1e08c90b" category="section-title">迁移计划</block>
+  <block id="68a48fbb2af3e6d7bde13f9b79c1c9b7" category="paragraph-title">NetApp Workload Factory for VMware 对我有什么帮助？</block>
+  <block id="7abe51b29673391c62dbf3f8749ad887" category="paragraph">它提供了一个规划中心和迁移顾问，用于分析本地 VMware VM 配置并为云环境创建迁移计划。您可以在规划中心管理已保存的 VM 清单数据集和计划。</block>
+  <block id="22f263390246a9c39cabb176ef631aad" category="paragraph-title">我可以计划哪些迁移目标和外部存储选项？</block>
+  <block id="e639c5502f615dfde1d0c499a1d62172" category="paragraph">顾问支持以下方面的规划：</block>
+  <block id="0adfc65f94dcc3f5f21a413837937795" category="list-text">*Amazon EVS、Amazon EC2 和 VMware Cloud on AWS*：Amazon FSx for NetApp ONTAP 外部数据存储。</block>
+  <block id="814f242de9ef1ad90bde17a1732e1275" category="list-text">*Google Cloud VMware Engine*：Google Cloud NetApp Volumes 外部 NFS 数据存储。</block>
+  <block id="a3f6e39522270495b7ade2db49e36aff" category="inline-link-macro">Amazon EVS</block>
+  <block id="c421d122321bec48d6b30858f4e7b515" category="inline-link-macro">Amazon EC2</block>
+  <block id="4dab2f9796b0af6304d00e21e2b9dfb4" category="inline-link-macro">VMware Cloud on AWS</block>
+  <block id="8cb69aa5b1609d0a39f0fcd576c07df6" category="inline-link-macro">Google Cloud VMware Engine</block>
+  <block id="1c262301540de33d6756655a686ed5b9" category="paragraph">有关每个目标的详细信息，请参见 <block ref="9c2b1296fd4e6905a5138236d0b63e57" category="inline-link-macro-rx"></block>、<block ref="b56ba05800e5da500ec14669dcbe24fe" category="inline-link-macro-rx"></block>、<block ref="dbdf5d8b354615c538eac17b1cb7ef66" category="inline-link-macro-rx"></block> 和 <block ref="1604998c59575416bb03744d61eab4a1" category="inline-link-macro-rx"></block> 的迁移顾问主题。</block>
+  <block id="5ad7d3b807f99b46f69658ed88815e6d" category="paragraph-title">迁移顾问在制定计划时会考虑什么？</block>
+  <block id="e2145d872370b5ed7066380746bb8ac4" category="paragraph">顾问分析虚拟机配置，帮助确定要迁移的虚拟机，估算云原生外部数据存储所需的空间，并提供部署计划。特定于目标的选项可能包括虚拟机选择、容量和保护首选项以及存储分配。</block>
+  <block id="a0d2df962201e828aaf8c55a8a8fcb4a" category="paragraph-title">Workload Factory 是否可以为每个迁移目标提供建议的资源？</block>
+  <block id="94985dfc0712efb12dc10d8fa2fc5e54" category="paragraph">Workload Factory 支持 Amazon EC2、Amazon EVS 和 VMware Cloud on AWS 的部署。对于 Google Cloud VMware Engine，该计划提供生成的 Terraform 代码，以在您的 Terraform 环境中配置 Google Cloud NetApp Volumes NFS 数据存储。请参阅 <block ref="4f67d9858e997a397a4969c6aa8fe655" category="inline-link-macro-rx"></block>、<block ref="6667ebc08e629643a12f3b7485d0395c" category="inline-link-macro-rx"></block> 和 <block ref="333d1147dd4e020c07f15b6f692fcc0e" category="inline-link-macro-rx"></block> 的部署计划主题。</block>
+  <block id="6318da2d496e169f337afd4ff402526c" category="paragraph-title">外部数据存储如何与 VMware 存储相匹配？</block>
+  <block id="15e3eaa8417738fa9506f66df80fc23b" category="paragraph">FSx for ONTAP 或 Google Cloud NetApp Volumes 提供可以补充 vSAN 存储的 NFS 数据存储。此存储可独立于计算进行扩展，因此您可以增加存储，而无需添加主机。</block>
+  <block id="55d66ec039b75fc2759a50f781a06ed7" category="section-title">VM 清单</block>
+  <block id="a24d65bece3aee2663d885c0a64e92a7" category="paragraph-title">我可以使用哪些虚拟机清单源进行迁移规划？</block>
+  <block id="f9af019e9f1c862aee89fe05ceb9591a" category="paragraph">您可以从 RVTools、Workload Factory VM 收集器脚本或 NetApp Data Infrastructure Insights 提供清单。RVTools 捕获虚拟机配置信息；收集器还可以捕获当前虚拟机性能数据，并且 Data Infrastructure Insights 通过 API 通信提供基础架构信息。有关详细信息，请参见 <block ref="31e8e3bc37bd2e1bade95d88393c52bb" category="inline-link-macro-rx"></block>。</block>
+  <block id="7afee89e1a9e2debd08db073ec3934d9" category="paragraph-title">为什么我会选择 VM 收集器而不是 RVTools？</block>
+  <block id="be43335cbb078eb76cc8d740b569e465" category="inline-link-macro">捕获 VM 配置</block>
+  <block id="d3e4b204e59f5a98d1ebcceda70307fc" category="paragraph">收集器捕获 VM 配置以及当前的读写 IOPS 和吞吐量统计信息，从而支持更准确的规划。RVTools 捕获配置信息，但不提供这些性能统计信息。有关详细信息，请参见 <block ref="adf5172dac9e3bdd5d6cd83ffca17ea5" category="inline-link-macro-rx"></block>。</block>
+  <block id="8fed66a0c40dda072c94d458c872ef62" category="section-title">成本和可用性</block>
+  <block id="20fdf4b8688f4afc30202991997b4c2e" category="paragraph-title">我是否需要付费才能使用 Workload Factory for VMware，以及是否需要 NetApp 许可证？</block>
+  <block id="341d2dffce381e61275067753696f7b6" category="paragraph">使用 Workload Factory for VMware 无需任何费用，也不需要特殊的 NetApp 许可证。您需要为根据顾问建议部署的 AWS 资源付费。</block>
+  <block id="765b05cb563da6f40d663d2593d0c763" category="paragraph-title">适用于 VMware 的 Workload Factory 可以使用哪些 AWS 区域？</block>
+  <block id="086cdec2519a73cf27a8a12e453eab47" category="inline-link">支持的 Amazon 区域</block>
+  <block id="448e3e4c660376567a40289818c91d91" category="paragraph">在支持 FSx for ONTAP 的商业区域中支持 Workload Factory。不支持中国区域、Secret Cloud 和 Top Secret Cloud。有关当前 AWS 区域可用性，请参见<block ref="809309708af46b9486c52391ea92f7d9" category="inline-link-rx"></block>。</block>
+  <block id="7f68e2bc2b8cbb72e6a5018e54563f19" category="paragraph-title">我可以从 EVS 节省计算器中了解到什么？</block>
+  <block id="051af7bcf03c0c0d23d599186c282824" category="inline-link-macro">计算 EVS 节省量</block>
+  <block id="4277946ad96fa77ee168524d39d3e1f0" category="paragraph">该计算器比较了使用和不使用 FSx for ONTAP 时的潜在 EVS 成本。您可以按区域、物理 CPU、物理内存、VM 存储和 EVS 计费计划调整估算值。如果 FSx for ONTAP 被确定为最具成本效益的存储，您可以创建详细的评估。请参阅 <block ref="778cca21f3f5bbf5509fd7145d83f99e" category="inline-link-macro-rx"></block>。</block>
+  <block id="ba77922ef9e1baa3033e9b990b664a40" category="section-title">EVS 架构完善的分析</block>
+  <block id="f57cca92e666a3209a8832215b03ddf0" category="paragraph-title">EVS 架构完善的分析会检查什么？</block>
+  <block id="6afd14ee08adf3254ece642e2de1a862" category="paragraph">它分析已发现的 EVS 环境，以获取可靠性和安全性发现。记录的检查评估了分区放置组分布的弹性以及集群节点的 EC2 停止和终止保护。调查结果包括状态、严重程度、受影响的资源和补救指导。请参阅<block ref="dc1d4508bc87fe084e4997c9ba74f001" category="inline-link-macro-rx"></block>。</block>
+  <block id="92cf0e18866b04760e70a131cb85dfe9" category="paragraph-title">EVS 精心设计的分析运行的频率如何，需要哪些访问权限？</block>
+  <block id="dfd41ab037a25f5c2fce16d5ee27e400" category="inline-link-macro">EVS 精心设计的分析要求</block>
+  <block id="dff9e7d880dfe3330c2697a30f505e01" category="paragraph">发现的 EVS 配置每天使用 AWS API 自动扫描一次；不需要 vSphere 凭据和 vCenter 连接。您需要具有 VMware 工作负载的查看、规划和分析权限的 AWS 凭据，以及至少一个发现的 EVS 环境。有关详细信息，请参见 <block ref="49902b356d6c7776da8fe31c598cd788" category="inline-link-macro-rx"></block>。</block>
 </blocks>

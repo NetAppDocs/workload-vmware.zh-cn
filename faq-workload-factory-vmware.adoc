@@ -1,0 +1,79 @@
+---
+sidebar: sidebar 
+permalink: faq-workload-factory-vmware.html 
+keywords: faq, frequently asked questions, frequently asked questions about netapp workload factory for vmware, workload factory for vmware, vmware migration advisors, amazon evs, amazon ec2, vmware cloud on aws, google cloud vmware engine, fsx for ontap, google cloud netapp volumes, evs well-architected analysis 
+summary: 有关适用于 VMware 迁移规划和架构完善的分析的 NetApp Workload Factory 的常见问题解答。 
+---
+= 适用于 VMware 的 NetApp Workload Factory 常见问题解答
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+本常见问题解答回答了有关 NetApp Workload Factory for VMware 的常见问题。它侧重于评估或准备 VMware 工作负载迁移时有用的迁移规划概念、清单、存储、成本、支持的区域和 EVS 分析。
+
+
+
+[[migration-planning]]
+== 迁移计划
+
+.NetApp Workload Factory for VMware 对我有什么帮助？
+它提供了一个规划中心和迁移顾问，用于分析本地 VMware VM 配置并为云环境创建迁移计划。您可以在规划中心管理已保存的 VM 清单数据集和计划。
+
+.我可以计划哪些迁移目标和外部存储选项？
+顾问支持以下方面的规划：
+
+* *Amazon EVS、Amazon EC2 和 VMware Cloud on AWS*：Amazon FSx for NetApp ONTAP 外部数据存储。
+* *Google Cloud VMware Engine*：Google Cloud NetApp Volumes 外部 NFS 数据存储。
+
+
+有关每个目标的详细信息，请参见 link:launch-migration-advisor-evs.html["Amazon EVS"]、link:launch-onboarding-advisor-native.html["Amazon EC2"]、link:launch-onboarding-advisor.html["VMware Cloud on AWS"] 和 link:launch-migration-advisor-gcve.html["Google Cloud VMware Engine"] 的迁移顾问主题。
+
+.迁移顾问在制定计划时会考虑什么？
+顾问分析虚拟机配置，帮助确定要迁移的虚拟机，估算云原生外部数据存储所需的空间，并提供部署计划。特定于目标的选项可能包括虚拟机选择、容量和保护首选项以及存储分配。
+
+.Workload Factory 是否可以为每个迁移目标提供建议的资源？
+Workload Factory 支持 Amazon EC2、Amazon EVS 和 VMware Cloud on AWS 的部署。对于 Google Cloud VMware Engine，该计划提供生成的 Terraform 代码，以在您的 Terraform 环境中配置 Google Cloud NetApp Volumes NFS 数据存储。请参阅 link:deploy-fsx-file-system-native.html["Amazon EC2"]、link:deploy-fsx-file-system-evs.html["Amazon EVS"] 和 link:deploy-fsx-file-system.html["VMware Cloud on AWS"] 的部署计划主题。
+
+.外部数据存储如何与 VMware 存储相匹配？
+FSx for ONTAP 或 Google Cloud NetApp Volumes 提供可以补充 vSAN 存储的 NFS 数据存储。此存储可独立于计算进行扩展，因此您可以增加存储，而无需添加主机。
+
+
+
+[[vm-inventory]]
+== VM 清单
+
+.我可以使用哪些虚拟机清单源进行迁移规划？
+您可以从 RVTools、Workload Factory VM 收集器脚本或 NetApp Data Infrastructure Insights 提供清单。RVTools 捕获虚拟机配置信息；收集器还可以捕获当前虚拟机性能数据，并且 Data Infrastructure Insights 通过 API 通信提供基础架构信息。有关详细信息，请参见 link:upload-vm-inventory.html["上传虚拟机清单数据"]。
+
+.为什么我会选择 VM 收集器而不是 RVTools？
+收集器捕获 VM 配置以及当前的读写 IOPS 和吞吐量统计信息，从而支持更准确的规划。RVTools 捕获配置信息，但不提供这些性能统计信息。有关详细信息，请参见 link:capture-vm-configurations.html["捕获 VM 配置"]。
+
+
+
+[[costs-and-availability]]
+== 成本和可用性
+
+.我是否需要付费才能使用 Workload Factory for VMware，以及是否需要 NetApp 许可证？
+使用 Workload Factory for VMware 无需任何费用，也不需要特殊的 NetApp 许可证。您需要为根据顾问建议部署的 AWS 资源付费。
+
+.适用于 VMware 的 Workload Factory 可以使用哪些 AWS 区域？
+在支持 FSx for ONTAP 的商业区域中支持 Workload Factory。不支持中国区域、Secret Cloud 和 Top Secret Cloud。有关当前 AWS 区域可用性，请参见 https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/["支持的 Amazon 区域"^]。
+
+.我可以从 EVS 节省计算器中了解到什么？
+该计算器比较了使用和不使用 FSx for ONTAP 时的潜在 EVS 成本。您可以按区域、物理 CPU、物理内存、VM 存储和 EVS 计费计划调整估算值。如果 FSx for ONTAP 被确定为最具成本效益的存储，您可以创建详细的评估。请参阅 link:calculate-evs-savings.html["计算 EVS 节省量"]。
+
+
+
+[[evs-well-architected-analysis]]
+== EVS 架构完善的分析
+
+.EVS 架构完善的分析会检查什么？
+它分析已发现的 EVS 环境，以获取可靠性和安全性发现。记录的检查评估了分区放置组分布的弹性以及集群节点的 EC2 停止和终止保护。调查结果包括状态、严重程度、受影响的资源和补救指导。请参阅link:view-evs-well-architected.html["在 Workload Factory 中实施良好架构的 EVS 配置"]。
+
+.EVS 精心设计的分析运行的频率如何，需要哪些访问权限？
+发现的 EVS 配置每天使用 AWS API 自动扫描一次；不需要 vSphere 凭据和 vCenter 连接。您需要具有 VMware 工作负载的查看、规划和分析权限的 AWS 凭据，以及至少一个发现的 EVS 环境。有关详细信息，请参见 link:view-evs-well-architected.html["EVS 精心设计的分析要求"]。
